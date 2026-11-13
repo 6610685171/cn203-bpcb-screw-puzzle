@@ -1,0 +1,370 @@
+{
+  "boxes": [
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "cyan"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "purple"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "orange"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "pink"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "cyan"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "purple"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "orange"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "pink"
+    },
+    {
+      "capacity": 1,
+      "collected": [],
+      "color": "cyan"
+    }
+  ],
+  "covers": [
+    {
+      "plate_id": "rib_arc_2",
+      "screw_id": "ra_1_l"
+    },
+    {
+      "plate_id": "rib_arc_4",
+      "screw_id": "ra_1_mid"
+    },
+    {
+      "plate_id": "rib_spine",
+      "screw_id": "ra_1_mid"
+    },
+    {
+      "plate_id": "rib_arc_2",
+      "screw_id": "ra_1_r"
+    },
+    {
+      "plate_id": "rib_spine",
+      "screw_id": "ra_2_mid"
+    },
+    {
+      "plate_id": "rib_arc_4",
+      "screw_id": "ra_3_l"
+    },
+    {
+      "plate_id": "rib_arc_6",
+      "screw_id": "ra_3_mid"
+    },
+    {
+      "plate_id": "rib_spine",
+      "screw_id": "ra_3_mid"
+    },
+    {
+      "plate_id": "rib_arc_4",
+      "screw_id": "ra_3_r"
+    },
+    {
+      "plate_id": "rib_spine",
+      "screw_id": "ra_4_mid"
+    },
+    {
+      "plate_id": "rib_spine",
+      "screw_id": "ra_5_mid"
+    },
+    {
+      "plate_id": "rib_arc_5",
+      "screw_id": "ra_6_l"
+    },
+    {
+      "plate_id": "rib_spine",
+      "screw_id": "ra_6_mid"
+    },
+    {
+      "plate_id": "rib_arc_5",
+      "screw_id": "ra_6_r"
+    }
+  ],
+  "metadata": {
+    "level": 19,
+    "seed": null,
+    "source_commit": "5ee0b84970eba12d4fd7f937bae162bf75ba61f3"
+  },
+  "name": "ScrewJam level 19",
+  "plates": [
+    {
+      "angle": 3.1051511385281394,
+      "height": 95.0,
+      "holes": [
+        {
+          "color": "cyan",
+          "dx": -60.0,
+          "dy": -12.0,
+          "id": "ra_0_l"
+        },
+        {
+          "color": "cyan",
+          "dx": 0.0,
+          "dy": -36.0,
+          "id": "ra_0_mid"
+        },
+        {
+          "color": "cyan",
+          "dx": 60.0,
+          "dy": -12.0,
+          "id": "ra_0_r"
+        }
+      ],
+      "id": "rib_arc_0",
+      "layer": 0,
+      "order": 0,
+      "shape_type": "curvedArc",
+      "width": 180.0,
+      "x": 177.52227297972564,
+      "y": 342.3017262782947
+    },
+    {
+      "angle": 6.2467437921179325,
+      "height": 95.0,
+      "holes": [
+        {
+          "color": "purple",
+          "dx": -60.0,
+          "dy": -12.0,
+          "id": "ra_1_l"
+        },
+        {
+          "color": "purple",
+          "dx": 0.0,
+          "dy": -36.0,
+          "id": "ra_1_mid"
+        },
+        {
+          "color": "orange",
+          "dx": 60.0,
+          "dy": -12.0,
+          "id": "ra_1_r"
+        }
+      ],
+      "id": "rib_arc_1",
+      "layer": 1,
+      "order": 1,
+      "shape_type": "curvedArc",
+      "width": 180.0,
+      "x": 176.42926948055833,
+      "y": 312.32164383426516
+    },
+    {
+      "angle": 3.1051511385281394,
+      "height": 95.0,
+      "holes": [
+        {
+          "color": "purple",
+          "dx": -60.0,
+          "dy": -12.0,
+          "id": "ra_2_l"
+        },
+        {
+          "color": "cyan",
+          "dx": 0.0,
+          "dy": -36.0,
+          "id": "ra_2_mid"
+        },
+        {
+          "color": "purple",
+          "dx": 60.0,
+          "dy": -12.0,
+          "id": "ra_2_r"
+        }
+      ],
+      "id": "rib_arc_2",
+      "layer": 2,
+      "order": 2,
+      "shape_type": "curvedArc",
+      "width": 180.0,
+      "x": 175.33626598139102,
+      "y": 282.3415613902356
+    },
+    {
+      "angle": 6.2467437921179325,
+      "height": 95.0,
+      "holes": [
+        {
+          "color": "orange",
+          "dx": -60.0,
+          "dy": -12.0,
+          "id": "ra_3_l"
+        },
+        {
+          "color": "cyan",
+          "dx": 0.0,
+          "dy": -36.0,
+          "id": "ra_3_mid"
+        },
+        {
+          "color": "orange",
+          "dx": 60.0,
+          "dy": -12.0,
+          "id": "ra_3_r"
+        }
+      ],
+      "id": "rib_arc_3",
+      "layer": 0,
+      "order": 3,
+      "shape_type": "curvedArc",
+      "width": 180.0,
+      "x": 174.2432624822237,
+      "y": 252.3614789462061
+    },
+    {
+      "angle": 3.1051511385281394,
+      "height": 95.0,
+      "holes": [
+        {
+          "color": "purple",
+          "dx": -60.0,
+          "dy": -12.0,
+          "id": "ra_4_l"
+        },
+        {
+          "color": "cyan",
+          "dx": 0.0,
+          "dy": -36.0,
+          "id": "ra_4_mid"
+        },
+        {
+          "color": "orange",
+          "dx": 60.0,
+          "dy": -12.0,
+          "id": "ra_4_r"
+        }
+      ],
+      "id": "rib_arc_4",
+      "layer": 1,
+      "order": 4,
+      "shape_type": "curvedArc",
+      "width": 180.0,
+      "x": 173.1502589830564,
+      "y": 222.38139650217656
+    },
+    {
+      "angle": 6.2467437921179325,
+      "height": 95.0,
+      "holes": [
+        {
+          "color": "orange",
+          "dx": -60.0,
+          "dy": -12.0,
+          "id": "ra_5_l"
+        },
+        {
+          "color": "purple",
+          "dx": 0.0,
+          "dy": -36.0,
+          "id": "ra_5_mid"
+        },
+        {
+          "color": "orange",
+          "dx": 60.0,
+          "dy": -12.0,
+          "id": "ra_5_r"
+        }
+      ],
+      "id": "rib_arc_5",
+      "layer": 2,
+      "order": 5,
+      "shape_type": "curvedArc",
+      "width": 180.0,
+      "x": 172.0572554838891,
+      "y": 192.40131405814702
+    },
+    {
+      "angle": 3.1051511385281394,
+      "height": 95.0,
+      "holes": [
+        {
+          "color": "pink",
+          "dx": -60.0,
+          "dy": -12.0,
+          "id": "ra_6_l"
+        },
+        {
+          "color": "pink",
+          "dx": 0.0,
+          "dy": -36.0,
+          "id": "ra_6_mid"
+        },
+        {
+          "color": "pink",
+          "dx": 60.0,
+          "dy": -12.0,
+          "id": "ra_6_r"
+        }
+      ],
+      "id": "rib_arc_6",
+      "layer": 0,
+      "order": 6,
+      "shape_type": "curvedArc",
+      "width": 180.0,
+      "x": 170.96425198472178,
+      "y": 162.4212316141175
+    },
+    {
+      "angle": 3.1051511385281394,
+      "height": 220.0,
+      "holes": [
+        {
+          "color": "pink",
+          "dx": 0.0,
+          "dy": -82.0,
+          "id": "rs_0"
+        },
+        {
+          "color": "pink",
+          "dx": 0.0,
+          "dy": -26.0,
+          "id": "rs_1"
+        },
+        {
+          "color": "pink",
+          "dx": 0.0,
+          "dy": 26.0,
+          "id": "rs_2"
+        },
+        {
+          "color": "cyan",
+          "dx": 0.0,
+          "dy": 82.0,
+          "id": "rs_3"
+        }
+      ],
+      "id": "rib_spine",
+      "layer": 4,
+      "order": 7,
+      "shape_type": "linkBar4",
+      "width": 36.0,
+      "x": 174.2432624822237,
+      "y": 252.3614789462061
+    }
+  ],
+  "waiting_capacity": 4
+}

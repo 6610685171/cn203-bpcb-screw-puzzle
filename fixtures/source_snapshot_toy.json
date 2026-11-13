@@ -1,0 +1,60 @@
+{
+  "boxes": [
+    {
+      "capacity": 1,
+      "collected": [],
+      "color": "A"
+    },
+    {
+      "capacity": 1,
+      "collected": [],
+      "color": "B"
+    }
+  ],
+  "metadata": {
+    "purpose": "Dart-independent importer and coverage smoke test"
+  },
+  "name": "Source snapshot toy overlap",
+  "plates": [
+    {
+      "angle": 0.0,
+      "height": 30.0,
+      "holes": [
+        {
+          "color": "A",
+          "dx": 0.0,
+          "dy": 0.0,
+          "id": "a1"
+        }
+      ],
+      "id": "pA",
+      "layer": 0,
+      "order": 0,
+      "shape_type": "linkBar2",
+      "width": 100.0,
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "angle": 0.0,
+      "height": 30.0,
+      "holes": [
+        {
+          "color": "B",
+          "dx": 40.0,
+          "dy": 0.0,
+          "id": "b1"
+        }
+      ],
+      "id": "pB",
+      "layer": 1,
+      "order": 1,
+      "shape_type": "linkBar2",
+      "width": 100.0,
+      "x": 0.0,
+      "y": 0.0
+    }
+  ],
+  "waiting_capacity": 1
+}
+

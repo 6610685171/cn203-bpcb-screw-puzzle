@@ -1,0 +1,240 @@
+{
+  "boxes": [
+    {
+      "capacity": 3,
+      "color": "purple"
+    },
+    {
+      "capacity": 3,
+      "color": "blue"
+    },
+    {
+      "capacity": 3,
+      "color": "orange"
+    },
+    {
+      "capacity": 3,
+      "color": "blue"
+    },
+    {
+      "capacity": 2,
+      "color": "purple"
+    },
+    {
+      "capacity": 3,
+      "color": "purple"
+    },
+    {
+      "capacity": 3,
+      "color": "orange"
+    }
+  ],
+  "covers": [
+    {
+      "plate_id": "hw_center_star",
+      "screw_id": "hwh_2"
+    },
+    {
+      "plate_id": "hw_extra_0",
+      "screw_id": "hwh_2"
+    },
+    {
+      "plate_id": "hw_extra_0",
+      "screw_id": "hws_0"
+    },
+    {
+      "plate_id": "hw_extra_0",
+      "screw_id": "hws_1"
+    },
+    {
+      "plate_id": "hw_extra_1",
+      "screw_id": "hwe_0_0"
+    },
+    {
+      "plate_id": "hw_extra_1",
+      "screw_id": "hwe_0_1"
+    },
+    {
+      "plate_id": "hw_extra_1",
+      "screw_id": "hwh_2"
+    },
+    {
+      "plate_id": "hw_extra_1",
+      "screw_id": "hws_0"
+    },
+    {
+      "plate_id": "hw_extra_1",
+      "screw_id": "hws_1"
+    },
+    {
+      "plate_id": "hw_wing_l",
+      "screw_id": "hwe_2_0"
+    },
+    {
+      "plate_id": "hw_wing_l",
+      "screw_id": "hwe_2_1"
+    },
+    {
+      "plate_id": "hw_wing_l",
+      "screw_id": "hwh_0"
+    },
+    {
+      "plate_id": "hw_wing_l",
+      "screw_id": "hws_0"
+    },
+    {
+      "plate_id": "hw_wing_r",
+      "screw_id": "hwh_1"
+    },
+    {
+      "plate_id": "hw_wing_r",
+      "screw_id": "hwl_2"
+    },
+    {
+      "plate_id": "hw_wing_r",
+      "screw_id": "hws_0"
+    }
+  ],
+  "format": "osrp-level-v1",
+  "name": "ScrewJam level 8 [seed=80003, box_swaps=4, color_swaps=10, W=2]",
+  "plates": [
+    {
+      "id": "hw_heart_base",
+      "layer": 0,
+      "order": 0
+    },
+    {
+      "id": "hw_wing_l",
+      "layer": 1,
+      "order": 1
+    },
+    {
+      "id": "hw_wing_r",
+      "layer": 2,
+      "order": 2
+    },
+    {
+      "id": "hw_center_star",
+      "layer": 0,
+      "order": 3
+    },
+    {
+      "id": "hw_extra_0",
+      "layer": 1,
+      "order": 4
+    },
+    {
+      "id": "hw_extra_1",
+      "layer": 2,
+      "order": 5
+    },
+    {
+      "id": "hw_extra_2",
+      "layer": 0,
+      "order": 6
+    }
+  ],
+  "screws": [
+    {
+      "color": "orange",
+      "id": "hwh_0",
+      "plate_id": "hw_heart_base"
+    },
+    {
+      "color": "blue",
+      "id": "hwh_1",
+      "plate_id": "hw_heart_base"
+    },
+    {
+      "color": "purple",
+      "id": "hwh_2",
+      "plate_id": "hw_heart_base"
+    },
+    {
+      "color": "purple",
+      "id": "hwl_0",
+      "plate_id": "hw_wing_l"
+    },
+    {
+      "color": "orange",
+      "id": "hwl_1",
+      "plate_id": "hw_wing_l"
+    },
+    {
+      "color": "orange",
+      "id": "hwl_2",
+      "plate_id": "hw_wing_l"
+    },
+    {
+      "color": "purple",
+      "id": "hwr_0",
+      "plate_id": "hw_wing_r"
+    },
+    {
+      "color": "purple",
+      "id": "hwr_1",
+      "plate_id": "hw_wing_r"
+    },
+    {
+      "color": "purple",
+      "id": "hwr_2",
+      "plate_id": "hw_wing_r"
+    },
+    {
+      "color": "blue",
+      "id": "hws_0",
+      "plate_id": "hw_center_star"
+    },
+    {
+      "color": "blue",
+      "id": "hws_1",
+      "plate_id": "hw_center_star"
+    },
+    {
+      "color": "orange",
+      "id": "hwe_0_0",
+      "plate_id": "hw_extra_0"
+    },
+    {
+      "color": "blue",
+      "id": "hwe_0_1",
+      "plate_id": "hw_extra_0"
+    },
+    {
+      "color": "blue",
+      "id": "hwe_0_2",
+      "plate_id": "hw_extra_0"
+    },
+    {
+      "color": "orange",
+      "id": "hwe_1_0",
+      "plate_id": "hw_extra_1"
+    },
+    {
+      "color": "blue",
+      "id": "hwe_1_1",
+      "plate_id": "hw_extra_1"
+    },
+    {
+      "color": "purple",
+      "id": "hwe_1_2",
+      "plate_id": "hw_extra_1"
+    },
+    {
+      "color": "purple",
+      "id": "hwe_2_0",
+      "plate_id": "hw_extra_2"
+    },
+    {
+      "color": "purple",
+      "id": "hwe_2_1",
+      "plate_id": "hw_extra_2"
+    },
+    {
+      "color": "orange",
+      "id": "hwe_2_2",
+      "plate_id": "hw_extra_2"
+    }
+  ],
+  "waiting_capacity": 2
+}

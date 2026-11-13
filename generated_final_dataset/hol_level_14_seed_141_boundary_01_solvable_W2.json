@@ -1,0 +1,276 @@
+{
+  "boxes": [
+    {
+      "capacity": 3,
+      "color": "orange"
+    },
+    {
+      "capacity": 3,
+      "color": "cyan"
+    },
+    {
+      "capacity": 3,
+      "color": "pink"
+    },
+    {
+      "capacity": 3,
+      "color": "lime"
+    },
+    {
+      "capacity": 3,
+      "color": "orange"
+    },
+    {
+      "capacity": 3,
+      "color": "lime"
+    },
+    {
+      "capacity": 3,
+      "color": "pink"
+    },
+    {
+      "capacity": 2,
+      "color": "cyan"
+    }
+  ],
+  "covers": [
+    {
+      "plate_id": "mc_extra_bar_0",
+      "screw_id": "mcg_0"
+    },
+    {
+      "plate_id": "mc_extra_bar_0",
+      "screw_id": "mcg_1"
+    },
+    {
+      "plate_id": "mc_extra_bar_0",
+      "screw_id": "mct_2"
+    },
+    {
+      "plate_id": "mc_extra_bar_2",
+      "screw_id": "mcl1_1"
+    },
+    {
+      "plate_id": "mc_extra_bar_2",
+      "screw_id": "mcl2_1"
+    },
+    {
+      "plate_id": "mc_extra_bar_2",
+      "screw_id": "mct_2"
+    },
+    {
+      "plate_id": "mc_extra_gear_1",
+      "screw_id": "mcu_3"
+    },
+    {
+      "plate_id": "mc_l_brace1",
+      "screw_id": "mcu_2"
+    },
+    {
+      "plate_id": "mc_l_brace2",
+      "screw_id": "mceb_0_0"
+    },
+    {
+      "plate_id": "mc_l_brace2",
+      "screw_id": "mceb_0_1"
+    },
+    {
+      "plate_id": "mc_l_brace2",
+      "screw_id": "mceb_0_2"
+    },
+    {
+      "plate_id": "mc_l_brace2",
+      "screw_id": "mcg_0"
+    },
+    {
+      "plate_id": "mc_l_brace2",
+      "screw_id": "mcg_1"
+    },
+    {
+      "plate_id": "mc_l_brace2",
+      "screw_id": "mcl1_1"
+    },
+    {
+      "plate_id": "mc_l_brace2",
+      "screw_id": "mct_2"
+    },
+    {
+      "plate_id": "mc_t_mid",
+      "screw_id": "mcg_0"
+    },
+    {
+      "plate_id": "mc_t_mid",
+      "screw_id": "mcg_1"
+    },
+    {
+      "plate_id": "mc_t_mid",
+      "screw_id": "mcu_0"
+    },
+    {
+      "plate_id": "mc_t_mid",
+      "screw_id": "mcu_1"
+    }
+  ],
+  "format": "osrp-level-v1",
+  "name": "ScrewJam level 14 seed 141 [seed=141410001, box_swaps=2, color_swaps=4, W=2]",
+  "plates": [
+    {
+      "id": "mc_u_base",
+      "layer": 0,
+      "order": 0
+    },
+    {
+      "id": "mc_t_mid",
+      "layer": 1,
+      "order": 1
+    },
+    {
+      "id": "mc_l_brace1",
+      "layer": 2,
+      "order": 2
+    },
+    {
+      "id": "mc_l_brace2",
+      "layer": 3,
+      "order": 3
+    },
+    {
+      "id": "mc_cog_lock",
+      "layer": 0,
+      "order": 4
+    },
+    {
+      "id": "mc_extra_bar_0",
+      "layer": 1,
+      "order": 5
+    },
+    {
+      "id": "mc_extra_gear_1",
+      "layer": 2,
+      "order": 6
+    },
+    {
+      "id": "mc_extra_bar_2",
+      "layer": 3,
+      "order": 7
+    }
+  ],
+  "screws": [
+    {
+      "color": "pink",
+      "id": "mcu_0",
+      "plate_id": "mc_u_base"
+    },
+    {
+      "color": "pink",
+      "id": "mcu_1",
+      "plate_id": "mc_u_base"
+    },
+    {
+      "color": "lime",
+      "id": "mcu_2",
+      "plate_id": "mc_u_base"
+    },
+    {
+      "color": "cyan",
+      "id": "mcu_3",
+      "plate_id": "mc_u_base"
+    },
+    {
+      "color": "lime",
+      "id": "mct_0",
+      "plate_id": "mc_t_mid"
+    },
+    {
+      "color": "orange",
+      "id": "mct_1",
+      "plate_id": "mc_t_mid"
+    },
+    {
+      "color": "lime",
+      "id": "mct_2",
+      "plate_id": "mc_t_mid"
+    },
+    {
+      "color": "lime",
+      "id": "mcl1_0",
+      "plate_id": "mc_l_brace1"
+    },
+    {
+      "color": "cyan",
+      "id": "mcl1_1",
+      "plate_id": "mc_l_brace1"
+    },
+    {
+      "color": "lime",
+      "id": "mcl1_2",
+      "plate_id": "mc_l_brace1"
+    },
+    {
+      "color": "pink",
+      "id": "mcl2_0",
+      "plate_id": "mc_l_brace2"
+    },
+    {
+      "color": "orange",
+      "id": "mcl2_1",
+      "plate_id": "mc_l_brace2"
+    },
+    {
+      "color": "pink",
+      "id": "mcl2_2",
+      "plate_id": "mc_l_brace2"
+    },
+    {
+      "color": "orange",
+      "id": "mcg_0",
+      "plate_id": "mc_cog_lock"
+    },
+    {
+      "color": "pink",
+      "id": "mcg_1",
+      "plate_id": "mc_cog_lock"
+    },
+    {
+      "color": "orange",
+      "id": "mceb_0_0",
+      "plate_id": "mc_extra_bar_0"
+    },
+    {
+      "color": "lime",
+      "id": "mceb_0_1",
+      "plate_id": "mc_extra_bar_0"
+    },
+    {
+      "color": "cyan",
+      "id": "mceb_0_2",
+      "plate_id": "mc_extra_bar_0"
+    },
+    {
+      "color": "orange",
+      "id": "mgeg_1_0",
+      "plate_id": "mc_extra_gear_1"
+    },
+    {
+      "color": "orange",
+      "id": "mgeg_1_1",
+      "plate_id": "mc_extra_gear_1"
+    },
+    {
+      "color": "pink",
+      "id": "mceb_2_0",
+      "plate_id": "mc_extra_bar_2"
+    },
+    {
+      "color": "cyan",
+      "id": "mceb_2_1",
+      "plate_id": "mc_extra_bar_2"
+    },
+    {
+      "color": "cyan",
+      "id": "mceb_2_2",
+      "plate_id": "mc_extra_bar_2"
+    }
+  ],
+  "waiting_capacity": 2
+}

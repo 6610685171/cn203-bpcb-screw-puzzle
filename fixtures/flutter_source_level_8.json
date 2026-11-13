@@ -1,0 +1,325 @@
+{
+  "boxes": [
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "purple"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "blue"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "orange"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "purple"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "blue"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "orange"
+    },
+    {
+      "capacity": 2,
+      "collected": [],
+      "color": "purple"
+    }
+  ],
+  "covers": [
+    {
+      "plate_id": "hw_wing_l",
+      "screw_id": "hwh_0"
+    },
+    {
+      "plate_id": "hw_wing_r",
+      "screw_id": "hwh_1"
+    },
+    {
+      "plate_id": "hw_center_star",
+      "screw_id": "hwh_2"
+    },
+    {
+      "plate_id": "hw_extra_0",
+      "screw_id": "hwh_2"
+    },
+    {
+      "plate_id": "hw_extra_1",
+      "screw_id": "hwh_2"
+    },
+    {
+      "plate_id": "hw_wing_r",
+      "screw_id": "hwl_2"
+    },
+    {
+      "plate_id": "hw_wing_l",
+      "screw_id": "hws_0"
+    },
+    {
+      "plate_id": "hw_wing_r",
+      "screw_id": "hws_0"
+    },
+    {
+      "plate_id": "hw_extra_0",
+      "screw_id": "hws_0"
+    },
+    {
+      "plate_id": "hw_extra_1",
+      "screw_id": "hws_0"
+    },
+    {
+      "plate_id": "hw_extra_0",
+      "screw_id": "hws_1"
+    },
+    {
+      "plate_id": "hw_extra_1",
+      "screw_id": "hws_1"
+    },
+    {
+      "plate_id": "hw_extra_1",
+      "screw_id": "hwe_0_0"
+    },
+    {
+      "plate_id": "hw_extra_1",
+      "screw_id": "hwe_0_1"
+    },
+    {
+      "plate_id": "hw_wing_l",
+      "screw_id": "hwe_2_0"
+    },
+    {
+      "plate_id": "hw_wing_l",
+      "screw_id": "hwe_2_1"
+    }
+  ],
+  "metadata": {
+    "level": 8,
+    "seed": null,
+    "source_commit": "5ee0b84970eba12d4fd7f937bae162bf75ba61f3"
+  },
+  "name": "ScrewJam level 8",
+  "plates": [
+    {
+      "angle": 0.011403156887605652,
+      "height": 150.0,
+      "holes": [
+        {
+          "color": "orange",
+          "dx": -45.0,
+          "dy": -30.0,
+          "id": "hwh_0"
+        },
+        {
+          "color": "orange",
+          "dx": 45.0,
+          "dy": -30.0,
+          "id": "hwh_1"
+        },
+        {
+          "color": "orange",
+          "dx": 0.0,
+          "dy": 38.0,
+          "id": "hwh_2"
+        }
+      ],
+      "id": "hw_heart_base",
+      "layer": 0,
+      "order": 0,
+      "shape_type": "heart",
+      "width": 160.0,
+      "x": 181.5639059502267,
+      "y": 256.65337015497647
+    },
+    {
+      "angle": -0.5121956187106932,
+      "height": 34.0,
+      "holes": [
+        {
+          "color": "purple",
+          "dx": -45.0,
+          "dy": 0.0,
+          "id": "hwl_0"
+        },
+        {
+          "color": "purple",
+          "dx": 0.0,
+          "dy": 0.0,
+          "id": "hwl_1"
+        },
+        {
+          "color": "blue",
+          "dx": 45.0,
+          "dy": 0.0,
+          "id": "hwl_2"
+        }
+      ],
+      "id": "hw_wing_l",
+      "layer": 1,
+      "order": 1,
+      "shape_type": "linkBar3",
+      "width": 140.0,
+      "x": 136.79488983343174,
+      "y": 236.14153952155536
+    },
+    {
+      "angle": 0.5350019324859044,
+      "height": 34.0,
+      "holes": [
+        {
+          "color": "purple",
+          "dx": -45.0,
+          "dy": 0.0,
+          "id": "hwr_0"
+        },
+        {
+          "color": "blue",
+          "dx": 0.0,
+          "dy": 0.0,
+          "id": "hwr_1"
+        },
+        {
+          "color": "blue",
+          "dx": 45.0,
+          "dy": 0.0,
+          "id": "hwr_2"
+        }
+      ],
+      "id": "hw_wing_r",
+      "layer": 2,
+      "order": 2,
+      "shape_type": "linkBar3",
+      "width": 140.0,
+      "x": 226.78903845742252,
+      "y": 237.16780139995726
+    },
+    {
+      "angle": 0.011403156887605652,
+      "height": 80.0,
+      "holes": [
+        {
+          "color": "blue",
+          "dx": 0.0,
+          "dy": -18.0,
+          "id": "hws_0"
+        },
+        {
+          "color": "orange",
+          "dx": 0.0,
+          "dy": 18.0,
+          "id": "hws_1"
+        }
+      ],
+      "id": "hw_center_star",
+      "layer": 0,
+      "order": 3,
+      "shape_type": "star",
+      "width": 80.0,
+      "x": 181.5639059502267,
+      "y": 256.65337015497647
+    },
+    {
+      "angle": 0.7968013202850539,
+      "height": 32.0,
+      "holes": [
+        {
+          "color": "blue",
+          "dx": -42.0,
+          "dy": 0.0,
+          "id": "hwe_0_0"
+        },
+        {
+          "color": "blue",
+          "dx": 0.0,
+          "dy": 0.0,
+          "id": "hwe_0_1"
+        },
+        {
+          "color": "orange",
+          "dx": 42.0,
+          "dy": 0.0,
+          "id": "hwe_0_2"
+        }
+      ],
+      "id": "hw_extra_0",
+      "layer": 1,
+      "order": 4,
+      "shape_type": "linkBar3",
+      "width": 130.0,
+      "x": 206.02882662686554,
+      "y": 281.6827060687751
+    },
+    {
+      "angle": 1.8439988714816515,
+      "height": 32.0,
+      "holes": [
+        {
+          "color": "purple",
+          "dx": -42.0,
+          "dy": 0.0,
+          "id": "hwe_1_0"
+        },
+        {
+          "color": "purple",
+          "dx": 0.0,
+          "dy": 0.0,
+          "id": "hwe_1_1"
+        },
+        {
+          "color": "purple",
+          "dx": 42.0,
+          "dy": 0.0,
+          "id": "hwe_1_2"
+        }
+      ],
+      "id": "hw_extra_1",
+      "layer": 2,
+      "order": 5,
+      "shape_type": "linkBar3",
+      "width": 130.0,
+      "x": 165.10509439091388,
+      "y": 315.39098605871425
+    },
+    {
+      "angle": 2.891196422678249,
+      "height": 32.0,
+      "holes": [
+        {
+          "color": "orange",
+          "dx": -42.0,
+          "dy": 0.0,
+          "id": "hwe_2_0"
+        },
+        {
+          "color": "purple",
+          "dx": 0.0,
+          "dy": 0.0,
+          "id": "hwe_2_1"
+        },
+        {
+          "color": "purple",
+          "dx": 42.0,
+          "dy": 0.0,
+          "id": "hwe_2_2"
+        }
+      ],
+      "id": "hw_extra_2",
+      "layer": 0,
+      "order": 6,
+      "shape_type": "linkBar3",
+      "width": 130.0,
+      "x": 97.27706040969754,
+      "y": 278.21091335514143
+    }
+  ],
+  "waiting_capacity": 4
+}

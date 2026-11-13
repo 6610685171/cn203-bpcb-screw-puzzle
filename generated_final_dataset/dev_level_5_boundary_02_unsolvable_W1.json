@@ -1,0 +1,390 @@
+{
+  "boxes": [
+    {
+      "capacity": 3,
+      "color": "yellow"
+    },
+    {
+      "capacity": 3,
+      "color": "purple"
+    },
+    {
+      "capacity": 3,
+      "color": "lime"
+    },
+    {
+      "capacity": 3,
+      "color": "purple"
+    },
+    {
+      "capacity": 3,
+      "color": "yellow"
+    },
+    {
+      "capacity": 3,
+      "color": "lime"
+    },
+    {
+      "capacity": 3,
+      "color": "yellow"
+    },
+    {
+      "capacity": 2,
+      "color": "purple"
+    }
+  ],
+  "covers": [
+    {
+      "plate_id": "vault_lock_bar1",
+      "screw_id": "vu_0_br"
+    },
+    {
+      "plate_id": "vault_lock_bar1",
+      "screw_id": "vu_0_tl"
+    },
+    {
+      "plate_id": "vault_lock_bar1",
+      "screw_id": "vu_1_br"
+    },
+    {
+      "plate_id": "vault_lock_bar1",
+      "screw_id": "vu_1_tl"
+    },
+    {
+      "plate_id": "vault_lock_bar1",
+      "screw_id": "vu_2_br"
+    },
+    {
+      "plate_id": "vault_lock_bar1",
+      "screw_id": "vu_2_tl"
+    },
+    {
+      "plate_id": "vault_lock_bar1",
+      "screw_id": "vu_3_br"
+    },
+    {
+      "plate_id": "vault_lock_bar1",
+      "screw_id": "vu_3_tl"
+    },
+    {
+      "plate_id": "vault_lock_bar1",
+      "screw_id": "vu_4_br"
+    },
+    {
+      "plate_id": "vault_lock_bar1",
+      "screw_id": "vu_4_tl"
+    },
+    {
+      "plate_id": "vault_u_1",
+      "screw_id": "vu_0_bl"
+    },
+    {
+      "plate_id": "vault_u_1",
+      "screw_id": "vu_0_br"
+    },
+    {
+      "plate_id": "vault_u_1",
+      "screw_id": "vu_0_tl"
+    },
+    {
+      "plate_id": "vault_u_1",
+      "screw_id": "vu_0_tr"
+    },
+    {
+      "plate_id": "vault_u_1",
+      "screw_id": "vu_3_bl"
+    },
+    {
+      "plate_id": "vault_u_1",
+      "screw_id": "vu_3_br"
+    },
+    {
+      "plate_id": "vault_u_1",
+      "screw_id": "vu_3_tl"
+    },
+    {
+      "plate_id": "vault_u_1",
+      "screw_id": "vu_3_tr"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_0_bl"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_0_br"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_0_tl"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_0_tr"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_1_bl"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_1_br"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_1_tl"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_1_tr"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_3_bl"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_3_br"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_3_tl"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_3_tr"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_4_bl"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_4_br"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_4_tl"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_4_tr"
+    },
+    {
+      "plate_id": "vault_u_3",
+      "screw_id": "vu_0_bl"
+    },
+    {
+      "plate_id": "vault_u_3",
+      "screw_id": "vu_0_br"
+    },
+    {
+      "plate_id": "vault_u_3",
+      "screw_id": "vu_0_tl"
+    },
+    {
+      "plate_id": "vault_u_3",
+      "screw_id": "vu_0_tr"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_0_bl"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_0_br"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_0_tl"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_0_tr"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_1_bl"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_1_br"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_1_tl"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_1_tr"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_3_bl"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_3_br"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_3_tl"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_3_tr"
+    }
+  ],
+  "format": "osrp-level-v1",
+  "name": "ScrewJam level 5 [seed=50008, box_swaps=1, color_swaps=5, W=1]",
+  "plates": [
+    {
+      "id": "vault_u_0",
+      "layer": 0,
+      "order": 0
+    },
+    {
+      "id": "vault_u_1",
+      "layer": 1,
+      "order": 1
+    },
+    {
+      "id": "vault_u_2",
+      "layer": 2,
+      "order": 2
+    },
+    {
+      "id": "vault_u_3",
+      "layer": 0,
+      "order": 3
+    },
+    {
+      "id": "vault_u_4",
+      "layer": 1,
+      "order": 4
+    },
+    {
+      "id": "vault_lock_bar1",
+      "layer": 4,
+      "order": 5
+    }
+  ],
+  "screws": [
+    {
+      "color": "lime",
+      "id": "vu_0_tl",
+      "plate_id": "vault_u_0"
+    },
+    {
+      "color": "yellow",
+      "id": "vu_0_tr",
+      "plate_id": "vault_u_0"
+    },
+    {
+      "color": "yellow",
+      "id": "vu_0_bl",
+      "plate_id": "vault_u_0"
+    },
+    {
+      "color": "purple",
+      "id": "vu_0_br",
+      "plate_id": "vault_u_0"
+    },
+    {
+      "color": "purple",
+      "id": "vu_1_tl",
+      "plate_id": "vault_u_1"
+    },
+    {
+      "color": "purple",
+      "id": "vu_1_tr",
+      "plate_id": "vault_u_1"
+    },
+    {
+      "color": "purple",
+      "id": "vu_1_bl",
+      "plate_id": "vault_u_1"
+    },
+    {
+      "color": "purple",
+      "id": "vu_1_br",
+      "plate_id": "vault_u_1"
+    },
+    {
+      "color": "lime",
+      "id": "vu_2_tl",
+      "plate_id": "vault_u_2"
+    },
+    {
+      "color": "lime",
+      "id": "vu_2_tr",
+      "plate_id": "vault_u_2"
+    },
+    {
+      "color": "purple",
+      "id": "vu_2_bl",
+      "plate_id": "vault_u_2"
+    },
+    {
+      "color": "yellow",
+      "id": "vu_2_br",
+      "plate_id": "vault_u_2"
+    },
+    {
+      "color": "lime",
+      "id": "vu_3_tl",
+      "plate_id": "vault_u_3"
+    },
+    {
+      "color": "yellow",
+      "id": "vu_3_tr",
+      "plate_id": "vault_u_3"
+    },
+    {
+      "color": "lime",
+      "id": "vu_3_bl",
+      "plate_id": "vault_u_3"
+    },
+    {
+      "color": "yellow",
+      "id": "vu_3_br",
+      "plate_id": "vault_u_3"
+    },
+    {
+      "color": "lime",
+      "id": "vu_4_tl",
+      "plate_id": "vault_u_4"
+    },
+    {
+      "color": "purple",
+      "id": "vu_4_tr",
+      "plate_id": "vault_u_4"
+    },
+    {
+      "color": "yellow",
+      "id": "vu_4_bl",
+      "plate_id": "vault_u_4"
+    },
+    {
+      "color": "yellow",
+      "id": "vu_4_br",
+      "plate_id": "vault_u_4"
+    },
+    {
+      "color": "yellow",
+      "id": "vlb1_0",
+      "plate_id": "vault_lock_bar1"
+    },
+    {
+      "color": "purple",
+      "id": "vlb1_1",
+      "plate_id": "vault_lock_bar1"
+    },
+    {
+      "color": "yellow",
+      "id": "vlb1_2",
+      "plate_id": "vault_lock_bar1"
+    }
+  ],
+  "waiting_capacity": 1
+}

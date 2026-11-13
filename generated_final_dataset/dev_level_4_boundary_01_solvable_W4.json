@@ -1,0 +1,283 @@
+{
+  "boxes": [
+    {
+      "capacity": 3,
+      "color": "coral"
+    },
+    {
+      "capacity": 3,
+      "color": "blue"
+    },
+    {
+      "capacity": 3,
+      "color": "lime"
+    },
+    {
+      "capacity": 2,
+      "color": "lime"
+    },
+    {
+      "capacity": 3,
+      "color": "blue"
+    },
+    {
+      "capacity": 3,
+      "color": "lime"
+    },
+    {
+      "capacity": 3,
+      "color": "coral"
+    },
+    {
+      "capacity": 3,
+      "color": "blue"
+    },
+    {
+      "capacity": 3,
+      "color": "coral"
+    }
+  ],
+  "covers": [
+    {
+      "plate_id": "truss_beam_0",
+      "screw_id": "tt_0_l"
+    },
+    {
+      "plate_id": "truss_beam_0",
+      "screw_id": "tt_1_r"
+    },
+    {
+      "plate_id": "truss_beam_0",
+      "screw_id": "tt_2_l"
+    },
+    {
+      "plate_id": "truss_beam_0",
+      "screw_id": "tt_3_r"
+    },
+    {
+      "plate_id": "truss_beam_0",
+      "screw_id": "tt_4_l"
+    },
+    {
+      "plate_id": "truss_beam_1",
+      "screw_id": "tt_1_l"
+    },
+    {
+      "plate_id": "truss_beam_1",
+      "screw_id": "tt_2_r"
+    },
+    {
+      "plate_id": "truss_beam_1",
+      "screw_id": "tt_3_l"
+    },
+    {
+      "plate_id": "truss_beam_1",
+      "screw_id": "tt_4_r"
+    },
+    {
+      "plate_id": "truss_beam_1",
+      "screw_id": "tt_5_l"
+    },
+    {
+      "plate_id": "truss_t_1",
+      "screw_id": "tt_2_l"
+    },
+    {
+      "plate_id": "truss_t_1",
+      "screw_id": "tt_2_r"
+    },
+    {
+      "plate_id": "truss_t_2",
+      "screw_id": "tt_0_stem"
+    },
+    {
+      "plate_id": "truss_t_3",
+      "screw_id": "tt_4_l"
+    },
+    {
+      "plate_id": "truss_t_3",
+      "screw_id": "tt_4_r"
+    },
+    {
+      "plate_id": "truss_t_4",
+      "screw_id": "tt_2_stem"
+    }
+  ],
+  "format": "osrp-level-v1",
+  "name": "ScrewJam level 4 [seed=40002, box_swaps=3, color_swaps=7, W=4]",
+  "plates": [
+    {
+      "id": "truss_t_0",
+      "layer": 0,
+      "order": 0
+    },
+    {
+      "id": "truss_t_1",
+      "layer": 1,
+      "order": 1
+    },
+    {
+      "id": "truss_t_2",
+      "layer": 0,
+      "order": 2
+    },
+    {
+      "id": "truss_t_3",
+      "layer": 1,
+      "order": 3
+    },
+    {
+      "id": "truss_t_4",
+      "layer": 0,
+      "order": 4
+    },
+    {
+      "id": "truss_t_5",
+      "layer": 1,
+      "order": 5
+    },
+    {
+      "id": "truss_beam_0",
+      "layer": 3,
+      "order": 6
+    },
+    {
+      "id": "truss_beam_1",
+      "layer": 3,
+      "order": 7
+    }
+  ],
+  "screws": [
+    {
+      "color": "coral",
+      "id": "tt_0_l",
+      "plate_id": "truss_t_0"
+    },
+    {
+      "color": "coral",
+      "id": "tt_0_r",
+      "plate_id": "truss_t_0"
+    },
+    {
+      "color": "lime",
+      "id": "tt_0_stem",
+      "plate_id": "truss_t_0"
+    },
+    {
+      "color": "blue",
+      "id": "tt_1_l",
+      "plate_id": "truss_t_1"
+    },
+    {
+      "color": "coral",
+      "id": "tt_1_r",
+      "plate_id": "truss_t_1"
+    },
+    {
+      "color": "blue",
+      "id": "tt_1_stem",
+      "plate_id": "truss_t_1"
+    },
+    {
+      "color": "blue",
+      "id": "tt_2_l",
+      "plate_id": "truss_t_2"
+    },
+    {
+      "color": "blue",
+      "id": "tt_2_r",
+      "plate_id": "truss_t_2"
+    },
+    {
+      "color": "lime",
+      "id": "tt_2_stem",
+      "plate_id": "truss_t_2"
+    },
+    {
+      "color": "coral",
+      "id": "tt_3_l",
+      "plate_id": "truss_t_3"
+    },
+    {
+      "color": "coral",
+      "id": "tt_3_r",
+      "plate_id": "truss_t_3"
+    },
+    {
+      "color": "coral",
+      "id": "tt_3_stem",
+      "plate_id": "truss_t_3"
+    },
+    {
+      "color": "coral",
+      "id": "tt_4_l",
+      "plate_id": "truss_t_4"
+    },
+    {
+      "color": "coral",
+      "id": "tt_4_r",
+      "plate_id": "truss_t_4"
+    },
+    {
+      "color": "lime",
+      "id": "tt_4_stem",
+      "plate_id": "truss_t_4"
+    },
+    {
+      "color": "blue",
+      "id": "tt_5_l",
+      "plate_id": "truss_t_5"
+    },
+    {
+      "color": "blue",
+      "id": "tt_5_r",
+      "plate_id": "truss_t_5"
+    },
+    {
+      "color": "blue",
+      "id": "tt_5_stem",
+      "plate_id": "truss_t_5"
+    },
+    {
+      "color": "blue",
+      "id": "tb_0_0",
+      "plate_id": "truss_beam_0"
+    },
+    {
+      "color": "blue",
+      "id": "tb_0_1",
+      "plate_id": "truss_beam_0"
+    },
+    {
+      "color": "lime",
+      "id": "tb_0_2",
+      "plate_id": "truss_beam_0"
+    },
+    {
+      "color": "lime",
+      "id": "tb_0_3",
+      "plate_id": "truss_beam_0"
+    },
+    {
+      "color": "lime",
+      "id": "tb_1_0",
+      "plate_id": "truss_beam_1"
+    },
+    {
+      "color": "coral",
+      "id": "tb_1_1",
+      "plate_id": "truss_beam_1"
+    },
+    {
+      "color": "lime",
+      "id": "tb_1_2",
+      "plate_id": "truss_beam_1"
+    },
+    {
+      "color": "lime",
+      "id": "tb_1_3",
+      "plate_id": "truss_beam_1"
+    }
+  ],
+  "waiting_capacity": 4
+}

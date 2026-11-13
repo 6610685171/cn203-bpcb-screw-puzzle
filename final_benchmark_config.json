@@ -1,0 +1,46 @@
+{
+  "format": "osrp-final-benchmark-config-v1",
+  "source_commit": "5ee0b84970eba12d4fd7f937bae162bf75ba61f3",
+  "development_snapshots": [
+    "flutter_source_level_1.json",
+    "flutter_source_level_2.json",
+    "flutter_source_level_3.json",
+    "flutter_source_level_4.json",
+    "flutter_source_level_5.json",
+    "flutter_source_level_6.json",
+    "flutter_source_level_7.json",
+    "flutter_source_level_8.json",
+    "flutter_source_level_9.json",
+    "flutter_source_level_6_seed_61.json"
+  ],
+  "holdout_snapshots": [
+    "flutter_source_level_11.json",
+    "flutter_source_level_13.json",
+    "flutter_source_level_14.json",
+    "flutter_source_level_16.json",
+    "flutter_source_level_19.json",
+    "flutter_source_level_11_seed_111.json",
+    "flutter_source_level_13_seed_131.json",
+    "flutter_source_level_14_seed_141.json",
+    "flutter_source_level_16_seed_161.json",
+    "flutter_source_level_19_seed_191.json"
+  ],
+  "instances_per_base": {
+    "raw_direct": 1,
+    "general_mutation": 1,
+    "development_boundary_families": 2,
+    "holdout_boundary_families": 1
+  },
+  "capacity_values": [0, 1, 2, 3, 4],
+  "waiting_capacity_for_raw_and_general": 4,
+  "max_seed_attempts": 60,
+  "exact_label_limits": {
+    "max_nodes": 500000,
+    "time_limit_seconds": 5.0
+  },
+  "final_target": {
+    "development_instances": 60,
+    "holdout_instances": 40,
+    "total_instances": 100
+  }
+}

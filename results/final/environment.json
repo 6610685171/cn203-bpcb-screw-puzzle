@@ -1,0 +1,27 @@
+{
+  "algorithm_hashes": {
+    "osrp/bounds.py": "c132121b32958b01a4d379d1abc770e42bc86728061cc9c0e3207e34d7f461b9",
+    "osrp/model.py": "131addacd806974b20c621d84e8d94c460974e31569e5280684ad19883493851",
+    "osrp/search.py": "2000a4f12ea4ab8d8750fe825df3f77ba379645238e8d4834b584a282eada5e4",
+    "osrp/simulator.py": "6e5381fbc4d534ba033d582b4e72828494afe105fdf8c80d0e94e98cda11751d"
+  },
+  "completed_utc": "2026-11-13T13:27:54.555922+00:00",
+  "cpu_count": 8,
+  "manifest_sha256": "d5979eb3f5763982b0abb26bef09d6783140192c869bd7d4840487331badcc9d",
+  "max_bound_combinations": 50000,
+  "methods": [
+    "baseline",
+    "bpcb1",
+    "bpcb2",
+    "bpcb12"
+  ],
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "processor": "arm",
+  "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "repeats": 5,
+  "splits": [
+    "development",
+    "holdout"
+  ],
+  "warmup": 1
+}

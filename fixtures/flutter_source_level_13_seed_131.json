@@ -1,0 +1,307 @@
+{
+  "boxes": [
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "yellow"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "orange"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "cyan"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "pink"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "yellow"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "orange"
+    },
+    {
+      "capacity": 2,
+      "collected": [],
+      "color": "cyan"
+    }
+  ],
+  "covers": [
+    {
+      "plate_id": "gear_cross_key",
+      "screw_id": "g_4_0"
+    },
+    {
+      "plate_id": "gear_cross_key",
+      "screw_id": "g_4_1"
+    },
+    {
+      "plate_id": "gear_2",
+      "screw_id": "g_6_0"
+    },
+    {
+      "plate_id": "gear_cross_key",
+      "screw_id": "g_7_0"
+    },
+    {
+      "plate_id": "gear_cross_key",
+      "screw_id": "g_7_1"
+    }
+  ],
+  "metadata": {
+    "level": 13,
+    "seed": 131,
+    "source_commit": "5ee0b84970eba12d4fd7f937bae162bf75ba61f3"
+  },
+  "name": "ScrewJam level 13 seed 131",
+  "plates": [
+    {
+      "angle": 3.125502478309326,
+      "height": 76.0,
+      "holes": [
+        {
+          "color": "yellow",
+          "dx": -19.76,
+          "dy": -9.12,
+          "id": "g_0_0"
+        },
+        {
+          "color": "yellow",
+          "dx": 19.76,
+          "dy": 9.12,
+          "id": "g_0_1"
+        }
+      ],
+      "id": "gear_0",
+      "layer": 0,
+      "order": 0,
+      "shape_type": "cogwheel",
+      "width": 76.0,
+      "x": 233.65267949608716,
+      "y": 309.4315550734442
+    },
+    {
+      "angle": 3.125502478309326,
+      "height": 68.0,
+      "holes": [
+        {
+          "color": "yellow",
+          "dx": -17.68,
+          "dy": -8.16,
+          "id": "g_1_0"
+        },
+        {
+          "color": "orange",
+          "dx": 17.68,
+          "dy": 8.16,
+          "id": "g_1_1"
+        }
+      ],
+      "id": "gear_1",
+      "layer": 1,
+      "order": 1,
+      "shape_type": "cogwheel",
+      "width": 68.0,
+      "x": 123.66691834461803,
+      "y": 311.20139798511366
+    },
+    {
+      "angle": 3.125502478309326,
+      "height": 76.0,
+      "holes": [
+        {
+          "color": "orange",
+          "dx": -19.76,
+          "dy": -9.12,
+          "id": "g_2_0"
+        },
+        {
+          "color": "orange",
+          "dx": 19.76,
+          "dy": 9.12,
+          "id": "g_2_1"
+        }
+      ],
+      "id": "gear_2",
+      "layer": 2,
+      "order": 2,
+      "shape_type": "cogwheel",
+      "width": 76.0,
+      "x": 231.88283658441767,
+      "y": 199.44579392197505
+    },
+    {
+      "angle": 3.125502478309326,
+      "height": 68.0,
+      "holes": [
+        {
+          "color": "cyan",
+          "dx": -17.68,
+          "dy": -8.16,
+          "id": "g_3_0"
+        },
+        {
+          "color": "cyan",
+          "dx": 17.68,
+          "dy": 8.16,
+          "id": "g_3_1"
+        }
+      ],
+      "id": "gear_3",
+      "layer": 0,
+      "order": 3,
+      "shape_type": "cogwheel",
+      "width": 68.0,
+      "x": 121.89707543294855,
+      "y": 201.21563683364454
+    },
+    {
+      "angle": 3.125502478309326,
+      "height": 84.0,
+      "holes": [
+        {
+          "color": "orange",
+          "dx": -21.84,
+          "dy": -10.08,
+          "id": "g_4_0"
+        },
+        {
+          "color": "orange",
+          "dx": 21.84,
+          "dy": 10.08,
+          "id": "g_4_1"
+        }
+      ],
+      "id": "gear_4",
+      "layer": 1,
+      "order": 4,
+      "shape_type": "cogwheel",
+      "width": 84.0,
+      "x": 177.77487746451786,
+      "y": 255.32359595354436
+    },
+    {
+      "angle": 3.125502478309326,
+      "height": 68.0,
+      "holes": [
+        {
+          "color": "cyan",
+          "dx": -17.68,
+          "dy": -8.16,
+          "id": "g_5_0"
+        },
+        {
+          "color": "pink",
+          "dx": 17.68,
+          "dy": 8.16,
+          "id": "g_5_1"
+        }
+      ],
+      "id": "gear_5",
+      "layer": 2,
+      "order": 5,
+      "shape_type": "cogwheel",
+      "width": 68.0,
+      "x": 179.22293075588377,
+      "y": 345.3119459865645
+    },
+    {
+      "angle": 3.125502478309326,
+      "height": 76.0,
+      "holes": [
+        {
+          "color": "pink",
+          "dx": -19.76,
+          "dy": -9.12,
+          "id": "g_6_0"
+        },
+        {
+          "color": "pink",
+          "dx": 19.76,
+          "dy": 9.12,
+          "id": "g_6_1"
+        }
+      ],
+      "id": "gear_6",
+      "layer": 0,
+      "order": 6,
+      "shape_type": "cogwheel",
+      "width": 76.0,
+      "x": 176.32682417315192,
+      "y": 165.33524592052416
+    },
+    {
+      "angle": 3.125502478309326,
+      "height": 68.0,
+      "holes": [
+        {
+          "color": "cyan",
+          "dx": -17.68,
+          "dy": -8.16,
+          "id": "g_7_0"
+        },
+        {
+          "color": "cyan",
+          "dx": 17.68,
+          "dy": 8.16,
+          "id": "g_7_1"
+        }
+      ],
+      "id": "gear_7",
+      "layer": 1,
+      "order": 7,
+      "shape_type": "cogwheel",
+      "width": 68.0,
+      "x": 267.763227497538,
+      "y": 253.87554266217842
+    },
+    {
+      "angle": 3.125502478309326,
+      "height": 34.0,
+      "holes": [
+        {
+          "color": "yellow",
+          "dx": -80.0,
+          "dy": 0.0,
+          "id": "gck_0"
+        },
+        {
+          "color": "yellow",
+          "dx": -26.0,
+          "dy": 0.0,
+          "id": "gck_1"
+        },
+        {
+          "color": "yellow",
+          "dx": 26.0,
+          "dy": 0.0,
+          "id": "gck_2"
+        },
+        {
+          "color": "orange",
+          "dx": 80.0,
+          "dy": 0.0,
+          "id": "gck_3"
+        }
+      ],
+      "id": "gear_cross_key",
+      "layer": 4,
+      "order": 8,
+      "shape_type": "linkBar4",
+      "width": 220.0,
+      "x": 177.77487746451786,
+      "y": 255.32359595354436
+    }
+  ],
+  "waiting_capacity": 4
+}

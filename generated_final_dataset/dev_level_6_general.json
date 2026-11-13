@@ -1,0 +1,222 @@
+{
+  "boxes": [
+    {
+      "capacity": 3,
+      "color": "pink"
+    },
+    {
+      "capacity": 3,
+      "color": "orange"
+    },
+    {
+      "capacity": 3,
+      "color": "purple"
+    },
+    {
+      "capacity": 3,
+      "color": "orange"
+    },
+    {
+      "capacity": 3,
+      "color": "purple"
+    },
+    {
+      "capacity": 3,
+      "color": "pink"
+    },
+    {
+      "capacity": 3,
+      "color": "orange"
+    },
+    {
+      "capacity": 1,
+      "color": "pink"
+    }
+  ],
+  "covers": [
+    {
+      "plate_id": "rib_arc_1",
+      "screw_id": "ra_2_l"
+    },
+    {
+      "plate_id": "rib_arc_1",
+      "screw_id": "ra_2_r"
+    },
+    {
+      "plate_id": "rib_arc_3",
+      "screw_id": "ra_4_l"
+    },
+    {
+      "plate_id": "rib_arc_3",
+      "screw_id": "ra_4_r"
+    },
+    {
+      "plate_id": "rib_spine",
+      "screw_id": "ra_1_mid"
+    },
+    {
+      "plate_id": "rib_spine",
+      "screw_id": "ra_2_mid"
+    },
+    {
+      "plate_id": "rib_spine",
+      "screw_id": "ra_3_mid"
+    },
+    {
+      "plate_id": "rib_spine",
+      "screw_id": "ra_4_mid"
+    }
+  ],
+  "format": "osrp-level-v1",
+  "name": "ScrewJam level 6 [seed=67001, box_swaps=2, color_swaps=4, W=4]",
+  "plates": [
+    {
+      "id": "rib_arc_0",
+      "layer": 0,
+      "order": 0
+    },
+    {
+      "id": "rib_arc_1",
+      "layer": 1,
+      "order": 1
+    },
+    {
+      "id": "rib_arc_2",
+      "layer": 0,
+      "order": 2
+    },
+    {
+      "id": "rib_arc_3",
+      "layer": 1,
+      "order": 3
+    },
+    {
+      "id": "rib_arc_4",
+      "layer": 0,
+      "order": 4
+    },
+    {
+      "id": "rib_arc_5",
+      "layer": 1,
+      "order": 5
+    },
+    {
+      "id": "rib_spine",
+      "layer": 3,
+      "order": 6
+    }
+  ],
+  "screws": [
+    {
+      "color": "purple",
+      "id": "ra_0_l",
+      "plate_id": "rib_arc_0"
+    },
+    {
+      "color": "orange",
+      "id": "ra_0_mid",
+      "plate_id": "rib_arc_0"
+    },
+    {
+      "color": "pink",
+      "id": "ra_0_r",
+      "plate_id": "rib_arc_0"
+    },
+    {
+      "color": "pink",
+      "id": "ra_1_l",
+      "plate_id": "rib_arc_1"
+    },
+    {
+      "color": "pink",
+      "id": "ra_1_mid",
+      "plate_id": "rib_arc_1"
+    },
+    {
+      "color": "pink",
+      "id": "ra_1_r",
+      "plate_id": "rib_arc_1"
+    },
+    {
+      "color": "purple",
+      "id": "ra_2_l",
+      "plate_id": "rib_arc_2"
+    },
+    {
+      "color": "purple",
+      "id": "ra_2_mid",
+      "plate_id": "rib_arc_2"
+    },
+    {
+      "color": "pink",
+      "id": "ra_2_r",
+      "plate_id": "rib_arc_2"
+    },
+    {
+      "color": "pink",
+      "id": "ra_3_l",
+      "plate_id": "rib_arc_3"
+    },
+    {
+      "color": "orange",
+      "id": "ra_3_mid",
+      "plate_id": "rib_arc_3"
+    },
+    {
+      "color": "purple",
+      "id": "ra_3_r",
+      "plate_id": "rib_arc_3"
+    },
+    {
+      "color": "orange",
+      "id": "ra_4_l",
+      "plate_id": "rib_arc_4"
+    },
+    {
+      "color": "orange",
+      "id": "ra_4_mid",
+      "plate_id": "rib_arc_4"
+    },
+    {
+      "color": "orange",
+      "id": "ra_4_r",
+      "plate_id": "rib_arc_4"
+    },
+    {
+      "color": "purple",
+      "id": "ra_5_l",
+      "plate_id": "rib_arc_5"
+    },
+    {
+      "color": "purple",
+      "id": "ra_5_mid",
+      "plate_id": "rib_arc_5"
+    },
+    {
+      "color": "orange",
+      "id": "ra_5_r",
+      "plate_id": "rib_arc_5"
+    },
+    {
+      "color": "orange",
+      "id": "rs_0",
+      "plate_id": "rib_spine"
+    },
+    {
+      "color": "orange",
+      "id": "rs_1",
+      "plate_id": "rib_spine"
+    },
+    {
+      "color": "orange",
+      "id": "rs_2",
+      "plate_id": "rib_spine"
+    },
+    {
+      "color": "pink",
+      "id": "rs_3",
+      "plate_id": "rib_spine"
+    }
+  ],
+  "waiting_capacity": 4
+}

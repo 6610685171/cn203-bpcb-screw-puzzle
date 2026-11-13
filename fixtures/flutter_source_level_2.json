@@ -1,0 +1,240 @@
+{
+  "boxes": [
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "blue"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "cyan"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "blue"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "cyan"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "blue"
+    },
+    {
+      "capacity": 1,
+      "collected": [],
+      "color": "cyan"
+    }
+  ],
+  "covers": [
+    {
+      "plate_id": "gear_cross_key",
+      "screw_id": "g_4_0"
+    },
+    {
+      "plate_id": "gear_cross_key",
+      "screw_id": "g_4_1"
+    }
+  ],
+  "metadata": {
+    "level": 2,
+    "seed": null,
+    "source_commit": "5ee0b84970eba12d4fd7f937bae162bf75ba61f3"
+  },
+  "name": "ScrewJam level 2",
+  "plates": [
+    {
+      "angle": -0.035455358984847966,
+      "height": 76.0,
+      "holes": [
+        {
+          "color": "blue",
+          "dx": -19.76,
+          "dy": -9.12,
+          "id": "g_0_0"
+        },
+        {
+          "color": "blue",
+          "dx": 19.76,
+          "dy": 9.12,
+          "id": "g_0_1"
+        }
+      ],
+      "id": "gear_0",
+      "layer": 0,
+      "order": 0,
+      "shape_type": "cogwheel",
+      "width": 76.0,
+      "x": 120.46939054399438,
+      "y": 201.17687042540868
+    },
+    {
+      "angle": -0.035455358984847966,
+      "height": 68.0,
+      "holes": [
+        {
+          "color": "blue",
+          "dx": -17.68,
+          "dy": -8.16,
+          "id": "g_1_0"
+        },
+        {
+          "color": "cyan",
+          "dx": 17.68,
+          "dy": 8.16,
+          "id": "g_1_1"
+        }
+      ],
+      "id": "gear_1",
+      "layer": 1,
+      "order": 1,
+      "shape_type": "cogwheel",
+      "width": 68.0,
+      "x": 230.4002582500916,
+      "y": 197.27759800807897
+    },
+    {
+      "angle": -0.035455358984847966,
+      "height": 76.0,
+      "holes": [
+        {
+          "color": "cyan",
+          "dx": -19.76,
+          "dy": -9.12,
+          "id": "g_2_0"
+        },
+        {
+          "color": "cyan",
+          "dx": 19.76,
+          "dy": 9.12,
+          "id": "g_2_1"
+        }
+      ],
+      "id": "gear_2",
+      "layer": 0,
+      "order": 2,
+      "shape_type": "cogwheel",
+      "width": 76.0,
+      "x": 124.3686629613241,
+      "y": 311.1077381315059
+    },
+    {
+      "angle": -0.035455358984847966,
+      "height": 68.0,
+      "holes": [
+        {
+          "color": "blue",
+          "dx": -17.68,
+          "dy": -8.16,
+          "id": "g_3_0"
+        },
+        {
+          "color": "blue",
+          "dx": 17.68,
+          "dy": 8.16,
+          "id": "g_3_1"
+        }
+      ],
+      "id": "gear_3",
+      "layer": 1,
+      "order": 3,
+      "shape_type": "cogwheel",
+      "width": 68.0,
+      "x": 234.29953066742132,
+      "y": 307.2084657141762
+    },
+    {
+      "angle": -0.035455358984847966,
+      "height": 84.0,
+      "holes": [
+        {
+          "color": "blue",
+          "dx": -21.84,
+          "dy": -10.08,
+          "id": "g_4_0"
+        },
+        {
+          "color": "cyan",
+          "dx": 21.84,
+          "dy": 10.08,
+          "id": "g_4_1"
+        }
+      ],
+      "id": "gear_4",
+      "layer": 0,
+      "order": 4,
+      "shape_type": "cogwheel",
+      "width": 84.0,
+      "x": 177.38446060570786,
+      "y": 254.19266806979243
+    },
+    {
+      "angle": -0.035455358984847966,
+      "height": 68.0,
+      "holes": [
+        {
+          "color": "blue",
+          "dx": -17.68,
+          "dy": -8.16,
+          "id": "g_5_0"
+        },
+        {
+          "color": "cyan",
+          "dx": 17.68,
+          "dy": 8.16,
+          "id": "g_5_1"
+        }
+      ],
+      "id": "gear_5",
+      "layer": 1,
+      "order": 5,
+      "shape_type": "cogwheel",
+      "width": 68.0,
+      "x": 174.19414680971082,
+      "y": 164.24923085571288
+    },
+    {
+      "angle": -0.035455358984847966,
+      "height": 34.0,
+      "holes": [
+        {
+          "color": "cyan",
+          "dx": -80.0,
+          "dy": 0.0,
+          "id": "gck_0"
+        },
+        {
+          "color": "cyan",
+          "dx": -26.0,
+          "dy": 0.0,
+          "id": "gck_1"
+        },
+        {
+          "color": "blue",
+          "dx": 26.0,
+          "dy": 0.0,
+          "id": "gck_2"
+        },
+        {
+          "color": "blue",
+          "dx": 80.0,
+          "dy": 0.0,
+          "id": "gck_3"
+        }
+      ],
+      "id": "gear_cross_key",
+      "layer": 3,
+      "order": 6,
+      "shape_type": "linkBar4",
+      "width": 220.0,
+      "x": 177.38446060570786,
+      "y": 254.19266806979243
+    }
+  ],
+  "waiting_capacity": 4
+}

@@ -1,0 +1,336 @@
+{
+  "boxes": [
+    {
+      "capacity": 3,
+      "color": "orange"
+    },
+    {
+      "capacity": 3,
+      "color": "blue"
+    },
+    {
+      "capacity": 3,
+      "color": "cyan"
+    },
+    {
+      "capacity": 3,
+      "color": "yellow"
+    },
+    {
+      "capacity": 3,
+      "color": "cyan"
+    },
+    {
+      "capacity": 3,
+      "color": "blue"
+    },
+    {
+      "capacity": 3,
+      "color": "yellow"
+    },
+    {
+      "capacity": 2,
+      "color": "orange"
+    }
+  ],
+  "covers": [
+    {
+      "plate_id": "l_bracket_1",
+      "screw_id": "lb_0_v"
+    },
+    {
+      "plate_id": "l_bracket_1",
+      "screw_id": "lb_3_v"
+    },
+    {
+      "plate_id": "l_bracket_1",
+      "screw_id": "lb_6_v"
+    },
+    {
+      "plate_id": "l_bracket_2",
+      "screw_id": "lb_0_v"
+    },
+    {
+      "plate_id": "l_bracket_2",
+      "screw_id": "lb_1_v"
+    },
+    {
+      "plate_id": "l_bracket_2",
+      "screw_id": "lb_3_v"
+    },
+    {
+      "plate_id": "l_bracket_2",
+      "screw_id": "lb_4_v"
+    },
+    {
+      "plate_id": "l_bracket_2",
+      "screw_id": "lb_6_corner"
+    },
+    {
+      "plate_id": "l_bracket_2",
+      "screw_id": "lb_6_h"
+    },
+    {
+      "plate_id": "l_bracket_2",
+      "screw_id": "lb_6_v"
+    },
+    {
+      "plate_id": "l_bracket_3",
+      "screw_id": "lb_0_v"
+    },
+    {
+      "plate_id": "l_bracket_4",
+      "screw_id": "lb_0_corner"
+    },
+    {
+      "plate_id": "l_bracket_4",
+      "screw_id": "lb_0_h"
+    },
+    {
+      "plate_id": "l_bracket_4",
+      "screw_id": "lb_0_v"
+    },
+    {
+      "plate_id": "l_bracket_4",
+      "screw_id": "lb_1_v"
+    },
+    {
+      "plate_id": "l_bracket_4",
+      "screw_id": "lb_3_v"
+    },
+    {
+      "plate_id": "l_bracket_4",
+      "screw_id": "lb_6_v"
+    },
+    {
+      "plate_id": "l_bracket_5",
+      "screw_id": "lb_0_v"
+    },
+    {
+      "plate_id": "l_bracket_5",
+      "screw_id": "lb_1_corner"
+    },
+    {
+      "plate_id": "l_bracket_5",
+      "screw_id": "lb_1_h"
+    },
+    {
+      "plate_id": "l_bracket_5",
+      "screw_id": "lb_1_v"
+    },
+    {
+      "plate_id": "l_bracket_5",
+      "screw_id": "lb_2_v"
+    },
+    {
+      "plate_id": "l_bracket_5",
+      "screw_id": "lb_3_v"
+    },
+    {
+      "plate_id": "l_bracket_5",
+      "screw_id": "lb_4_v"
+    },
+    {
+      "plate_id": "l_bracket_5",
+      "screw_id": "lb_6_v"
+    },
+    {
+      "plate_id": "l_bracket_6",
+      "screw_id": "lb_0_v"
+    },
+    {
+      "plate_id": "l_bracket_6",
+      "screw_id": "lb_3_v"
+    },
+    {
+      "plate_id": "l_center_disc",
+      "screw_id": "lb_0_v"
+    },
+    {
+      "plate_id": "l_center_disc",
+      "screw_id": "lb_1_v"
+    },
+    {
+      "plate_id": "l_center_disc",
+      "screw_id": "lb_2_v"
+    },
+    {
+      "plate_id": "l_center_disc",
+      "screw_id": "lb_3_v"
+    },
+    {
+      "plate_id": "l_center_disc",
+      "screw_id": "lb_4_v"
+    },
+    {
+      "plate_id": "l_center_disc",
+      "screw_id": "lb_5_v"
+    },
+    {
+      "plate_id": "l_center_disc",
+      "screw_id": "lb_6_v"
+    }
+  ],
+  "format": "osrp-level-v1",
+  "name": "ScrewJam level 11 seed 111 [seed=111117001, box_swaps=2, color_swaps=4, W=4]",
+  "plates": [
+    {
+      "id": "l_bracket_0",
+      "layer": 0,
+      "order": 0
+    },
+    {
+      "id": "l_bracket_1",
+      "layer": 1,
+      "order": 1
+    },
+    {
+      "id": "l_bracket_2",
+      "layer": 2,
+      "order": 2
+    },
+    {
+      "id": "l_bracket_3",
+      "layer": 0,
+      "order": 3
+    },
+    {
+      "id": "l_bracket_4",
+      "layer": 1,
+      "order": 4
+    },
+    {
+      "id": "l_bracket_5",
+      "layer": 2,
+      "order": 5
+    },
+    {
+      "id": "l_bracket_6",
+      "layer": 0,
+      "order": 6
+    },
+    {
+      "id": "l_center_disc",
+      "layer": 4,
+      "order": 7
+    }
+  ],
+  "screws": [
+    {
+      "color": "blue",
+      "id": "lb_0_corner",
+      "plate_id": "l_bracket_0"
+    },
+    {
+      "color": "orange",
+      "id": "lb_0_v",
+      "plate_id": "l_bracket_0"
+    },
+    {
+      "color": "blue",
+      "id": "lb_0_h",
+      "plate_id": "l_bracket_0"
+    },
+    {
+      "color": "blue",
+      "id": "lb_1_corner",
+      "plate_id": "l_bracket_1"
+    },
+    {
+      "color": "blue",
+      "id": "lb_1_v",
+      "plate_id": "l_bracket_1"
+    },
+    {
+      "color": "cyan",
+      "id": "lb_1_h",
+      "plate_id": "l_bracket_1"
+    },
+    {
+      "color": "cyan",
+      "id": "lb_2_corner",
+      "plate_id": "l_bracket_2"
+    },
+    {
+      "color": "orange",
+      "id": "lb_2_v",
+      "plate_id": "l_bracket_2"
+    },
+    {
+      "color": "cyan",
+      "id": "lb_2_h",
+      "plate_id": "l_bracket_2"
+    },
+    {
+      "color": "blue",
+      "id": "lb_3_corner",
+      "plate_id": "l_bracket_3"
+    },
+    {
+      "color": "orange",
+      "id": "lb_3_v",
+      "plate_id": "l_bracket_3"
+    },
+    {
+      "color": "blue",
+      "id": "lb_3_h",
+      "plate_id": "l_bracket_3"
+    },
+    {
+      "color": "yellow",
+      "id": "lb_4_corner",
+      "plate_id": "l_bracket_4"
+    },
+    {
+      "color": "cyan",
+      "id": "lb_4_v",
+      "plate_id": "l_bracket_4"
+    },
+    {
+      "color": "yellow",
+      "id": "lb_4_h",
+      "plate_id": "l_bracket_4"
+    },
+    {
+      "color": "yellow",
+      "id": "lb_5_corner",
+      "plate_id": "l_bracket_5"
+    },
+    {
+      "color": "orange",
+      "id": "lb_5_v",
+      "plate_id": "l_bracket_5"
+    },
+    {
+      "color": "cyan",
+      "id": "lb_5_h",
+      "plate_id": "l_bracket_5"
+    },
+    {
+      "color": "yellow",
+      "id": "lb_6_corner",
+      "plate_id": "l_bracket_6"
+    },
+    {
+      "color": "yellow",
+      "id": "lb_6_v",
+      "plate_id": "l_bracket_6"
+    },
+    {
+      "color": "yellow",
+      "id": "lb_6_h",
+      "plate_id": "l_bracket_6"
+    },
+    {
+      "color": "cyan",
+      "id": "lcd_0",
+      "plate_id": "l_center_disc"
+    },
+    {
+      "color": "orange",
+      "id": "lcd_1",
+      "plate_id": "l_center_disc"
+    }
+  ],
+  "waiting_capacity": 4
+}

@@ -1,0 +1,459 @@
+{
+  "boxes": [
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "purple"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "cyan"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "lime"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "orange"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "purple"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "cyan"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "lime"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "orange"
+    },
+    {
+      "capacity": 1,
+      "collected": [],
+      "color": "purple"
+    }
+  ],
+  "covers": [
+    {
+      "plate_id": "treat_bar_1",
+      "screw_id": "tc_0"
+    },
+    {
+      "plate_id": "treat_bar_2",
+      "screw_id": "tc_0"
+    },
+    {
+      "plate_id": "treat_bar_3",
+      "screw_id": "tc_0"
+    },
+    {
+      "plate_id": "treat_bar_4",
+      "screw_id": "tc_0"
+    },
+    {
+      "plate_id": "treat_bar_2",
+      "screw_id": "tc_1"
+    },
+    {
+      "plate_id": "treat_bar_4",
+      "screw_id": "tc_1"
+    },
+    {
+      "plate_id": "treat_popsicle",
+      "screw_id": "tc_2"
+    },
+    {
+      "plate_id": "treat_bar_3",
+      "screw_id": "tc_2"
+    },
+    {
+      "plate_id": "treat_bar_1",
+      "screw_id": "tsl_0"
+    },
+    {
+      "plate_id": "treat_scoop_r",
+      "screw_id": "tsl_1"
+    },
+    {
+      "plate_id": "treat_popsicle",
+      "screw_id": "tsl_1"
+    },
+    {
+      "plate_id": "treat_bar_1",
+      "screw_id": "tsl_1"
+    },
+    {
+      "plate_id": "treat_bar_2",
+      "screw_id": "tsl_1"
+    },
+    {
+      "plate_id": "treat_bar_3",
+      "screw_id": "tsl_1"
+    },
+    {
+      "plate_id": "treat_popsicle",
+      "screw_id": "tsr_1"
+    },
+    {
+      "plate_id": "treat_bar_2",
+      "screw_id": "tsr_1"
+    },
+    {
+      "plate_id": "treat_bar_3",
+      "screw_id": "tsr_1"
+    },
+    {
+      "plate_id": "treat_bar_3",
+      "screw_id": "tp_0"
+    },
+    {
+      "plate_id": "treat_bar_3",
+      "screw_id": "tp_1"
+    },
+    {
+      "plate_id": "treat_bar_3",
+      "screw_id": "tp_2"
+    },
+    {
+      "plate_id": "treat_scoop_l",
+      "screw_id": "tb_0_0"
+    },
+    {
+      "plate_id": "treat_bar_1",
+      "screw_id": "tb_0_0"
+    },
+    {
+      "plate_id": "treat_scoop_l",
+      "screw_id": "tb_0_1"
+    },
+    {
+      "plate_id": "treat_scoop_r",
+      "screw_id": "tb_0_1"
+    },
+    {
+      "plate_id": "treat_popsicle",
+      "screw_id": "tb_0_1"
+    },
+    {
+      "plate_id": "treat_bar_3",
+      "screw_id": "tb_0_1"
+    },
+    {
+      "plate_id": "treat_scoop_r",
+      "screw_id": "tb_0_2"
+    },
+    {
+      "plate_id": "treat_bar_2",
+      "screw_id": "tb_1_1"
+    },
+    {
+      "plate_id": "treat_popsicle",
+      "screw_id": "tb_2_1"
+    },
+    {
+      "plate_id": "treat_bar_3",
+      "screw_id": "tb_2_1"
+    },
+    {
+      "plate_id": "treat_bar_1",
+      "screw_id": "tb_4_0"
+    },
+    {
+      "plate_id": "treat_popsicle",
+      "screw_id": "tb_4_1"
+    },
+    {
+      "plate_id": "treat_bar_3",
+      "screw_id": "tb_4_1"
+    }
+  ],
+  "metadata": {
+    "level": 16,
+    "seed": 161,
+    "source_commit": "5ee0b84970eba12d4fd7f937bae162bf75ba61f3"
+  },
+  "name": "ScrewJam level 16 seed 161",
+  "plates": [
+    {
+      "angle": 3.160225846517527,
+      "height": 160.0,
+      "holes": [
+        {
+          "color": "orange",
+          "dx": -36.0,
+          "dy": -30.0,
+          "id": "tc_0"
+        },
+        {
+          "color": "purple",
+          "dx": 36.0,
+          "dy": -30.0,
+          "id": "tc_1"
+        },
+        {
+          "color": "cyan",
+          "dx": 0.0,
+          "dy": 40.0,
+          "id": "tc_2"
+        }
+      ],
+      "id": "treat_cone",
+      "layer": 0,
+      "order": 0,
+      "shape_type": "iceCreamCone",
+      "width": 150.0,
+      "x": 179.62894337233027,
+      "y": 202.82074680493525
+    },
+    {
+      "angle": 3.160225846517527,
+      "height": 100.0,
+      "holes": [
+        {
+          "color": "purple",
+          "dx": -22.0,
+          "dy": -18.0,
+          "id": "tsl_0"
+        },
+        {
+          "color": "cyan",
+          "dx": 18.0,
+          "dy": 18.0,
+          "id": "tsl_1"
+        }
+      ],
+      "id": "treat_scoop_l",
+      "layer": 1,
+      "order": 1,
+      "shape_type": "iceCreamScoopLeft",
+      "width": 110.0,
+      "x": 212.94597729558234,
+      "y": 293.45724745758
+    },
+    {
+      "angle": 3.160225846517527,
+      "height": 100.0,
+      "holes": [
+        {
+          "color": "purple",
+          "dx": 22.0,
+          "dy": -18.0,
+          "id": "tsr_0"
+        },
+        {
+          "color": "purple",
+          "dx": -18.0,
+          "dy": 18.0,
+          "id": "tsr_1"
+        }
+      ],
+      "id": "treat_scoop_r",
+      "layer": 2,
+      "order": 2,
+      "shape_type": "iceCreamScoopRight",
+      "width": 110.0,
+      "x": 142.95812879975074,
+      "y": 292.152999427286
+    },
+    {
+      "angle": 3.160225846517527,
+      "height": 170.0,
+      "holes": [
+        {
+          "color": "lime",
+          "dx": 0.0,
+          "dy": -60.0,
+          "id": "tp_0"
+        },
+        {
+          "color": "orange",
+          "dx": 0.0,
+          "dy": 0.0,
+          "id": "tp_1"
+        },
+        {
+          "color": "orange",
+          "dx": 0.0,
+          "dy": 60.0,
+          "id": "tp_2"
+        }
+      ],
+      "id": "treat_popsicle",
+      "layer": 3,
+      "order": 3,
+      "shape_type": "popsicleStick",
+      "width": 34.0,
+      "x": 178.60417706281353,
+      "y": 257.8111991945172
+    },
+    {
+      "angle": 3.160225846517527,
+      "height": 34.0,
+      "holes": [
+        {
+          "color": "cyan",
+          "dx": -55.0,
+          "dy": 0.0,
+          "id": "tb_0_0"
+        },
+        {
+          "color": "lime",
+          "dx": 0.0,
+          "dy": 0.0,
+          "id": "tb_0_1"
+        },
+        {
+          "color": "lime",
+          "dx": 55.0,
+          "dy": 0.0,
+          "id": "tb_0_2"
+        }
+      ],
+      "id": "treat_bar_0",
+      "layer": 0,
+      "order": 4,
+      "shape_type": "linkBar3",
+      "width": 170.0,
+      "x": 178.04521362125897,
+      "y": 287.80599140701645
+    },
+    {
+      "angle": 3.160225846517527,
+      "height": 170.0,
+      "holes": [
+        {
+          "color": "purple",
+          "dx": 0.0,
+          "dy": -55.0,
+          "id": "tb_1_0"
+        },
+        {
+          "color": "purple",
+          "dx": 0.0,
+          "dy": 0.0,
+          "id": "tb_1_1"
+        },
+        {
+          "color": "purple",
+          "dx": 0.0,
+          "dy": 55.0,
+          "id": "tb_1_2"
+        }
+      ],
+      "id": "treat_bar_1",
+      "layer": 1,
+      "order": 5,
+      "shape_type": "linkBar3",
+      "width": 34.0,
+      "x": 218.78355449333074,
+      "y": 248.55821971242355
+    },
+    {
+      "angle": 3.160225846517527,
+      "height": 34.0,
+      "holes": [
+        {
+          "color": "cyan",
+          "dx": -55.0,
+          "dy": 0.0,
+          "id": "tb_2_0"
+        },
+        {
+          "color": "orange",
+          "dx": 0.0,
+          "dy": 0.0,
+          "id": "tb_2_1"
+        },
+        {
+          "color": "cyan",
+          "dx": 55.0,
+          "dy": 0.0,
+          "id": "tb_2_2"
+        }
+      ],
+      "id": "treat_bar_2",
+      "layer": 2,
+      "order": 6,
+      "shape_type": "linkBar3",
+      "width": 170.0,
+      "x": 178.6414412922505,
+      "y": 255.8115463803506
+    },
+    {
+      "angle": 3.160225846517527,
+      "height": 170.0,
+      "holes": [
+        {
+          "color": "cyan",
+          "dx": 0.0,
+          "dy": -55.0,
+          "id": "tb_3_0"
+        },
+        {
+          "color": "lime",
+          "dx": 0.0,
+          "dy": 0.0,
+          "id": "tb_3_1"
+        },
+        {
+          "color": "lime",
+          "dx": 0.0,
+          "dy": 55.0,
+          "id": "tb_3_2"
+        }
+      ],
+      "id": "treat_bar_3",
+      "layer": 3,
+      "order": 7,
+      "shape_type": "linkBar3",
+      "width": 34.0,
+      "x": 186.78910946666488,
+      "y": 247.961992041432
+    },
+    {
+      "angle": 3.160225846517527,
+      "height": 34.0,
+      "holes": [
+        {
+          "color": "lime",
+          "dx": -55.0,
+          "dy": 0.0,
+          "id": "tb_4_0"
+        },
+        {
+          "color": "orange",
+          "dx": 0.0,
+          "dy": 0.0,
+          "id": "tb_4_1"
+        },
+        {
+          "color": "orange",
+          "dx": 55.0,
+          "dy": 0.0,
+          "id": "tb_4_2"
+        }
+      ],
+      "id": "treat_bar_4",
+      "layer": 0,
+      "order": 8,
+      "shape_type": "linkBar3",
+      "width": 170.0,
+      "x": 179.23766896324207,
+      "y": 223.81710135368473
+    }
+  ],
+  "waiting_capacity": 4
+}

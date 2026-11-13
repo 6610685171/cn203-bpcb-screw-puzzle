@@ -1,0 +1,3628 @@
+{
+  "config": {
+    "capacity_values": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "development_snapshots": [
+      "flutter_source_level_1.json",
+      "flutter_source_level_2.json",
+      "flutter_source_level_3.json",
+      "flutter_source_level_4.json",
+      "flutter_source_level_5.json",
+      "flutter_source_level_6.json",
+      "flutter_source_level_7.json",
+      "flutter_source_level_8.json",
+      "flutter_source_level_9.json",
+      "flutter_source_level_6_seed_61.json"
+    ],
+    "exact_label_limits": {
+      "max_nodes": 500000,
+      "time_limit_seconds": 5.0
+    },
+    "final_target": {
+      "development_instances": 60,
+      "holdout_instances": 40,
+      "total_instances": 100
+    },
+    "format": "osrp-final-benchmark-config-v1",
+    "holdout_snapshots": [
+      "flutter_source_level_11.json",
+      "flutter_source_level_13.json",
+      "flutter_source_level_14.json",
+      "flutter_source_level_16.json",
+      "flutter_source_level_19.json",
+      "flutter_source_level_11_seed_111.json",
+      "flutter_source_level_13_seed_131.json",
+      "flutter_source_level_14_seed_141.json",
+      "flutter_source_level_16_seed_161.json",
+      "flutter_source_level_19_seed_191.json"
+    ],
+    "instances_per_base": {
+      "development_boundary_families": 2,
+      "general_mutation": 1,
+      "holdout_boundary_families": 1,
+      "raw_direct": 1
+    },
+    "max_seed_attempts": 60,
+    "source_commit": "5ee0b84970eba12d4fd7f937bae162bf75ba61f3",
+    "waiting_capacity_for_raw_and_general": 4
+  },
+  "counts": {
+    "by_split": {
+      "development": 60,
+      "holdout": 40
+    },
+    "by_split_and_stratum": {
+      "development:capacity_boundary": 40,
+      "development:general_mutation": 10,
+      "development:raw_direct": 10,
+      "holdout:capacity_boundary": 20,
+      "holdout:general_mutation": 10,
+      "holdout:raw_direct": 10
+    },
+    "total": 100
+  },
+  "format": "osrp-final-benchmark-v1",
+  "freeze": {
+    "algorithm_files": {
+      "osrp/bounds.py": "c132121b32958b01a4d379d1abc770e42bc86728061cc9c0e3207e34d7f461b9",
+      "osrp/model.py": "131addacd806974b20c621d84e8d94c460974e31569e5280684ad19883493851",
+      "osrp/search.py": "2000a4f12ea4ab8d8750fe825df3f77ba379645238e8d4834b584a282eada5e4",
+      "osrp/simulator.py": "6e5381fbc4d534ba033d582b4e72828494afe105fdf8c80d0e94e98cda11751d"
+    },
+    "config_file": "final_benchmark_config.json",
+    "config_sha256": "d58c36291dbb55bcb4e254bee1c380f73d16854f7eb20fb6beaefb529d71437f",
+    "created_utc": "2026-11-12T11:32:11.674337+00:00",
+    "fixture_files": {
+      "flutter_source_level_1.json": "16cb8f4217963ee57a649f3e34195558d26f5a5886ed4fd4df966f42aeb340ed",
+      "flutter_source_level_11.json": "b73e8a220e256ce7d63ce92c60c85565580d12563fec2c1f1f51b72e76c2a0f8",
+      "flutter_source_level_11_seed_111.json": "b754e0a3f457b80f15fef004e00aaca0af9613123670f9af3a5807c5cbc51f46",
+      "flutter_source_level_13.json": "52afce246823e0a826187471be089e66a3dc318c626fafbc0c2ce998209b7923",
+      "flutter_source_level_13_seed_131.json": "e9e40f642ae61133b32fb2fa741d76b41a3d7cc9328009100b460c59f3c72111",
+      "flutter_source_level_14.json": "f32739a1b5bad5513eb10c30c1126919a4561b808da12606c154d33c80cc1035",
+      "flutter_source_level_14_seed_141.json": "8c152c3c2b5937c9ae1d0af60bab75c3f48715b5a262ad9a9f6fe434b0bcca3e",
+      "flutter_source_level_16.json": "48d0345bdf6e8f7c3eac2623287147494ae30318271f7f85533de40f98442cc2",
+      "flutter_source_level_16_seed_161.json": "0fcccacedd8e8699719de57ba8e22db3fd2f36725ab2cd2664978fc02716dd52",
+      "flutter_source_level_19.json": "c8af8ed180bd68fef7149cf5a8dacba3339f5f1d1dee0a3f0f56db5273a1b5aa",
+      "flutter_source_level_19_seed_191.json": "4a334227496a869dd93f9cc2cdddd67a0477634cf945c399ae965cb9fa81526d",
+      "flutter_source_level_2.json": "a8a5f3261c585708fc8c9f80bdaf2b41854d760b60507d83eade7167e7b94f51",
+      "flutter_source_level_3.json": "c550afb66070ba0dc0377866b7f11657379d35dcfa5dec56eb1774c43e49778f",
+      "flutter_source_level_4.json": "a48a38537bbfc3be104feadf12742e29273ab90b0920d75d31e486896abdaf0e",
+      "flutter_source_level_5.json": "2a757543c6de0e1ccdc93a370e01505f2a149c739c390e2a9bfd2c5804d123cf",
+      "flutter_source_level_6.json": "f1dc384ba7564f6508a717381b7c969c2e406196b40eb156fa4462fc749e3ad1",
+      "flutter_source_level_6_seed_61.json": "9afa7b5a390e24a25f2ce00b011c3517ae6b3c715399b68ced45ca2586cdc7cc",
+      "flutter_source_level_7.json": "4835e4bec796da6fb6fad6b9b7b3642dd9b791a118ab3504741d88090fb8f700",
+      "flutter_source_level_8.json": "7dc2fe51131aa91fa0ed8d62c0ce556b7d2dc8e3b6e63577b834a5cb289d80e9",
+      "flutter_source_level_9.json": "0df3462e65835856b16320dead65f9ff3b456815ceec6fb2ee2177d2406749ae"
+    },
+    "generator_sha256": "d891ee3a3aeeaed67c87fa25416fe3eb4b40a5becc263fe06c16c9b5a05b9833"
+  },
+  "instances": [
+    {
+      "baseline_label": {
+        "max_depth": 24,
+        "memo_prunes": 0,
+        "nodes_expanded": 24
+      },
+      "expected_status": "solved",
+      "file": "dev_level_1_raw.json",
+      "instance_id": "dev_level_1_raw",
+      "sha256": "481f079946b6e6a9ff83645591911060222af55ddcf1c4de9eb17e4c7f2698da",
+      "source_snapshot": "flutter_source_level_1.json",
+      "split": "development",
+      "stratum": "raw_direct",
+      "structure": {
+        "blocker_pairs": 18,
+        "boxes": 8,
+        "colors": 2,
+        "plates": 6,
+        "screws": 24,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 24,
+        "memo_prunes": 0,
+        "nodes_expanded": 24
+      },
+      "expected_status": "solved",
+      "file": "dev_level_1_general.json",
+      "instance_id": "dev_level_1_general",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 17001
+      },
+      "sha256": "8206f4965ab39530b2a9f68f129fe55aa52c7deb5fba30701b56968b2066e501",
+      "source_snapshot": "flutter_source_level_1.json",
+      "split": "development",
+      "stratum": "general_mutation",
+      "structure": {
+        "blocker_pairs": 18,
+        "boxes": 8,
+        "colors": 2,
+        "plates": 6,
+        "screws": 24,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 24,
+        "memo_prunes": 232,
+        "nodes_expanded": 213
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "dev_level_1_boundary_01",
+      "file": "dev_level_1_boundary_01_solvable_W1.json",
+      "instance_id": "dev_level_1_boundary_01_solvable_W1",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 10001
+      },
+      "sha256": "7db9833a326207bd2932bc38b8a8afd8272b014c73c6c2ef6715a231366a82c4",
+      "source_snapshot": "flutter_source_level_1.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 18,
+        "boxes": 8,
+        "colors": 2,
+        "plates": 6,
+        "screws": 24,
+        "waiting_capacity": 1
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 5,
+        "memo_prunes": 49,
+        "nodes_expanded": 32
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "dev_level_1_boundary_01",
+      "file": "dev_level_1_boundary_01_unsolvable_W0.json",
+      "instance_id": "dev_level_1_boundary_01_unsolvable_W0",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 10001
+      },
+      "sha256": "c1b7f926e6c604b073838547734f295fb3f837bebd3fb23ab3313a5b51b778f5",
+      "source_snapshot": "flutter_source_level_1.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 18,
+        "boxes": 8,
+        "colors": 2,
+        "plates": 6,
+        "screws": 24,
+        "waiting_capacity": 0
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 24,
+        "memo_prunes": 10698,
+        "nodes_expanded": 2764
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "dev_level_1_boundary_02",
+      "file": "dev_level_1_boundary_02_solvable_W4.json",
+      "instance_id": "dev_level_1_boundary_02_solvable_W4",
+      "recipe": {
+        "box_swaps": 3,
+        "screw_color_swaps": 7,
+        "seed": 10002
+      },
+      "sha256": "92eb4f876c6a0e89b08da34a8353fb0897ae0282e25e76d6b12d60e2077fc6d1",
+      "source_snapshot": "flutter_source_level_1.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 18,
+        "boxes": 8,
+        "colors": 2,
+        "plates": 6,
+        "screws": 24,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 14,
+        "memo_prunes": 15796,
+        "nodes_expanded": 4231
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "dev_level_1_boundary_02",
+      "file": "dev_level_1_boundary_02_unsolvable_W3.json",
+      "instance_id": "dev_level_1_boundary_02_unsolvable_W3",
+      "recipe": {
+        "box_swaps": 3,
+        "screw_color_swaps": 7,
+        "seed": 10002
+      },
+      "sha256": "f376f3e121b8141d500dcef859d46e0dc6fde121adb562e0bb855f1c1e316323",
+      "source_snapshot": "flutter_source_level_1.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 18,
+        "boxes": 8,
+        "colors": 2,
+        "plates": 6,
+        "screws": 24,
+        "waiting_capacity": 3
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 16,
+        "memo_prunes": 0,
+        "nodes_expanded": 16
+      },
+      "expected_status": "solved",
+      "file": "dev_level_2_raw.json",
+      "instance_id": "dev_level_2_raw",
+      "sha256": "4c681978bd32c6592ced4d0f94291a4e8eb64d93e4867656a61e431a2b6670ee",
+      "source_snapshot": "flutter_source_level_2.json",
+      "split": "development",
+      "stratum": "raw_direct",
+      "structure": {
+        "blocker_pairs": 2,
+        "boxes": 6,
+        "colors": 2,
+        "plates": 7,
+        "screws": 16,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 16,
+        "memo_prunes": 53,
+        "nodes_expanded": 48
+      },
+      "expected_status": "solved",
+      "file": "dev_level_2_general.json",
+      "instance_id": "dev_level_2_general",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 27001
+      },
+      "sha256": "553cf3c8b3e72548a058558dd859bfe5bb99c4401ce46fc63c9211e099c6fb8b",
+      "source_snapshot": "flutter_source_level_2.json",
+      "split": "development",
+      "stratum": "general_mutation",
+      "structure": {
+        "blocker_pairs": 2,
+        "boxes": 6,
+        "colors": 2,
+        "plates": 7,
+        "screws": 16,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 16,
+        "memo_prunes": 4028,
+        "nodes_expanded": 1412
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "dev_level_2_boundary_01",
+      "file": "dev_level_2_boundary_01_solvable_W3.json",
+      "instance_id": "dev_level_2_boundary_01_solvable_W3",
+      "recipe": {
+        "box_swaps": 3,
+        "screw_color_swaps": 7,
+        "seed": 20002
+      },
+      "sha256": "36c486d15d76fe383ead6386c2199e45479c479ee03d3f6982805c62afb45f27",
+      "source_snapshot": "flutter_source_level_2.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 2,
+        "boxes": 6,
+        "colors": 2,
+        "plates": 7,
+        "screws": 16,
+        "waiting_capacity": 3
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 7,
+        "memo_prunes": 4801,
+        "nodes_expanded": 1472
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "dev_level_2_boundary_01",
+      "file": "dev_level_2_boundary_01_unsolvable_W2.json",
+      "instance_id": "dev_level_2_boundary_01_unsolvable_W2",
+      "recipe": {
+        "box_swaps": 3,
+        "screw_color_swaps": 7,
+        "seed": 20002
+      },
+      "sha256": "f96f02fa6db00e844871cc22ee647ad101b215a84353557d0db65a921aa2098c",
+      "source_snapshot": "flutter_source_level_2.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 2,
+        "boxes": 6,
+        "colors": 2,
+        "plates": 7,
+        "screws": 16,
+        "waiting_capacity": 2
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 16,
+        "memo_prunes": 27886,
+        "nodes_expanded": 6916
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "dev_level_2_boundary_02",
+      "file": "dev_level_2_boundary_02_solvable_W1.json",
+      "instance_id": "dev_level_2_boundary_02_solvable_W1",
+      "recipe": {
+        "box_swaps": 5,
+        "screw_color_swaps": 3,
+        "seed": 20004
+      },
+      "sha256": "547d18e70b2ad7e8b3c8a9427c7f977a2a551ea3d4810fc9a2312ff9659b1c8f",
+      "source_snapshot": "flutter_source_level_2.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 2,
+        "boxes": 6,
+        "colors": 2,
+        "plates": 7,
+        "screws": 16,
+        "waiting_capacity": 1
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 9,
+        "memo_prunes": 7364,
+        "nodes_expanded": 3621
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "dev_level_2_boundary_02",
+      "file": "dev_level_2_boundary_02_unsolvable_W0.json",
+      "instance_id": "dev_level_2_boundary_02_unsolvable_W0",
+      "recipe": {
+        "box_swaps": 5,
+        "screw_color_swaps": 3,
+        "seed": 20004
+      },
+      "sha256": "c55088aa0a3207bbfa781c37b70572ecdd676d9593c59ff0dcedc3cd3c41f971",
+      "source_snapshot": "flutter_source_level_2.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 2,
+        "boxes": 6,
+        "colors": 2,
+        "plates": 7,
+        "screws": 16,
+        "waiting_capacity": 0
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 20,
+        "memo_prunes": 0,
+        "nodes_expanded": 20
+      },
+      "expected_status": "solved",
+      "file": "dev_level_3_raw.json",
+      "instance_id": "dev_level_3_raw",
+      "sha256": "efa433650f636c834b85550056a6e125f00460482ce66325895b69f877a62e96",
+      "source_snapshot": "flutter_source_level_3.json",
+      "split": "development",
+      "stratum": "raw_direct",
+      "structure": {
+        "blocker_pairs": 25,
+        "boxes": 7,
+        "colors": 2,
+        "plates": 7,
+        "screws": 20,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 20,
+        "memo_prunes": 2,
+        "nodes_expanded": 24
+      },
+      "expected_status": "solved",
+      "file": "dev_level_3_general.json",
+      "instance_id": "dev_level_3_general",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 37001
+      },
+      "sha256": "aa637b1e5bca5f53fdd71c6a65fe368755c9bfe40e6c6e59447b76664c5f812a",
+      "source_snapshot": "flutter_source_level_3.json",
+      "split": "development",
+      "stratum": "general_mutation",
+      "structure": {
+        "blocker_pairs": 25,
+        "boxes": 7,
+        "colors": 2,
+        "plates": 7,
+        "screws": 20,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 20,
+        "memo_prunes": 2909,
+        "nodes_expanded": 895
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "dev_level_3_boundary_01",
+      "file": "dev_level_3_boundary_01_solvable_W4.json",
+      "instance_id": "dev_level_3_boundary_01_solvable_W4",
+      "recipe": {
+        "box_swaps": 3,
+        "screw_color_swaps": 7,
+        "seed": 30002
+      },
+      "sha256": "b4c7a8351f0e6f48755f8f924ffd4f376d408213d681fcbf2df6a4902696090d",
+      "source_snapshot": "flutter_source_level_3.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 25,
+        "boxes": 7,
+        "colors": 2,
+        "plates": 7,
+        "screws": 20,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 14,
+        "memo_prunes": 6107,
+        "nodes_expanded": 1648
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "dev_level_3_boundary_01",
+      "file": "dev_level_3_boundary_01_unsolvable_W3.json",
+      "instance_id": "dev_level_3_boundary_01_unsolvable_W3",
+      "recipe": {
+        "box_swaps": 3,
+        "screw_color_swaps": 7,
+        "seed": 30002
+      },
+      "sha256": "a67a624b48c648a3c58a53af737195820109a875d462d57697aa95555b82688d",
+      "source_snapshot": "flutter_source_level_3.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 25,
+        "boxes": 7,
+        "colors": 2,
+        "plates": 7,
+        "screws": 20,
+        "waiting_capacity": 3
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 20,
+        "memo_prunes": 2269,
+        "nodes_expanded": 775
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "dev_level_3_boundary_02",
+      "file": "dev_level_3_boundary_02_solvable_W2.json",
+      "instance_id": "dev_level_3_boundary_02_solvable_W2",
+      "recipe": {
+        "box_swaps": 4,
+        "screw_color_swaps": 10,
+        "seed": 30003
+      },
+      "sha256": "1013890471e4cc1cbd020bb4e75bb2ff20fe13e10d0a94c872a12082e301a48f",
+      "source_snapshot": "flutter_source_level_3.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 25,
+        "boxes": 7,
+        "colors": 2,
+        "plates": 7,
+        "screws": 20,
+        "waiting_capacity": 2
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 14,
+        "memo_prunes": 2881,
+        "nodes_expanded": 1020
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "dev_level_3_boundary_02",
+      "file": "dev_level_3_boundary_02_unsolvable_W1.json",
+      "instance_id": "dev_level_3_boundary_02_unsolvable_W1",
+      "recipe": {
+        "box_swaps": 4,
+        "screw_color_swaps": 10,
+        "seed": 30003
+      },
+      "sha256": "aa6173c74800ed01447e7778f6c74251ac054ee7d12f74a5b3de7417cad67720",
+      "source_snapshot": "flutter_source_level_3.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 25,
+        "boxes": 7,
+        "colors": 2,
+        "plates": 7,
+        "screws": 20,
+        "waiting_capacity": 1
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 26,
+        "memo_prunes": 0,
+        "nodes_expanded": 26
+      },
+      "expected_status": "solved",
+      "file": "dev_level_4_raw.json",
+      "instance_id": "dev_level_4_raw",
+      "sha256": "5306af3c64ce0fc921d1687e817ca8271d5f862a5177fa050628f7df8bbec573",
+      "source_snapshot": "flutter_source_level_4.json",
+      "split": "development",
+      "stratum": "raw_direct",
+      "structure": {
+        "blocker_pairs": 16,
+        "boxes": 9,
+        "colors": 3,
+        "plates": 8,
+        "screws": 26,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 26,
+        "memo_prunes": 0,
+        "nodes_expanded": 26
+      },
+      "expected_status": "solved",
+      "file": "dev_level_4_general.json",
+      "instance_id": "dev_level_4_general",
+      "recipe": {
+        "box_swaps": 4,
+        "screw_color_swaps": 10,
+        "seed": 47003
+      },
+      "sha256": "423c2bf1e43e9604a33826676011f31c095370aa9b10124924046d5c13764e5e",
+      "source_snapshot": "flutter_source_level_4.json",
+      "split": "development",
+      "stratum": "general_mutation",
+      "structure": {
+        "blocker_pairs": 16,
+        "boxes": 9,
+        "colors": 3,
+        "plates": 8,
+        "screws": 26,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 26,
+        "memo_prunes": 26402,
+        "nodes_expanded": 6336
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "dev_level_4_boundary_01",
+      "file": "dev_level_4_boundary_01_solvable_W4.json",
+      "instance_id": "dev_level_4_boundary_01_solvable_W4",
+      "recipe": {
+        "box_swaps": 3,
+        "screw_color_swaps": 7,
+        "seed": 40002
+      },
+      "sha256": "10f111476ca34a4ce2cdc768ccb212cade75f5e7efbd68541baae7ead9ac85ca",
+      "source_snapshot": "flutter_source_level_4.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 16,
+        "boxes": 9,
+        "colors": 3,
+        "plates": 8,
+        "screws": 26,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 19,
+        "memo_prunes": 36215,
+        "nodes_expanded": 9388
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "dev_level_4_boundary_01",
+      "file": "dev_level_4_boundary_01_unsolvable_W3.json",
+      "instance_id": "dev_level_4_boundary_01_unsolvable_W3",
+      "recipe": {
+        "box_swaps": 3,
+        "screw_color_swaps": 7,
+        "seed": 40002
+      },
+      "sha256": "030dd4f2953fcf381dc4f76b00c45ab53cfba4c631b262fa2b910216d417a056",
+      "source_snapshot": "flutter_source_level_4.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 16,
+        "boxes": 9,
+        "colors": 3,
+        "plates": 8,
+        "screws": 26,
+        "waiting_capacity": 3
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 26,
+        "memo_prunes": 5383,
+        "nodes_expanded": 1960
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "dev_level_4_boundary_02",
+      "file": "dev_level_4_boundary_02_solvable_W1.json",
+      "instance_id": "dev_level_4_boundary_02_solvable_W1",
+      "recipe": {
+        "box_swaps": 6,
+        "screw_color_swaps": 6,
+        "seed": 40005
+      },
+      "sha256": "6625fefe918f51bcca449beb488033806a606d60dad4d39cefa217de717c4760",
+      "source_snapshot": "flutter_source_level_4.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 16,
+        "boxes": 9,
+        "colors": 3,
+        "plates": 8,
+        "screws": 26,
+        "waiting_capacity": 1
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 7,
+        "memo_prunes": 556,
+        "nodes_expanded": 357
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "dev_level_4_boundary_02",
+      "file": "dev_level_4_boundary_02_unsolvable_W0.json",
+      "instance_id": "dev_level_4_boundary_02_unsolvable_W0",
+      "recipe": {
+        "box_swaps": 6,
+        "screw_color_swaps": 6,
+        "seed": 40005
+      },
+      "sha256": "1247e45422d19bd1c73cfef7c5ec8801027a2d9558fd5c932d990e7968cc02b7",
+      "source_snapshot": "flutter_source_level_4.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 16,
+        "boxes": 9,
+        "colors": 3,
+        "plates": 8,
+        "screws": 26,
+        "waiting_capacity": 0
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 23,
+        "memo_prunes": 0,
+        "nodes_expanded": 23
+      },
+      "expected_status": "solved",
+      "file": "dev_level_5_raw.json",
+      "instance_id": "dev_level_5_raw",
+      "sha256": "4db7b86dd5ca48b2924b0ff876b508a604f17db9d58fa1cb8f93ca8f57377e59",
+      "source_snapshot": "flutter_source_level_5.json",
+      "split": "development",
+      "stratum": "raw_direct",
+      "structure": {
+        "blocker_pairs": 50,
+        "boxes": 8,
+        "colors": 3,
+        "plates": 6,
+        "screws": 23,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 6,
+        "memo_prunes": 60,
+        "nodes_expanded": 42
+      },
+      "expected_status": "unsolvable",
+      "file": "dev_level_5_general.json",
+      "instance_id": "dev_level_5_general",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 57001
+      },
+      "sha256": "66479ff1d4efec900deef37f0f89507b384bfe58a8a492c50f907eebb8f69171",
+      "source_snapshot": "flutter_source_level_5.json",
+      "split": "development",
+      "stratum": "general_mutation",
+      "structure": {
+        "blocker_pairs": 50,
+        "boxes": 8,
+        "colors": 3,
+        "plates": 6,
+        "screws": 23,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 23,
+        "memo_prunes": 0,
+        "nodes_expanded": 23
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "dev_level_5_boundary_01",
+      "file": "dev_level_5_boundary_01_solvable_W2.json",
+      "instance_id": "dev_level_5_boundary_01_solvable_W2",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 50001
+      },
+      "sha256": "2d6439f1848922f0520f45f24a69d4c38a9f1d95354209e75bd917fcec2cd2e3",
+      "source_snapshot": "flutter_source_level_5.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 50,
+        "boxes": 8,
+        "colors": 3,
+        "plates": 6,
+        "screws": 23,
+        "waiting_capacity": 2
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 6,
+        "memo_prunes": 31,
+        "nodes_expanded": 27
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "dev_level_5_boundary_01",
+      "file": "dev_level_5_boundary_01_unsolvable_W1.json",
+      "instance_id": "dev_level_5_boundary_01_unsolvable_W1",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 50001
+      },
+      "sha256": "c024b4bcd935477ef98f965a11a05edb870b3b9ca06fc0ddc6c3a3086ce3032d",
+      "source_snapshot": "flutter_source_level_5.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 50,
+        "boxes": 8,
+        "colors": 3,
+        "plates": 6,
+        "screws": 23,
+        "waiting_capacity": 1
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 23,
+        "memo_prunes": 0,
+        "nodes_expanded": 23
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "dev_level_5_boundary_02",
+      "file": "dev_level_5_boundary_02_solvable_W2.json",
+      "instance_id": "dev_level_5_boundary_02_solvable_W2",
+      "recipe": {
+        "box_swaps": 1,
+        "screw_color_swaps": 5,
+        "seed": 50008
+      },
+      "sha256": "9b7fe654eb36ae9b228fc1862ec1a6ece6a58832022b9c998069121828d908fc",
+      "source_snapshot": "flutter_source_level_5.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 50,
+        "boxes": 8,
+        "colors": 3,
+        "plates": 6,
+        "screws": 23,
+        "waiting_capacity": 2
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 6,
+        "memo_prunes": 15,
+        "nodes_expanded": 22
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "dev_level_5_boundary_02",
+      "file": "dev_level_5_boundary_02_unsolvable_W1.json",
+      "instance_id": "dev_level_5_boundary_02_unsolvable_W1",
+      "recipe": {
+        "box_swaps": 1,
+        "screw_color_swaps": 5,
+        "seed": 50008
+      },
+      "sha256": "7c073afc0e4e2fa4207a8893494255b1d772749a6baf98a307234d0bda3ce9a8",
+      "source_snapshot": "flutter_source_level_5.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 50,
+        "boxes": 8,
+        "colors": 3,
+        "plates": 6,
+        "screws": 23,
+        "waiting_capacity": 1
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 22,
+        "memo_prunes": 0,
+        "nodes_expanded": 22
+      },
+      "expected_status": "solved",
+      "file": "dev_level_6_raw.json",
+      "instance_id": "dev_level_6_raw",
+      "sha256": "755a7481228c02458f7f1d264780e65710d6c0f7eba151e4c89b3739471fc3b0",
+      "source_snapshot": "flutter_source_level_6.json",
+      "split": "development",
+      "stratum": "raw_direct",
+      "structure": {
+        "blocker_pairs": 8,
+        "boxes": 8,
+        "colors": 3,
+        "plates": 7,
+        "screws": 22,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 22,
+        "memo_prunes": 0,
+        "nodes_expanded": 22
+      },
+      "expected_status": "solved",
+      "file": "dev_level_6_general.json",
+      "instance_id": "dev_level_6_general",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 67001
+      },
+      "sha256": "c2d1a9ce598188390caa8aa074863df18400e5c6a30aba5e63ec212b0d7bbdd7",
+      "source_snapshot": "flutter_source_level_6.json",
+      "split": "development",
+      "stratum": "general_mutation",
+      "structure": {
+        "blocker_pairs": 8,
+        "boxes": 8,
+        "colors": 3,
+        "plates": 7,
+        "screws": 22,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 22,
+        "memo_prunes": 846,
+        "nodes_expanded": 462
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "dev_level_6_boundary_01",
+      "file": "dev_level_6_boundary_01_solvable_W2.json",
+      "instance_id": "dev_level_6_boundary_01_solvable_W2",
+      "recipe": {
+        "box_swaps": 7,
+        "screw_color_swaps": 9,
+        "seed": 60006
+      },
+      "sha256": "79b210df879ac83b01e1361f0d6d37ca608f85e4697868e421bab9f7c7c5d217",
+      "source_snapshot": "flutter_source_level_6.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 8,
+        "boxes": 8,
+        "colors": 3,
+        "plates": 7,
+        "screws": 22,
+        "waiting_capacity": 2
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 5,
+        "memo_prunes": 337,
+        "nodes_expanded": 176
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "dev_level_6_boundary_01",
+      "file": "dev_level_6_boundary_01_unsolvable_W1.json",
+      "instance_id": "dev_level_6_boundary_01_unsolvable_W1",
+      "recipe": {
+        "box_swaps": 7,
+        "screw_color_swaps": 9,
+        "seed": 60006
+      },
+      "sha256": "59355a59837f019aecf9752fd40c659b72b7c6974bfe3288333b9c4acbfc10b7",
+      "source_snapshot": "flutter_source_level_6.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 8,
+        "boxes": 8,
+        "colors": 3,
+        "plates": 7,
+        "screws": 22,
+        "waiting_capacity": 1
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 22,
+        "memo_prunes": 2756,
+        "nodes_expanded": 1357
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "dev_level_6_boundary_02",
+      "file": "dev_level_6_boundary_02_solvable_W2.json",
+      "instance_id": "dev_level_6_boundary_02_solvable_W2",
+      "recipe": {
+        "box_swaps": 8,
+        "screw_color_swaps": 2,
+        "seed": 60007
+      },
+      "sha256": "c38ef49442618517eb3a437b674d57feb3e66f238d1df323078660c48f0ad2b0",
+      "source_snapshot": "flutter_source_level_6.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 8,
+        "boxes": 8,
+        "colors": 3,
+        "plates": 7,
+        "screws": 22,
+        "waiting_capacity": 2
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 6,
+        "memo_prunes": 895,
+        "nodes_expanded": 500
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "dev_level_6_boundary_02",
+      "file": "dev_level_6_boundary_02_unsolvable_W1.json",
+      "instance_id": "dev_level_6_boundary_02_unsolvable_W1",
+      "recipe": {
+        "box_swaps": 8,
+        "screw_color_swaps": 2,
+        "seed": 60007
+      },
+      "sha256": "c971dee675dfeca6e694be374ad6a27d65b018b0db013e486de7e9b3046c070a",
+      "source_snapshot": "flutter_source_level_6.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 8,
+        "boxes": 8,
+        "colors": 3,
+        "plates": 7,
+        "screws": 22,
+        "waiting_capacity": 1
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 19,
+        "memo_prunes": 0,
+        "nodes_expanded": 23
+      },
+      "expected_status": "solved",
+      "file": "dev_level_7_raw.json",
+      "instance_id": "dev_level_7_raw",
+      "sha256": "aeae1bed71d6fe9ee39dd4b46365d44fba317a2b0545db60e030a5c4e8bf23c3",
+      "source_snapshot": "flutter_source_level_7.json",
+      "split": "development",
+      "stratum": "raw_direct",
+      "structure": {
+        "blocker_pairs": 23,
+        "boxes": 7,
+        "colors": 3,
+        "plates": 7,
+        "screws": 19,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 19,
+        "memo_prunes": 2,
+        "nodes_expanded": 25
+      },
+      "expected_status": "solved",
+      "file": "dev_level_7_general.json",
+      "instance_id": "dev_level_7_general",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 77001
+      },
+      "sha256": "1ecfabf4afb90073320cf0d047f13101a43a4388c706630abf422c540d956dbc",
+      "source_snapshot": "flutter_source_level_7.json",
+      "split": "development",
+      "stratum": "general_mutation",
+      "structure": {
+        "blocker_pairs": 23,
+        "boxes": 7,
+        "colors": 3,
+        "plates": 7,
+        "screws": 19,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 19,
+        "memo_prunes": 11,
+        "nodes_expanded": 31
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "dev_level_7_boundary_01",
+      "file": "dev_level_7_boundary_01_solvable_W4.json",
+      "instance_id": "dev_level_7_boundary_01_solvable_W4",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 70001
+      },
+      "sha256": "43153b345d3501af8cf67a898a21331c451234065db72f09c0ba6f24130d5782",
+      "source_snapshot": "flutter_source_level_7.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 23,
+        "boxes": 7,
+        "colors": 3,
+        "plates": 7,
+        "screws": 19,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 15,
+        "memo_prunes": 319,
+        "nodes_expanded": 183
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "dev_level_7_boundary_01",
+      "file": "dev_level_7_boundary_01_unsolvable_W3.json",
+      "instance_id": "dev_level_7_boundary_01_unsolvable_W3",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 70001
+      },
+      "sha256": "23b71b05cd94a610633546feb0af30e33248bc49faf5bb16c114da2ec3e2e9fe",
+      "source_snapshot": "flutter_source_level_7.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 23,
+        "boxes": 7,
+        "colors": 3,
+        "plates": 7,
+        "screws": 19,
+        "waiting_capacity": 3
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 19,
+        "memo_prunes": 68,
+        "nodes_expanded": 78
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "dev_level_7_boundary_02",
+      "file": "dev_level_7_boundary_02_solvable_W3.json",
+      "instance_id": "dev_level_7_boundary_02_solvable_W3",
+      "recipe": {
+        "box_swaps": 3,
+        "screw_color_swaps": 7,
+        "seed": 70002
+      },
+      "sha256": "5252850a5dcf38572de71941c5e8c98c64f5fc8f5aebaf60cd3c0fa6ec989266",
+      "source_snapshot": "flutter_source_level_7.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 23,
+        "boxes": 7,
+        "colors": 3,
+        "plates": 7,
+        "screws": 19,
+        "waiting_capacity": 3
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 16,
+        "memo_prunes": 1435,
+        "nodes_expanded": 604
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "dev_level_7_boundary_02",
+      "file": "dev_level_7_boundary_02_unsolvable_W2.json",
+      "instance_id": "dev_level_7_boundary_02_unsolvable_W2",
+      "recipe": {
+        "box_swaps": 3,
+        "screw_color_swaps": 7,
+        "seed": 70002
+      },
+      "sha256": "98426eb34192cef1aa821274da923aefa1a9d696ae18170504723bb62ed5d298",
+      "source_snapshot": "flutter_source_level_7.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 23,
+        "boxes": 7,
+        "colors": 3,
+        "plates": 7,
+        "screws": 19,
+        "waiting_capacity": 2
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 20,
+        "memo_prunes": 6,
+        "nodes_expanded": 31
+      },
+      "expected_status": "solved",
+      "file": "dev_level_8_raw.json",
+      "instance_id": "dev_level_8_raw",
+      "sha256": "8edad92db9aa44a43ea8498d800eea49d60c732cfe17cf6a0ec17bcb01fa7d9b",
+      "source_snapshot": "flutter_source_level_8.json",
+      "split": "development",
+      "stratum": "raw_direct",
+      "structure": {
+        "blocker_pairs": 16,
+        "boxes": 7,
+        "colors": 3,
+        "plates": 7,
+        "screws": 20,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 20,
+        "memo_prunes": 0,
+        "nodes_expanded": 20
+      },
+      "expected_status": "solved",
+      "file": "dev_level_8_general.json",
+      "instance_id": "dev_level_8_general",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 87001
+      },
+      "sha256": "693f41fe5fd204e6a1279a715656fc179c68889bc7f633edfa044d1aa2e3ff9a",
+      "source_snapshot": "flutter_source_level_8.json",
+      "split": "development",
+      "stratum": "general_mutation",
+      "structure": {
+        "blocker_pairs": 16,
+        "boxes": 7,
+        "colors": 3,
+        "plates": 7,
+        "screws": 20,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 20,
+        "memo_prunes": 32,
+        "nodes_expanded": 55
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "dev_level_8_boundary_01",
+      "file": "dev_level_8_boundary_01_solvable_W1.json",
+      "instance_id": "dev_level_8_boundary_01_solvable_W1",
+      "recipe": {
+        "box_swaps": 3,
+        "screw_color_swaps": 7,
+        "seed": 80002
+      },
+      "sha256": "e14c6af793ade278f45cdd1da7a4968d8d6078f4203f563e8153433c0639d596",
+      "source_snapshot": "flutter_source_level_8.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 16,
+        "boxes": 7,
+        "colors": 3,
+        "plates": 7,
+        "screws": 20,
+        "waiting_capacity": 1
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 4,
+        "memo_prunes": 17,
+        "nodes_expanded": 16
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "dev_level_8_boundary_01",
+      "file": "dev_level_8_boundary_01_unsolvable_W0.json",
+      "instance_id": "dev_level_8_boundary_01_unsolvable_W0",
+      "recipe": {
+        "box_swaps": 3,
+        "screw_color_swaps": 7,
+        "seed": 80002
+      },
+      "sha256": "3b1e8f3b79dd2f6b8f39fa8f3ca428fd82fbf356b8a2a04e56ee25c40794f2e0",
+      "source_snapshot": "flutter_source_level_8.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 16,
+        "boxes": 7,
+        "colors": 3,
+        "plates": 7,
+        "screws": 20,
+        "waiting_capacity": 0
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 20,
+        "memo_prunes": 29,
+        "nodes_expanded": 44
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "dev_level_8_boundary_02",
+      "file": "dev_level_8_boundary_02_solvable_W3.json",
+      "instance_id": "dev_level_8_boundary_02_solvable_W3",
+      "recipe": {
+        "box_swaps": 4,
+        "screw_color_swaps": 10,
+        "seed": 80003
+      },
+      "sha256": "d3a3627c7c963c2746c224dd20ecc23c5e85232b7cfd5cbfa8c27a391e3851a1",
+      "source_snapshot": "flutter_source_level_8.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 16,
+        "boxes": 7,
+        "colors": 3,
+        "plates": 7,
+        "screws": 20,
+        "waiting_capacity": 3
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 13,
+        "memo_prunes": 2696,
+        "nodes_expanded": 1036
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "dev_level_8_boundary_02",
+      "file": "dev_level_8_boundary_02_unsolvable_W2.json",
+      "instance_id": "dev_level_8_boundary_02_unsolvable_W2",
+      "recipe": {
+        "box_swaps": 4,
+        "screw_color_swaps": 10,
+        "seed": 80003
+      },
+      "sha256": "1c89de5161d205d001d43546e78ffdd1c113870cc6d259d4c4153f6b1068401b",
+      "source_snapshot": "flutter_source_level_8.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 16,
+        "boxes": 7,
+        "colors": 3,
+        "plates": 7,
+        "screws": 20,
+        "waiting_capacity": 2
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 23,
+        "memo_prunes": 0,
+        "nodes_expanded": 23
+      },
+      "expected_status": "solved",
+      "file": "dev_level_9_raw.json",
+      "instance_id": "dev_level_9_raw",
+      "sha256": "a20686b19089fa136105d59cbbb07b07e19b91388094c4f9507cff1260753f34",
+      "source_snapshot": "flutter_source_level_9.json",
+      "split": "development",
+      "stratum": "raw_direct",
+      "structure": {
+        "blocker_pairs": 19,
+        "boxes": 8,
+        "colors": 3,
+        "plates": 8,
+        "screws": 23,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 8,
+        "memo_prunes": 5633,
+        "nodes_expanded": 1568
+      },
+      "expected_status": "unsolvable",
+      "file": "dev_level_9_general.json",
+      "instance_id": "dev_level_9_general",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 97001
+      },
+      "sha256": "97daa6080306a8e7975159eed15da80fae909b2f8617fc0c0c2a854207d9264d",
+      "source_snapshot": "flutter_source_level_9.json",
+      "split": "development",
+      "stratum": "general_mutation",
+      "structure": {
+        "blocker_pairs": 19,
+        "boxes": 8,
+        "colors": 3,
+        "plates": 8,
+        "screws": 23,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 23,
+        "memo_prunes": 0,
+        "nodes_expanded": 23
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "dev_level_9_boundary_01",
+      "file": "dev_level_9_boundary_01_solvable_W1.json",
+      "instance_id": "dev_level_9_boundary_01_solvable_W1",
+      "recipe": {
+        "box_swaps": 3,
+        "screw_color_swaps": 7,
+        "seed": 90002
+      },
+      "sha256": "be85f8a918517c0c35b5200aa339c6bf5c18f3a5ae67d03cc29db1cc464c01af",
+      "source_snapshot": "flutter_source_level_9.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 19,
+        "boxes": 8,
+        "colors": 3,
+        "plates": 8,
+        "screws": 23,
+        "waiting_capacity": 1
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 11,
+        "memo_prunes": 328,
+        "nodes_expanded": 378
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "dev_level_9_boundary_01",
+      "file": "dev_level_9_boundary_01_unsolvable_W0.json",
+      "instance_id": "dev_level_9_boundary_01_unsolvable_W0",
+      "recipe": {
+        "box_swaps": 3,
+        "screw_color_swaps": 7,
+        "seed": 90002
+      },
+      "sha256": "6a45744cde458d527153bc658138f1b40435e3be9fd720deac0758b89b879a1d",
+      "source_snapshot": "flutter_source_level_9.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 19,
+        "boxes": 8,
+        "colors": 3,
+        "plates": 8,
+        "screws": 23,
+        "waiting_capacity": 0
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 23,
+        "memo_prunes": 0,
+        "nodes_expanded": 23
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "dev_level_9_boundary_02",
+      "file": "dev_level_9_boundary_02_solvable_W4.json",
+      "instance_id": "dev_level_9_boundary_02_solvable_W4",
+      "recipe": {
+        "box_swaps": 4,
+        "screw_color_swaps": 10,
+        "seed": 90003
+      },
+      "sha256": "3e625a98415abf57aba2fdd746cf518215e79ea1c7858d2ae44f1a60626a4fc6",
+      "source_snapshot": "flutter_source_level_9.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 19,
+        "boxes": 8,
+        "colors": 3,
+        "plates": 8,
+        "screws": 23,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 16,
+        "memo_prunes": 11634,
+        "nodes_expanded": 3117
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "dev_level_9_boundary_02",
+      "file": "dev_level_9_boundary_02_unsolvable_W3.json",
+      "instance_id": "dev_level_9_boundary_02_unsolvable_W3",
+      "recipe": {
+        "box_swaps": 4,
+        "screw_color_swaps": 10,
+        "seed": 90003
+      },
+      "sha256": "aa2326a2ab959873fae8e7801392db5cea746591b96b171c5c4ee3c66c7e5aa5",
+      "source_snapshot": "flutter_source_level_9.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 19,
+        "boxes": 8,
+        "colors": 3,
+        "plates": 8,
+        "screws": 23,
+        "waiting_capacity": 3
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 18,
+        "memo_prunes": 0,
+        "nodes_expanded": 18
+      },
+      "expected_status": "solved",
+      "file": "dev_level_6_seed_61_raw.json",
+      "instance_id": "dev_level_6_seed_61_raw",
+      "sha256": "53f40d826cda8da0aa9432a95a8c52be12422fb92575f651586af6d557fc45a2",
+      "source_snapshot": "flutter_source_level_6_seed_61.json",
+      "split": "development",
+      "stratum": "raw_direct",
+      "structure": {
+        "blocker_pairs": 3,
+        "boxes": 6,
+        "colors": 3,
+        "plates": 8,
+        "screws": 18,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 18,
+        "memo_prunes": 15,
+        "nodes_expanded": 32
+      },
+      "expected_status": "solved",
+      "file": "dev_level_6_seed_61_general.json",
+      "instance_id": "dev_level_6_seed_61_general",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 60617001
+      },
+      "sha256": "3aa601401953771512e1bfa6244eab17eb67df27e4fcd30f91b6d0c48c2d9d62",
+      "source_snapshot": "flutter_source_level_6_seed_61.json",
+      "split": "development",
+      "stratum": "general_mutation",
+      "structure": {
+        "blocker_pairs": 3,
+        "boxes": 6,
+        "colors": 3,
+        "plates": 8,
+        "screws": 18,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 18,
+        "memo_prunes": 10272,
+        "nodes_expanded": 3904
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "dev_level_6_seed_61_boundary_01",
+      "file": "dev_level_6_seed_61_boundary_01_solvable_W2.json",
+      "instance_id": "dev_level_6_seed_61_boundary_01_solvable_W2",
+      "recipe": {
+        "box_swaps": 3,
+        "screw_color_swaps": 7,
+        "seed": 60610002
+      },
+      "sha256": "a8dbaec1bbf401d5a1f3faa034f2d9bb31610b1f10c040850e3df00133146914",
+      "source_snapshot": "flutter_source_level_6_seed_61.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 3,
+        "boxes": 6,
+        "colors": 3,
+        "plates": 8,
+        "screws": 18,
+        "waiting_capacity": 2
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 9,
+        "memo_prunes": 3298,
+        "nodes_expanded": 1415
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "dev_level_6_seed_61_boundary_01",
+      "file": "dev_level_6_seed_61_boundary_01_unsolvable_W1.json",
+      "instance_id": "dev_level_6_seed_61_boundary_01_unsolvable_W1",
+      "recipe": {
+        "box_swaps": 3,
+        "screw_color_swaps": 7,
+        "seed": 60610002
+      },
+      "sha256": "71948577b44b90d7c207ad78bf49909b6a00221dcad2957df931a8b52bb676da",
+      "source_snapshot": "flutter_source_level_6_seed_61.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 3,
+        "boxes": 6,
+        "colors": 3,
+        "plates": 8,
+        "screws": 18,
+        "waiting_capacity": 1
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 18,
+        "memo_prunes": 803,
+        "nodes_expanded": 392
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "dev_level_6_seed_61_boundary_02",
+      "file": "dev_level_6_seed_61_boundary_02_solvable_W1.json",
+      "instance_id": "dev_level_6_seed_61_boundary_02_solvable_W1",
+      "recipe": {
+        "box_swaps": 5,
+        "screw_color_swaps": 3,
+        "seed": 60610004
+      },
+      "sha256": "f7c80db18453dc60b87a25a88b01e7a001bd2affa7326f04d53d73b18133a071",
+      "source_snapshot": "flutter_source_level_6_seed_61.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 3,
+        "boxes": 6,
+        "colors": 3,
+        "plates": 8,
+        "screws": 18,
+        "waiting_capacity": 1
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 5,
+        "memo_prunes": 49,
+        "nodes_expanded": 32
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "dev_level_6_seed_61_boundary_02",
+      "file": "dev_level_6_seed_61_boundary_02_unsolvable_W0.json",
+      "instance_id": "dev_level_6_seed_61_boundary_02_unsolvable_W0",
+      "recipe": {
+        "box_swaps": 5,
+        "screw_color_swaps": 3,
+        "seed": 60610004
+      },
+      "sha256": "b0b785cf218716360491e0baf0b633c7ab4bdf283673c05a2aa12c106cb97b58",
+      "source_snapshot": "flutter_source_level_6_seed_61.json",
+      "split": "development",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 3,
+        "boxes": 6,
+        "colors": 3,
+        "plates": 8,
+        "screws": 18,
+        "waiting_capacity": 0
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 38,
+        "memo_prunes": 0,
+        "nodes_expanded": 38
+      },
+      "expected_status": "solved",
+      "file": "hol_level_11_raw.json",
+      "instance_id": "hol_level_11_raw",
+      "sha256": "60f78f01f43329462b3449c968c8cac4ff1fb060a77c5caa7299656f6ee66946",
+      "source_snapshot": "flutter_source_level_11.json",
+      "split": "holdout",
+      "stratum": "raw_direct",
+      "structure": {
+        "blocker_pairs": 33,
+        "boxes": 13,
+        "colors": 4,
+        "plates": 10,
+        "screws": 38,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 38,
+        "memo_prunes": 9709,
+        "nodes_expanded": 3346
+      },
+      "expected_status": "solved",
+      "file": "hol_level_11_general.json",
+      "instance_id": "hol_level_11_general",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 117001
+      },
+      "sha256": "e606ee2c97ab6f5b16d0e77490164b8d7662d2ebd348440103816232e0ad1561",
+      "source_snapshot": "flutter_source_level_11.json",
+      "split": "holdout",
+      "stratum": "general_mutation",
+      "structure": {
+        "blocker_pairs": 33,
+        "boxes": 13,
+        "colors": 4,
+        "plates": 10,
+        "screws": 38,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 38,
+        "memo_prunes": 0,
+        "nodes_expanded": 38
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "hol_level_11_boundary_01",
+      "file": "hol_level_11_boundary_01_solvable_W2.json",
+      "instance_id": "hol_level_11_boundary_01_solvable_W2",
+      "recipe": {
+        "box_swaps": 4,
+        "screw_color_swaps": 10,
+        "seed": 110003
+      },
+      "sha256": "8cbae5ded5068c96cbc96a8c1fab117565fa7859b25dc5c6a5f371d60f7ae989",
+      "source_snapshot": "flutter_source_level_11.json",
+      "split": "holdout",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 33,
+        "boxes": 13,
+        "colors": 4,
+        "plates": 10,
+        "screws": 38,
+        "waiting_capacity": 2
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 9,
+        "memo_prunes": 2635,
+        "nodes_expanded": 1124
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "hol_level_11_boundary_01",
+      "file": "hol_level_11_boundary_01_unsolvable_W1.json",
+      "instance_id": "hol_level_11_boundary_01_unsolvable_W1",
+      "recipe": {
+        "box_swaps": 4,
+        "screw_color_swaps": 10,
+        "seed": 110003
+      },
+      "sha256": "322c8ec0140b238af4c9dab76413877c5c51b051a70e3a3bc5e6fa5c36c262d5",
+      "source_snapshot": "flutter_source_level_11.json",
+      "split": "holdout",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 33,
+        "boxes": 13,
+        "colors": 4,
+        "plates": 10,
+        "screws": 38,
+        "waiting_capacity": 1
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 22,
+        "memo_prunes": 0,
+        "nodes_expanded": 22
+      },
+      "expected_status": "solved",
+      "file": "hol_level_13_raw.json",
+      "instance_id": "hol_level_13_raw",
+      "sha256": "62cc32faf3f84c6e3714ebaaa3731a45fbbb23852845b5985858cc3cba5f4836",
+      "source_snapshot": "flutter_source_level_13.json",
+      "split": "holdout",
+      "stratum": "raw_direct",
+      "structure": {
+        "blocker_pairs": 28,
+        "boxes": 8,
+        "colors": 4,
+        "plates": 8,
+        "screws": 22,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 6,
+        "memo_prunes": 274,
+        "nodes_expanded": 130
+      },
+      "expected_status": "unsolvable",
+      "file": "hol_level_13_general.json",
+      "instance_id": "hol_level_13_general",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 137001
+      },
+      "sha256": "3ece0f268620c05513f2dbf404d8997e13ccc4601753c9a7bc56a1d8dbb48332",
+      "source_snapshot": "flutter_source_level_13.json",
+      "split": "holdout",
+      "stratum": "general_mutation",
+      "structure": {
+        "blocker_pairs": 28,
+        "boxes": 8,
+        "colors": 4,
+        "plates": 8,
+        "screws": 22,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 22,
+        "memo_prunes": 6,
+        "nodes_expanded": 32
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "hol_level_13_boundary_01",
+      "file": "hol_level_13_boundary_01_solvable_W4.json",
+      "instance_id": "hol_level_13_boundary_01_solvable_W4",
+      "recipe": {
+        "box_swaps": 8,
+        "screw_color_swaps": 6,
+        "seed": 130015
+      },
+      "sha256": "55c7612b9e7a91021a057bfec13c3bc50a634d462d4bfa4ddb12b07a3b997049",
+      "source_snapshot": "flutter_source_level_13.json",
+      "split": "holdout",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 28,
+        "boxes": 8,
+        "colors": 4,
+        "plates": 8,
+        "screws": 22,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 17,
+        "memo_prunes": 297,
+        "nodes_expanded": 169
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "hol_level_13_boundary_01",
+      "file": "hol_level_13_boundary_01_unsolvable_W3.json",
+      "instance_id": "hol_level_13_boundary_01_unsolvable_W3",
+      "recipe": {
+        "box_swaps": 8,
+        "screw_color_swaps": 6,
+        "seed": 130015
+      },
+      "sha256": "9f638c3a3f7b40f4784a28b5b1114351c60a20c82c99451bf35772449db08339",
+      "source_snapshot": "flutter_source_level_13.json",
+      "split": "holdout",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 28,
+        "boxes": 8,
+        "colors": 4,
+        "plates": 8,
+        "screws": 22,
+        "waiting_capacity": 3
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 20,
+        "memo_prunes": 0,
+        "nodes_expanded": 20
+      },
+      "expected_status": "solved",
+      "file": "hol_level_14_raw.json",
+      "instance_id": "hol_level_14_raw",
+      "sha256": "5519e716ce53206ad8567d90cf70ee0930a70bf746cbf3537e4672a929250c74",
+      "source_snapshot": "flutter_source_level_14.json",
+      "split": "holdout",
+      "stratum": "raw_direct",
+      "structure": {
+        "blocker_pairs": 5,
+        "boxes": 7,
+        "colors": 4,
+        "plates": 9,
+        "screws": 20,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 20,
+        "memo_prunes": 476,
+        "nodes_expanded": 244
+      },
+      "expected_status": "solved",
+      "file": "hol_level_14_general.json",
+      "instance_id": "hol_level_14_general",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 147001
+      },
+      "sha256": "84f4c1cc668cad36ee0e5687e371abbd056d44ff1965d9eacca9966119178f65",
+      "source_snapshot": "flutter_source_level_14.json",
+      "split": "holdout",
+      "stratum": "general_mutation",
+      "structure": {
+        "blocker_pairs": 5,
+        "boxes": 7,
+        "colors": 4,
+        "plates": 9,
+        "screws": 20,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 20,
+        "memo_prunes": 20959,
+        "nodes_expanded": 6547
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "hol_level_14_boundary_01",
+      "file": "hol_level_14_boundary_01_solvable_W3.json",
+      "instance_id": "hol_level_14_boundary_01_solvable_W3",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 140001
+      },
+      "sha256": "0e3515e7f887be026a5596e540e721419c3bda4532da20c71fde4473036e78ca",
+      "source_snapshot": "flutter_source_level_14.json",
+      "split": "holdout",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 5,
+        "boxes": 7,
+        "colors": 4,
+        "plates": 9,
+        "screws": 20,
+        "waiting_capacity": 3
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 10,
+        "memo_prunes": 10022,
+        "nodes_expanded": 3505
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "hol_level_14_boundary_01",
+      "file": "hol_level_14_boundary_01_unsolvable_W2.json",
+      "instance_id": "hol_level_14_boundary_01_unsolvable_W2",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 140001
+      },
+      "sha256": "521033e77ab9942d04eabd5a6e084ae32783e3961b9597b2168c9f721a25bd87",
+      "source_snapshot": "flutter_source_level_14.json",
+      "split": "holdout",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 5,
+        "boxes": 7,
+        "colors": 4,
+        "plates": 9,
+        "screws": 20,
+        "waiting_capacity": 2
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 23,
+        "memo_prunes": 0,
+        "nodes_expanded": 23
+      },
+      "expected_status": "solved",
+      "file": "hol_level_16_raw.json",
+      "instance_id": "hol_level_16_raw",
+      "sha256": "95ebd7b503dc80872cf70f007030fc15a60750e18a00972cc7e246dc258f85cf",
+      "source_snapshot": "flutter_source_level_16.json",
+      "split": "holdout",
+      "stratum": "raw_direct",
+      "structure": {
+        "blocker_pairs": 34,
+        "boxes": 8,
+        "colors": 4,
+        "plates": 8,
+        "screws": 23,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 17,
+        "memo_prunes": 4546,
+        "nodes_expanded": 1451
+      },
+      "expected_status": "unsolvable",
+      "file": "hol_level_16_general.json",
+      "instance_id": "hol_level_16_general",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 167001
+      },
+      "sha256": "ae06e75205c1ba65a45c58d8669df3aa638264c37e3099d4ca75457efca98146",
+      "source_snapshot": "flutter_source_level_16.json",
+      "split": "holdout",
+      "stratum": "general_mutation",
+      "structure": {
+        "blocker_pairs": 34,
+        "boxes": 8,
+        "colors": 4,
+        "plates": 8,
+        "screws": 23,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 23,
+        "memo_prunes": 41,
+        "nodes_expanded": 102
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "hol_level_16_boundary_01",
+      "file": "hol_level_16_boundary_01_solvable_W1.json",
+      "instance_id": "hol_level_16_boundary_01_solvable_W1",
+      "recipe": {
+        "box_swaps": 4,
+        "screw_color_swaps": 10,
+        "seed": 160003
+      },
+      "sha256": "d569587a9fb2584efe31dddf4e929da6dabaca3b80473bf3c6af8896f5a8b28f",
+      "source_snapshot": "flutter_source_level_16.json",
+      "split": "holdout",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 34,
+        "boxes": 8,
+        "colors": 4,
+        "plates": 8,
+        "screws": 23,
+        "waiting_capacity": 1
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 2,
+        "memo_prunes": 1,
+        "nodes_expanded": 4
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "hol_level_16_boundary_01",
+      "file": "hol_level_16_boundary_01_unsolvable_W0.json",
+      "instance_id": "hol_level_16_boundary_01_unsolvable_W0",
+      "recipe": {
+        "box_swaps": 4,
+        "screw_color_swaps": 10,
+        "seed": 160003
+      },
+      "sha256": "362575de40961cd8eefa70e7ee68da8059901f43b4313288dd6f39664aab5192",
+      "source_snapshot": "flutter_source_level_16.json",
+      "split": "holdout",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 34,
+        "boxes": 8,
+        "colors": 4,
+        "plates": 8,
+        "screws": 23,
+        "waiting_capacity": 0
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 25,
+        "memo_prunes": 0,
+        "nodes_expanded": 25
+      },
+      "expected_status": "solved",
+      "file": "hol_level_19_raw.json",
+      "instance_id": "hol_level_19_raw",
+      "sha256": "0851eedcc28198bc9a3bf3ab9fb8608c77348724630f5ebcb1b2c8194d981a8a",
+      "source_snapshot": "flutter_source_level_19.json",
+      "split": "holdout",
+      "stratum": "raw_direct",
+      "structure": {
+        "blocker_pairs": 14,
+        "boxes": 9,
+        "colors": 4,
+        "plates": 8,
+        "screws": 25,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 16,
+        "memo_prunes": 16781,
+        "nodes_expanded": 4895
+      },
+      "expected_status": "unsolvable",
+      "file": "hol_level_19_general.json",
+      "instance_id": "hol_level_19_general",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 197001
+      },
+      "sha256": "04d0630074bfa5610f859734bd2079ba1953a82d78ce0fca9fcfc2348cc4d193",
+      "source_snapshot": "flutter_source_level_19.json",
+      "split": "holdout",
+      "stratum": "general_mutation",
+      "structure": {
+        "blocker_pairs": 14,
+        "boxes": 9,
+        "colors": 4,
+        "plates": 8,
+        "screws": 25,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 25,
+        "memo_prunes": 5181,
+        "nodes_expanded": 2138
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "hol_level_19_boundary_01",
+      "file": "hol_level_19_boundary_01_solvable_W2.json",
+      "instance_id": "hol_level_19_boundary_01_solvable_W2",
+      "recipe": {
+        "box_swaps": 4,
+        "screw_color_swaps": 10,
+        "seed": 190003
+      },
+      "sha256": "fb42d9df153445d9b49515f9f6f2c5d7dfcc4dd723dc393c7dbd5f629b37f92a",
+      "source_snapshot": "flutter_source_level_19.json",
+      "split": "holdout",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 14,
+        "boxes": 9,
+        "colors": 4,
+        "plates": 8,
+        "screws": 25,
+        "waiting_capacity": 2
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 10,
+        "memo_prunes": 1241,
+        "nodes_expanded": 664
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "hol_level_19_boundary_01",
+      "file": "hol_level_19_boundary_01_unsolvable_W1.json",
+      "instance_id": "hol_level_19_boundary_01_unsolvable_W1",
+      "recipe": {
+        "box_swaps": 4,
+        "screw_color_swaps": 10,
+        "seed": 190003
+      },
+      "sha256": "becf9e78557ddecf972b17fef27f09b30842a6629fb2cbade2823cb64fd219a6",
+      "source_snapshot": "flutter_source_level_19.json",
+      "split": "holdout",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 14,
+        "boxes": 9,
+        "colors": 4,
+        "plates": 8,
+        "screws": 25,
+        "waiting_capacity": 1
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 23,
+        "memo_prunes": 0,
+        "nodes_expanded": 23
+      },
+      "expected_status": "solved",
+      "file": "hol_level_11_seed_111_raw.json",
+      "instance_id": "hol_level_11_seed_111_raw",
+      "sha256": "05e3bd61a85aa3b47014ca1d98bc32f70f320ea3d00ebd806350e8f212af5824",
+      "source_snapshot": "flutter_source_level_11_seed_111.json",
+      "split": "holdout",
+      "stratum": "raw_direct",
+      "structure": {
+        "blocker_pairs": 34,
+        "boxes": 8,
+        "colors": 4,
+        "plates": 8,
+        "screws": 23,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 23,
+        "memo_prunes": 330,
+        "nodes_expanded": 218
+      },
+      "expected_status": "solved",
+      "file": "hol_level_11_seed_111_general.json",
+      "instance_id": "hol_level_11_seed_111_general",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 111117001
+      },
+      "sha256": "faf6c4365115874bc05b4ef830e0125beb0f361d9b01092a0eeac330ee8f6472",
+      "source_snapshot": "flutter_source_level_11_seed_111.json",
+      "split": "holdout",
+      "stratum": "general_mutation",
+      "structure": {
+        "blocker_pairs": 34,
+        "boxes": 8,
+        "colors": 4,
+        "plates": 8,
+        "screws": 23,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 23,
+        "memo_prunes": 748,
+        "nodes_expanded": 404
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "hol_level_11_seed_111_boundary_01",
+      "file": "hol_level_11_seed_111_boundary_01_solvable_W3.json",
+      "instance_id": "hol_level_11_seed_111_boundary_01_solvable_W3",
+      "recipe": {
+        "box_swaps": 1,
+        "screw_color_swaps": 5,
+        "seed": 111110008
+      },
+      "sha256": "215434c68f97bb9eee8afdd331706ae670f4d75758ea5a8349bd793976880802",
+      "source_snapshot": "flutter_source_level_11_seed_111.json",
+      "split": "holdout",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 34,
+        "boxes": 8,
+        "colors": 4,
+        "plates": 8,
+        "screws": 23,
+        "waiting_capacity": 3
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 7,
+        "memo_prunes": 1144,
+        "nodes_expanded": 454
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "hol_level_11_seed_111_boundary_01",
+      "file": "hol_level_11_seed_111_boundary_01_unsolvable_W2.json",
+      "instance_id": "hol_level_11_seed_111_boundary_01_unsolvable_W2",
+      "recipe": {
+        "box_swaps": 1,
+        "screw_color_swaps": 5,
+        "seed": 111110008
+      },
+      "sha256": "8f2ae5089f101ec193ca7f3e8785d6f593d0cb0108256c6b61fc7d4dad08efc3",
+      "source_snapshot": "flutter_source_level_11_seed_111.json",
+      "split": "holdout",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 34,
+        "boxes": 8,
+        "colors": 4,
+        "plates": 8,
+        "screws": 23,
+        "waiting_capacity": 2
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 20,
+        "memo_prunes": 0,
+        "nodes_expanded": 20
+      },
+      "expected_status": "solved",
+      "file": "hol_level_13_seed_131_raw.json",
+      "instance_id": "hol_level_13_seed_131_raw",
+      "sha256": "a3164e2c960278c56780c7d905f4b7a41e205ddc899ae128655ff34e8ca2a385",
+      "source_snapshot": "flutter_source_level_13_seed_131.json",
+      "split": "holdout",
+      "stratum": "raw_direct",
+      "structure": {
+        "blocker_pairs": 5,
+        "boxes": 7,
+        "colors": 4,
+        "plates": 9,
+        "screws": 20,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 20,
+        "memo_prunes": 1297,
+        "nodes_expanded": 720
+      },
+      "expected_status": "solved",
+      "file": "hol_level_13_seed_131_general.json",
+      "instance_id": "hol_level_13_seed_131_general",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 131317001
+      },
+      "sha256": "ab100f1fc9742d547b80fa58a44e4971e7ef069f7b0d4b6df09eb12887589325",
+      "source_snapshot": "flutter_source_level_13_seed_131.json",
+      "split": "holdout",
+      "stratum": "general_mutation",
+      "structure": {
+        "blocker_pairs": 5,
+        "boxes": 7,
+        "colors": 4,
+        "plates": 9,
+        "screws": 20,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 20,
+        "memo_prunes": 22493,
+        "nodes_expanded": 6879
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "hol_level_13_seed_131_boundary_01",
+      "file": "hol_level_13_seed_131_boundary_01_solvable_W3.json",
+      "instance_id": "hol_level_13_seed_131_boundary_01_solvable_W3",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 131310001
+      },
+      "sha256": "758ebf046fa915fce43573ea5620228ca4705f6ddd08f8a7586360bd61f4399f",
+      "source_snapshot": "flutter_source_level_13_seed_131.json",
+      "split": "holdout",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 5,
+        "boxes": 7,
+        "colors": 4,
+        "plates": 9,
+        "screws": 20,
+        "waiting_capacity": 3
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 8,
+        "memo_prunes": 11212,
+        "nodes_expanded": 3771
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "hol_level_13_seed_131_boundary_01",
+      "file": "hol_level_13_seed_131_boundary_01_unsolvable_W2.json",
+      "instance_id": "hol_level_13_seed_131_boundary_01_unsolvable_W2",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 131310001
+      },
+      "sha256": "3bd10da26521c260058a1d67c412a6f5817799fd3d4dadc727ebae49dc3fb192",
+      "source_snapshot": "flutter_source_level_13_seed_131.json",
+      "split": "holdout",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 5,
+        "boxes": 7,
+        "colors": 4,
+        "plates": 9,
+        "screws": 20,
+        "waiting_capacity": 2
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 23,
+        "memo_prunes": 0,
+        "nodes_expanded": 23
+      },
+      "expected_status": "solved",
+      "file": "hol_level_14_seed_141_raw.json",
+      "instance_id": "hol_level_14_seed_141_raw",
+      "sha256": "db9f733037850b248f63fecd0d625290c12ecf5a93a9a9395931f814759aa332",
+      "source_snapshot": "flutter_source_level_14_seed_141.json",
+      "split": "holdout",
+      "stratum": "raw_direct",
+      "structure": {
+        "blocker_pairs": 19,
+        "boxes": 8,
+        "colors": 4,
+        "plates": 8,
+        "screws": 23,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 5,
+        "memo_prunes": 2241,
+        "nodes_expanded": 792
+      },
+      "expected_status": "unsolvable",
+      "file": "hol_level_14_seed_141_general.json",
+      "instance_id": "hol_level_14_seed_141_general",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 141417001
+      },
+      "sha256": "18b2877276799419f567d18c355286fec146a06c020d13f50c70380e49defeef",
+      "source_snapshot": "flutter_source_level_14_seed_141.json",
+      "split": "holdout",
+      "stratum": "general_mutation",
+      "structure": {
+        "blocker_pairs": 19,
+        "boxes": 8,
+        "colors": 4,
+        "plates": 8,
+        "screws": 23,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 23,
+        "memo_prunes": 41,
+        "nodes_expanded": 66
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "hol_level_14_seed_141_boundary_01",
+      "file": "hol_level_14_seed_141_boundary_01_solvable_W2.json",
+      "instance_id": "hol_level_14_seed_141_boundary_01_solvable_W2",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 141410001
+      },
+      "sha256": "1b9949e5f1a1bf1c96d603cf12a5e0c2cda170b53f60f5b9d9dc97d5351c6448",
+      "source_snapshot": "flutter_source_level_14_seed_141.json",
+      "split": "holdout",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 19,
+        "boxes": 8,
+        "colors": 4,
+        "plates": 8,
+        "screws": 23,
+        "waiting_capacity": 2
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 15,
+        "memo_prunes": 265,
+        "nodes_expanded": 189
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "hol_level_14_seed_141_boundary_01",
+      "file": "hol_level_14_seed_141_boundary_01_unsolvable_W1.json",
+      "instance_id": "hol_level_14_seed_141_boundary_01_unsolvable_W1",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 141410001
+      },
+      "sha256": "4b82a9c0014cc1363a0a7a7dd810d0aee2cefa7b3b93eda5b83bcfd7ed1f5571",
+      "source_snapshot": "flutter_source_level_14_seed_141.json",
+      "split": "holdout",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 19,
+        "boxes": 8,
+        "colors": 4,
+        "plates": 8,
+        "screws": 23,
+        "waiting_capacity": 1
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 25,
+        "memo_prunes": 2,
+        "nodes_expanded": 32
+      },
+      "expected_status": "solved",
+      "file": "hol_level_16_seed_161_raw.json",
+      "instance_id": "hol_level_16_seed_161_raw",
+      "sha256": "0090c02f8c31bbf35f10c4ec156afa654bd40ee201f52b80d28471101ab2c062",
+      "source_snapshot": "flutter_source_level_16_seed_161.json",
+      "split": "holdout",
+      "stratum": "raw_direct",
+      "structure": {
+        "blocker_pairs": 33,
+        "boxes": 9,
+        "colors": 4,
+        "plates": 9,
+        "screws": 25,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 10,
+        "memo_prunes": 1337,
+        "nodes_expanded": 495
+      },
+      "expected_status": "unsolvable",
+      "file": "hol_level_16_seed_161_general.json",
+      "instance_id": "hol_level_16_seed_161_general",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 161617001
+      },
+      "sha256": "efa27e19923cf828bfa94e28e98b0d3fdf56a0177fe5d6ae95674b57fd845eaf",
+      "source_snapshot": "flutter_source_level_16_seed_161.json",
+      "split": "holdout",
+      "stratum": "general_mutation",
+      "structure": {
+        "blocker_pairs": 33,
+        "boxes": 9,
+        "colors": 4,
+        "plates": 9,
+        "screws": 25,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 25,
+        "memo_prunes": 7,
+        "nodes_expanded": 38
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "hol_level_16_seed_161_boundary_01",
+      "file": "hol_level_16_seed_161_boundary_01_solvable_W2.json",
+      "instance_id": "hol_level_16_seed_161_boundary_01_solvable_W2",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 8,
+        "seed": 161610009
+      },
+      "sha256": "2a68a4e95bdf138ab90c46eadf9d3ffa6e6e20e21ff34cb6680a3afa3eeca238",
+      "source_snapshot": "flutter_source_level_16_seed_161.json",
+      "split": "holdout",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 33,
+        "boxes": 9,
+        "colors": 4,
+        "plates": 9,
+        "screws": 25,
+        "waiting_capacity": 2
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 21,
+        "memo_prunes": 121,
+        "nodes_expanded": 111
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "hol_level_16_seed_161_boundary_01",
+      "file": "hol_level_16_seed_161_boundary_01_unsolvable_W1.json",
+      "instance_id": "hol_level_16_seed_161_boundary_01_unsolvable_W1",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 8,
+        "seed": 161610009
+      },
+      "sha256": "62f28c4d587630b746aab0b7f083cee59b9c46db81e15957e03fb67ccf5308a1",
+      "source_snapshot": "flutter_source_level_16_seed_161.json",
+      "split": "holdout",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 33,
+        "boxes": 9,
+        "colors": 4,
+        "plates": 9,
+        "screws": 25,
+        "waiting_capacity": 1
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 33,
+        "memo_prunes": 0,
+        "nodes_expanded": 33
+      },
+      "expected_status": "solved",
+      "file": "hol_level_19_seed_191_raw.json",
+      "instance_id": "hol_level_19_seed_191_raw",
+      "sha256": "eeb6f39055ca0e7c33a410d95b7fafeea7b65bcaff92ae3268b20ca0473aaefa",
+      "source_snapshot": "flutter_source_level_19_seed_191.json",
+      "split": "holdout",
+      "stratum": "raw_direct",
+      "structure": {
+        "blocker_pairs": 31,
+        "boxes": 11,
+        "colors": 4,
+        "plates": 10,
+        "screws": 33,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 33,
+        "memo_prunes": 0,
+        "nodes_expanded": 33
+      },
+      "expected_status": "solved",
+      "file": "hol_level_19_seed_191_general.json",
+      "instance_id": "hol_level_19_seed_191_general",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 191917001
+      },
+      "sha256": "42ad81665c6c74bd37ff065ea567402daccc054897cb556e4765aec3bc836213",
+      "source_snapshot": "flutter_source_level_19_seed_191.json",
+      "split": "holdout",
+      "stratum": "general_mutation",
+      "structure": {
+        "blocker_pairs": 31,
+        "boxes": 11,
+        "colors": 4,
+        "plates": 10,
+        "screws": 33,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 33,
+        "memo_prunes": 57,
+        "nodes_expanded": 77
+      },
+      "boundary_class": "solvable_at_minimum",
+      "expected_status": "solved",
+      "family_id": "hol_level_19_seed_191_boundary_01",
+      "file": "hol_level_19_seed_191_boundary_01_solvable_W4.json",
+      "instance_id": "hol_level_19_seed_191_boundary_01_solvable_W4",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 191910001
+      },
+      "sha256": "f95d8590b994073c538ef7bc22d3ca659f4d0d5b8a13e5a7a2010b78db32b905",
+      "source_snapshot": "flutter_source_level_19_seed_191.json",
+      "split": "holdout",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 31,
+        "boxes": 11,
+        "colors": 4,
+        "plates": 10,
+        "screws": 33,
+        "waiting_capacity": 4
+      }
+    },
+    {
+      "baseline_label": {
+        "max_depth": 17,
+        "memo_prunes": 18431,
+        "nodes_expanded": 5654
+      },
+      "boundary_class": "unsolvable_below_minimum",
+      "expected_status": "unsolvable",
+      "family_id": "hol_level_19_seed_191_boundary_01",
+      "file": "hol_level_19_seed_191_boundary_01_unsolvable_W3.json",
+      "instance_id": "hol_level_19_seed_191_boundary_01_unsolvable_W3",
+      "recipe": {
+        "box_swaps": 2,
+        "screw_color_swaps": 4,
+        "seed": 191910001
+      },
+      "sha256": "8db45b5cd7c203b390949994015f3e08da95cb2c1febe1077654b7eb6ad28dbc",
+      "source_snapshot": "flutter_source_level_19_seed_191.json",
+      "split": "holdout",
+      "stratum": "capacity_boundary",
+      "structure": {
+        "blocker_pairs": 31,
+        "boxes": 11,
+        "colors": 4,
+        "plates": 10,
+        "screws": 33,
+        "waiting_capacity": 3
+      }
+    }
+  ],
+  "rejected_attempts": [
+    {
+      "attempt": 1,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_2.json",
+      "split": "development",
+      "statuses": [
+        "solved",
+        "solved",
+        "solved",
+        "solved",
+        "solved"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 3,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_2.json",
+      "split": "development",
+      "statuses": [
+        "solved",
+        "solved",
+        "solved",
+        "solved",
+        "solved"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 1,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_3.json",
+      "split": "development",
+      "statuses": [
+        "solved",
+        "solved",
+        "solved",
+        "solved",
+        "solved"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 1,
+      "reason": "baseline_limit_reached",
+      "source_snapshot": "flutter_source_level_4.json",
+      "split": "development",
+      "stratum": "general_mutation"
+    },
+    {
+      "attempt": 2,
+      "reason": "baseline_limit_reached",
+      "source_snapshot": "flutter_source_level_4.json",
+      "split": "development",
+      "stratum": "general_mutation"
+    },
+    {
+      "attempt": 1,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_4.json",
+      "split": "development",
+      "statuses": [
+        "solved",
+        "solved",
+        "solved",
+        "solved",
+        "solved"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 3,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_4.json",
+      "split": "development",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 4,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_4.json",
+      "split": "development",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "limit_reached"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 2,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_5.json",
+      "split": "development",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 3,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_5.json",
+      "split": "development",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 4,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_5.json",
+      "split": "development",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 5,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_5.json",
+      "split": "development",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 6,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_5.json",
+      "split": "development",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 7,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_5.json",
+      "split": "development",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 1,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_6.json",
+      "split": "development",
+      "statuses": [
+        "solved",
+        "solved",
+        "solved",
+        "solved",
+        "solved"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 2,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_6.json",
+      "split": "development",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "limit_reached"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 3,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_6.json",
+      "split": "development",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "limit_reached",
+        "solved"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 4,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_6.json",
+      "split": "development",
+      "statuses": [
+        "solved",
+        "solved",
+        "solved",
+        "solved",
+        "solved"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 5,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_6.json",
+      "split": "development",
+      "statuses": [
+        "solved",
+        "solved",
+        "solved",
+        "solved",
+        "solved"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 1,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_8.json",
+      "split": "development",
+      "statuses": [
+        "solved",
+        "solved",
+        "solved",
+        "solved",
+        "solved"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 1,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_9.json",
+      "split": "development",
+      "statuses": [
+        "solved",
+        "solved",
+        "solved",
+        "solved",
+        "solved"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 1,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_6_seed_61.json",
+      "split": "development",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "limit_reached",
+        "solved"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 3,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_6_seed_61.json",
+      "split": "development",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 1,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_11.json",
+      "split": "holdout",
+      "statuses": [
+        "solved",
+        "solved",
+        "solved",
+        "solved",
+        "solved"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 2,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_11.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "limit_reached",
+        "solved",
+        "solved"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 1,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_13.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 2,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_13.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 3,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_13.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 4,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_13.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 5,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_13.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 6,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_13.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 7,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_13.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 8,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_13.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 9,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_13.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 10,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_13.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 11,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_13.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 12,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_13.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 13,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_13.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 14,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_13.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 1,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_16.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 2,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_16.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 1,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_19.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 2,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_19.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 1,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_11_seed_111.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 2,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_11_seed_111.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 3,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_11_seed_111.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 4,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_11_seed_111.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 5,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_11_seed_111.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 6,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_11_seed_111.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 7,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_11_seed_111.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 1,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_16_seed_161.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 2,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_16_seed_161.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 3,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_16_seed_161.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 4,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_16_seed_161.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 5,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_16_seed_161.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 6,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_16_seed_161.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 7,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_16_seed_161.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    },
+    {
+      "attempt": 8,
+      "reason": "boundary_not_exactly_confirmed",
+      "source_snapshot": "flutter_source_level_16_seed_161.json",
+      "split": "holdout",
+      "statuses": [
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable",
+        "unsolvable"
+      ],
+      "stratum": "capacity_boundary"
+    }
+  ],
+  "selection_policy": "baseline-only deterministic selection; BPCB was not imported or run",
+  "source_commit": "5ee0b84970eba12d4fd7f937bae162bf75ba61f3"
+}

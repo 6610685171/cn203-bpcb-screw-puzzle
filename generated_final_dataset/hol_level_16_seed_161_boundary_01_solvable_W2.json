@@ -1,0 +1,351 @@
+{
+  "boxes": [
+    {
+      "capacity": 3,
+      "color": "purple"
+    },
+    {
+      "capacity": 3,
+      "color": "cyan"
+    },
+    {
+      "capacity": 3,
+      "color": "lime"
+    },
+    {
+      "capacity": 3,
+      "color": "orange"
+    },
+    {
+      "capacity": 3,
+      "color": "purple"
+    },
+    {
+      "capacity": 3,
+      "color": "cyan"
+    },
+    {
+      "capacity": 3,
+      "color": "lime"
+    },
+    {
+      "capacity": 3,
+      "color": "orange"
+    },
+    {
+      "capacity": 1,
+      "color": "purple"
+    }
+  ],
+  "covers": [
+    {
+      "plate_id": "treat_bar_1",
+      "screw_id": "tb_0_0"
+    },
+    {
+      "plate_id": "treat_bar_1",
+      "screw_id": "tb_4_0"
+    },
+    {
+      "plate_id": "treat_bar_1",
+      "screw_id": "tc_0"
+    },
+    {
+      "plate_id": "treat_bar_1",
+      "screw_id": "tsl_0"
+    },
+    {
+      "plate_id": "treat_bar_1",
+      "screw_id": "tsl_1"
+    },
+    {
+      "plate_id": "treat_bar_2",
+      "screw_id": "tb_1_1"
+    },
+    {
+      "plate_id": "treat_bar_2",
+      "screw_id": "tc_0"
+    },
+    {
+      "plate_id": "treat_bar_2",
+      "screw_id": "tc_1"
+    },
+    {
+      "plate_id": "treat_bar_2",
+      "screw_id": "tsl_1"
+    },
+    {
+      "plate_id": "treat_bar_2",
+      "screw_id": "tsr_1"
+    },
+    {
+      "plate_id": "treat_bar_3",
+      "screw_id": "tb_0_1"
+    },
+    {
+      "plate_id": "treat_bar_3",
+      "screw_id": "tb_2_1"
+    },
+    {
+      "plate_id": "treat_bar_3",
+      "screw_id": "tb_4_1"
+    },
+    {
+      "plate_id": "treat_bar_3",
+      "screw_id": "tc_0"
+    },
+    {
+      "plate_id": "treat_bar_3",
+      "screw_id": "tc_2"
+    },
+    {
+      "plate_id": "treat_bar_3",
+      "screw_id": "tp_0"
+    },
+    {
+      "plate_id": "treat_bar_3",
+      "screw_id": "tp_1"
+    },
+    {
+      "plate_id": "treat_bar_3",
+      "screw_id": "tp_2"
+    },
+    {
+      "plate_id": "treat_bar_3",
+      "screw_id": "tsl_1"
+    },
+    {
+      "plate_id": "treat_bar_3",
+      "screw_id": "tsr_1"
+    },
+    {
+      "plate_id": "treat_bar_4",
+      "screw_id": "tc_0"
+    },
+    {
+      "plate_id": "treat_bar_4",
+      "screw_id": "tc_1"
+    },
+    {
+      "plate_id": "treat_popsicle",
+      "screw_id": "tb_0_1"
+    },
+    {
+      "plate_id": "treat_popsicle",
+      "screw_id": "tb_2_1"
+    },
+    {
+      "plate_id": "treat_popsicle",
+      "screw_id": "tb_4_1"
+    },
+    {
+      "plate_id": "treat_popsicle",
+      "screw_id": "tc_2"
+    },
+    {
+      "plate_id": "treat_popsicle",
+      "screw_id": "tsl_1"
+    },
+    {
+      "plate_id": "treat_popsicle",
+      "screw_id": "tsr_1"
+    },
+    {
+      "plate_id": "treat_scoop_l",
+      "screw_id": "tb_0_0"
+    },
+    {
+      "plate_id": "treat_scoop_l",
+      "screw_id": "tb_0_1"
+    },
+    {
+      "plate_id": "treat_scoop_r",
+      "screw_id": "tb_0_1"
+    },
+    {
+      "plate_id": "treat_scoop_r",
+      "screw_id": "tb_0_2"
+    },
+    {
+      "plate_id": "treat_scoop_r",
+      "screw_id": "tsl_1"
+    }
+  ],
+  "format": "osrp-level-v1",
+  "name": "ScrewJam level 16 seed 161 [seed=161610009, box_swaps=2, color_swaps=8, W=2]",
+  "plates": [
+    {
+      "id": "treat_cone",
+      "layer": 0,
+      "order": 0
+    },
+    {
+      "id": "treat_scoop_l",
+      "layer": 1,
+      "order": 1
+    },
+    {
+      "id": "treat_scoop_r",
+      "layer": 2,
+      "order": 2
+    },
+    {
+      "id": "treat_popsicle",
+      "layer": 3,
+      "order": 3
+    },
+    {
+      "id": "treat_bar_0",
+      "layer": 0,
+      "order": 4
+    },
+    {
+      "id": "treat_bar_1",
+      "layer": 1,
+      "order": 5
+    },
+    {
+      "id": "treat_bar_2",
+      "layer": 2,
+      "order": 6
+    },
+    {
+      "id": "treat_bar_3",
+      "layer": 3,
+      "order": 7
+    },
+    {
+      "id": "treat_bar_4",
+      "layer": 0,
+      "order": 8
+    }
+  ],
+  "screws": [
+    {
+      "color": "orange",
+      "id": "tc_0",
+      "plate_id": "treat_cone"
+    },
+    {
+      "color": "lime",
+      "id": "tc_1",
+      "plate_id": "treat_cone"
+    },
+    {
+      "color": "purple",
+      "id": "tc_2",
+      "plate_id": "treat_cone"
+    },
+    {
+      "color": "orange",
+      "id": "tsl_0",
+      "plate_id": "treat_scoop_l"
+    },
+    {
+      "color": "cyan",
+      "id": "tsl_1",
+      "plate_id": "treat_scoop_l"
+    },
+    {
+      "color": "purple",
+      "id": "tsr_0",
+      "plate_id": "treat_scoop_r"
+    },
+    {
+      "color": "cyan",
+      "id": "tsr_1",
+      "plate_id": "treat_scoop_r"
+    },
+    {
+      "color": "purple",
+      "id": "tp_0",
+      "plate_id": "treat_popsicle"
+    },
+    {
+      "color": "cyan",
+      "id": "tp_1",
+      "plate_id": "treat_popsicle"
+    },
+    {
+      "color": "orange",
+      "id": "tp_2",
+      "plate_id": "treat_popsicle"
+    },
+    {
+      "color": "cyan",
+      "id": "tb_0_0",
+      "plate_id": "treat_bar_0"
+    },
+    {
+      "color": "purple",
+      "id": "tb_0_1",
+      "plate_id": "treat_bar_0"
+    },
+    {
+      "color": "lime",
+      "id": "tb_0_2",
+      "plate_id": "treat_bar_0"
+    },
+    {
+      "color": "purple",
+      "id": "tb_1_0",
+      "plate_id": "treat_bar_1"
+    },
+    {
+      "color": "purple",
+      "id": "tb_1_1",
+      "plate_id": "treat_bar_1"
+    },
+    {
+      "color": "lime",
+      "id": "tb_1_2",
+      "plate_id": "treat_bar_1"
+    },
+    {
+      "color": "lime",
+      "id": "tb_2_0",
+      "plate_id": "treat_bar_2"
+    },
+    {
+      "color": "orange",
+      "id": "tb_2_1",
+      "plate_id": "treat_bar_2"
+    },
+    {
+      "color": "purple",
+      "id": "tb_2_2",
+      "plate_id": "treat_bar_2"
+    },
+    {
+      "color": "cyan",
+      "id": "tb_3_0",
+      "plate_id": "treat_bar_3"
+    },
+    {
+      "color": "cyan",
+      "id": "tb_3_1",
+      "plate_id": "treat_bar_3"
+    },
+    {
+      "color": "orange",
+      "id": "tb_3_2",
+      "plate_id": "treat_bar_3"
+    },
+    {
+      "color": "lime",
+      "id": "tb_4_0",
+      "plate_id": "treat_bar_4"
+    },
+    {
+      "color": "orange",
+      "id": "tb_4_1",
+      "plate_id": "treat_bar_4"
+    },
+    {
+      "color": "lime",
+      "id": "tb_4_2",
+      "plate_id": "treat_bar_4"
+    }
+  ],
+  "waiting_capacity": 2
+}

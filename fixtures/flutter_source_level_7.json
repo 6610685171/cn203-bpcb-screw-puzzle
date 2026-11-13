@@ -1,0 +1,347 @@
+{
+  "boxes": [
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "lime"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "coral"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "cyan"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "lime"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "coral"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "cyan"
+    },
+    {
+      "capacity": 1,
+      "collected": [],
+      "color": "lime"
+    }
+  ],
+  "covers": [
+    {
+      "plate_id": "treat_bar_1",
+      "screw_id": "tc_0"
+    },
+    {
+      "plate_id": "treat_bar_2",
+      "screw_id": "tc_0"
+    },
+    {
+      "plate_id": "treat_bar_2",
+      "screw_id": "tc_1"
+    },
+    {
+      "plate_id": "treat_popsicle",
+      "screw_id": "tc_2"
+    },
+    {
+      "plate_id": "treat_bar_1",
+      "screw_id": "tc_2"
+    },
+    {
+      "plate_id": "treat_scoop_r",
+      "screw_id": "tsl_1"
+    },
+    {
+      "plate_id": "treat_bar_0",
+      "screw_id": "tsl_1"
+    },
+    {
+      "plate_id": "treat_bar_1",
+      "screw_id": "tsl_1"
+    },
+    {
+      "plate_id": "treat_scoop_l",
+      "screw_id": "tp_0"
+    },
+    {
+      "plate_id": "treat_scoop_r",
+      "screw_id": "tp_0"
+    },
+    {
+      "plate_id": "treat_bar_1",
+      "screw_id": "tp_0"
+    },
+    {
+      "plate_id": "treat_scoop_l",
+      "screw_id": "tp_1"
+    },
+    {
+      "plate_id": "treat_scoop_r",
+      "screw_id": "tp_1"
+    },
+    {
+      "plate_id": "treat_bar_0",
+      "screw_id": "tp_1"
+    },
+    {
+      "plate_id": "treat_bar_1",
+      "screw_id": "tp_1"
+    },
+    {
+      "plate_id": "treat_bar_2",
+      "screw_id": "tp_1"
+    },
+    {
+      "plate_id": "treat_bar_1",
+      "screw_id": "tp_2"
+    },
+    {
+      "plate_id": "treat_bar_1",
+      "screw_id": "tb_0_0"
+    },
+    {
+      "plate_id": "treat_scoop_r",
+      "screw_id": "tb_0_1"
+    },
+    {
+      "plate_id": "treat_bar_1",
+      "screw_id": "tb_0_1"
+    },
+    {
+      "plate_id": "treat_scoop_r",
+      "screw_id": "tb_0_2"
+    },
+    {
+      "plate_id": "treat_bar_1",
+      "screw_id": "tb_2_0"
+    },
+    {
+      "plate_id": "treat_bar_1",
+      "screw_id": "tb_2_1"
+    }
+  ],
+  "metadata": {
+    "level": 7,
+    "seed": null,
+    "source_commit": "5ee0b84970eba12d4fd7f937bae162bf75ba61f3"
+  },
+  "name": "ScrewJam level 7",
+  "plates": [
+    {
+      "angle": 1.6101215711672272,
+      "height": 160.0,
+      "holes": [
+        {
+          "color": "cyan",
+          "dx": -36.0,
+          "dy": -30.0,
+          "id": "tc_0"
+        },
+        {
+          "color": "cyan",
+          "dx": 36.0,
+          "dy": -30.0,
+          "id": "tc_1"
+        },
+        {
+          "color": "lime",
+          "dx": 0.0,
+          "dy": 40.0,
+          "id": "tc_2"
+        }
+      ],
+      "id": "treat_cone",
+      "layer": 0,
+      "order": 0,
+      "shape_type": "iceCreamCone",
+      "width": 150.0,
+      "x": 140.2950316619171,
+      "y": 241.98939320630865
+    },
+    {
+      "angle": 1.6101215711672272,
+      "height": 100.0,
+      "holes": [
+        {
+          "color": "lime",
+          "dx": -22.0,
+          "dy": -18.0,
+          "id": "tsl_0"
+        },
+        {
+          "color": "lime",
+          "dx": 18.0,
+          "dy": 18.0,
+          "id": "tsl_1"
+        }
+      ],
+      "id": "treat_scoop_l",
+      "layer": 1,
+      "order": 1,
+      "shape_type": "iceCreamScoopLeft",
+      "width": 110.0,
+      "x": 231.60147808524542,
+      "y": 210.5548128600741
+    },
+    {
+      "angle": 1.6101215711672272,
+      "height": 100.0,
+      "holes": [
+        {
+          "color": "lime",
+          "dx": 22.0,
+          "dy": -18.0,
+          "id": "tsr_0"
+        },
+        {
+          "color": "lime",
+          "dx": -18.0,
+          "dy": 18.0,
+          "id": "tsr_1"
+        }
+      ],
+      "id": "treat_scoop_r",
+      "layer": 2,
+      "order": 2,
+      "shape_type": "iceCreamScoopRight",
+      "width": 110.0,
+      "x": 228.8494204385026,
+      "y": 280.50069321559613
+    },
+    {
+      "angle": 1.6101215711672272,
+      "height": 170.0,
+      "holes": [
+        {
+          "color": "lime",
+          "dx": 0.0,
+          "dy": -60.0,
+          "id": "tp_0"
+        },
+        {
+          "color": "cyan",
+          "dx": 0.0,
+          "dy": 0.0,
+          "id": "tp_1"
+        },
+        {
+          "color": "lime",
+          "dx": 0.0,
+          "dy": 60.0,
+          "id": "tp_2"
+        }
+      ],
+      "id": "treat_popsicle",
+      "layer": 0,
+      "order": 3,
+      "shape_type": "popsicleStick",
+      "width": 34.0,
+      "x": 195.252509084113,
+      "y": 244.1517242144637
+    },
+    {
+      "angle": 1.6101215711672272,
+      "height": 34.0,
+      "holes": [
+        {
+          "color": "cyan",
+          "dx": -55.0,
+          "dy": 0.0,
+          "id": "tb_0_0"
+        },
+        {
+          "color": "cyan",
+          "dx": 0.0,
+          "dy": 0.0,
+          "id": "tb_0_1"
+        },
+        {
+          "color": "coral",
+          "dx": 55.0,
+          "dy": 0.0,
+          "id": "tb_0_2"
+        }
+      ],
+      "id": "treat_bar_0",
+      "layer": 1,
+      "order": 4,
+      "shape_type": "linkBar3",
+      "width": 170.0,
+      "x": 209.2416851552174,
+      "y": 244.70213574381228
+    },
+    {
+      "angle": 1.6101215711672272,
+      "height": 170.0,
+      "holes": [
+        {
+          "color": "coral",
+          "dx": 0.0,
+          "dy": -55.0,
+          "id": "tb_1_0"
+        },
+        {
+          "color": "coral",
+          "dx": 0.0,
+          "dy": 0.0,
+          "id": "tb_1_1"
+        },
+        {
+          "color": "cyan",
+          "dx": 0.0,
+          "dy": 55.0,
+          "id": "tb_1_2"
+        }
+      ],
+      "id": "treat_bar_1",
+      "layer": 2,
+      "order": 5,
+      "shape_type": "linkBar3",
+      "width": 34.0,
+      "x": 186.20380308363596,
+      "y": 219.77712842875005
+    },
+    {
+      "angle": 1.6101215711672272,
+      "height": 34.0,
+      "holes": [
+        {
+          "color": "coral",
+          "dx": -55.0,
+          "dy": 0.0,
+          "id": "tb_2_0"
+        },
+        {
+          "color": "coral",
+          "dx": 0.0,
+          "dy": 0.0,
+          "id": "tb_2_1"
+        },
+        {
+          "color": "coral",
+          "dx": 55.0,
+          "dy": 0.0,
+          "id": "tb_2_2"
+        }
+      ],
+      "id": "treat_bar_2",
+      "layer": 0,
+      "order": 6,
+      "shape_type": "linkBar3",
+      "width": 170.0,
+      "x": 177.26642556412162,
+      "y": 243.4440522481584
+    }
+  ],
+  "waiting_capacity": 4
+}

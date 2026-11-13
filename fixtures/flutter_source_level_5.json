@@ -1,0 +1,471 @@
+{
+  "boxes": [
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "yellow"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "purple"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "lime"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "yellow"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "purple"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "lime"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "yellow"
+    },
+    {
+      "capacity": 2,
+      "collected": [],
+      "color": "purple"
+    }
+  ],
+  "covers": [
+    {
+      "plate_id": "vault_u_1",
+      "screw_id": "vu_0_tl"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_0_tl"
+    },
+    {
+      "plate_id": "vault_u_3",
+      "screw_id": "vu_0_tl"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_0_tl"
+    },
+    {
+      "plate_id": "vault_lock_bar1",
+      "screw_id": "vu_0_tl"
+    },
+    {
+      "plate_id": "vault_u_1",
+      "screw_id": "vu_0_tr"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_0_tr"
+    },
+    {
+      "plate_id": "vault_u_3",
+      "screw_id": "vu_0_tr"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_0_tr"
+    },
+    {
+      "plate_id": "vault_u_1",
+      "screw_id": "vu_0_bl"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_0_bl"
+    },
+    {
+      "plate_id": "vault_u_3",
+      "screw_id": "vu_0_bl"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_0_bl"
+    },
+    {
+      "plate_id": "vault_u_1",
+      "screw_id": "vu_0_br"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_0_br"
+    },
+    {
+      "plate_id": "vault_u_3",
+      "screw_id": "vu_0_br"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_0_br"
+    },
+    {
+      "plate_id": "vault_lock_bar1",
+      "screw_id": "vu_0_br"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_1_tl"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_1_tl"
+    },
+    {
+      "plate_id": "vault_lock_bar1",
+      "screw_id": "vu_1_tl"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_1_tr"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_1_tr"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_1_bl"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_1_bl"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_1_br"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_1_br"
+    },
+    {
+      "plate_id": "vault_lock_bar1",
+      "screw_id": "vu_1_br"
+    },
+    {
+      "plate_id": "vault_lock_bar1",
+      "screw_id": "vu_2_tl"
+    },
+    {
+      "plate_id": "vault_lock_bar1",
+      "screw_id": "vu_2_br"
+    },
+    {
+      "plate_id": "vault_u_1",
+      "screw_id": "vu_3_tl"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_3_tl"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_3_tl"
+    },
+    {
+      "plate_id": "vault_lock_bar1",
+      "screw_id": "vu_3_tl"
+    },
+    {
+      "plate_id": "vault_u_1",
+      "screw_id": "vu_3_tr"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_3_tr"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_3_tr"
+    },
+    {
+      "plate_id": "vault_u_1",
+      "screw_id": "vu_3_bl"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_3_bl"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_3_bl"
+    },
+    {
+      "plate_id": "vault_u_1",
+      "screw_id": "vu_3_br"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_3_br"
+    },
+    {
+      "plate_id": "vault_u_4",
+      "screw_id": "vu_3_br"
+    },
+    {
+      "plate_id": "vault_lock_bar1",
+      "screw_id": "vu_3_br"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_4_tl"
+    },
+    {
+      "plate_id": "vault_lock_bar1",
+      "screw_id": "vu_4_tl"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_4_tr"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_4_bl"
+    },
+    {
+      "plate_id": "vault_u_2",
+      "screw_id": "vu_4_br"
+    },
+    {
+      "plate_id": "vault_lock_bar1",
+      "screw_id": "vu_4_br"
+    }
+  ],
+  "metadata": {
+    "level": 5,
+    "seed": null,
+    "source_commit": "5ee0b84970eba12d4fd7f937bae162bf75ba61f3"
+  },
+  "name": "ScrewJam level 5",
+  "plates": [
+    {
+      "angle": -0.021928526928381143,
+      "height": 190.0,
+      "holes": [
+        {
+          "color": "yellow",
+          "dx": -60.800000000000004,
+          "dy": -60.800000000000004,
+          "id": "vu_0_tl"
+        },
+        {
+          "color": "yellow",
+          "dx": 60.800000000000004,
+          "dy": -60.800000000000004,
+          "id": "vu_0_tr"
+        },
+        {
+          "color": "purple",
+          "dx": -60.800000000000004,
+          "dy": 60.800000000000004,
+          "id": "vu_0_bl"
+        },
+        {
+          "color": "purple",
+          "dx": 60.800000000000004,
+          "dy": 60.800000000000004,
+          "id": "vu_0_br"
+        }
+      ],
+      "id": "vault_u_0",
+      "layer": 0,
+      "order": 0,
+      "shape_type": "uBracket",
+      "width": 190.0,
+      "x": 182.68621188168115,
+      "y": 250.3466758166618
+    },
+    {
+      "angle": 3.119664126661412,
+      "height": 172.0,
+      "holes": [
+        {
+          "color": "yellow",
+          "dx": -55.04,
+          "dy": -55.04,
+          "id": "vu_1_tl"
+        },
+        {
+          "color": "purple",
+          "dx": 55.04,
+          "dy": -55.04,
+          "id": "vu_1_tr"
+        },
+        {
+          "color": "purple",
+          "dx": -55.04,
+          "dy": 55.04,
+          "id": "vu_1_bl"
+        },
+        {
+          "color": "purple",
+          "dx": 55.04,
+          "dy": 55.04,
+          "id": "vu_1_br"
+        }
+      ],
+      "id": "vault_u_1",
+      "layer": 1,
+      "order": 1,
+      "shape_type": "uBracket",
+      "width": 172.0,
+      "x": 182.68621188168115,
+      "y": 250.3466758166618
+    },
+    {
+      "angle": -0.021928526928381143,
+      "height": 154.0,
+      "holes": [
+        {
+          "color": "purple",
+          "dx": -49.28,
+          "dy": -49.28,
+          "id": "vu_2_tl"
+        },
+        {
+          "color": "purple",
+          "dx": 49.28,
+          "dy": -49.28,
+          "id": "vu_2_tr"
+        },
+        {
+          "color": "purple",
+          "dx": -49.28,
+          "dy": 49.28,
+          "id": "vu_2_bl"
+        },
+        {
+          "color": "lime",
+          "dx": 49.28,
+          "dy": 49.28,
+          "id": "vu_2_br"
+        }
+      ],
+      "id": "vault_u_2",
+      "layer": 2,
+      "order": 2,
+      "shape_type": "uBracket",
+      "width": 154.0,
+      "x": 182.68621188168115,
+      "y": 250.3466758166618
+    },
+    {
+      "angle": 3.119664126661412,
+      "height": 136.0,
+      "holes": [
+        {
+          "color": "lime",
+          "dx": -43.52,
+          "dy": -43.52,
+          "id": "vu_3_tl"
+        },
+        {
+          "color": "lime",
+          "dx": 43.52,
+          "dy": -43.52,
+          "id": "vu_3_tr"
+        },
+        {
+          "color": "lime",
+          "dx": -43.52,
+          "dy": 43.52,
+          "id": "vu_3_bl"
+        },
+        {
+          "color": "yellow",
+          "dx": 43.52,
+          "dy": 43.52,
+          "id": "vu_3_br"
+        }
+      ],
+      "id": "vault_u_3",
+      "layer": 0,
+      "order": 3,
+      "shape_type": "uBracket",
+      "width": 136.0,
+      "x": 182.68621188168115,
+      "y": 250.3466758166618
+    },
+    {
+      "angle": -0.021928526928381143,
+      "height": 118.0,
+      "holes": [
+        {
+          "color": "lime",
+          "dx": -37.76,
+          "dy": -37.76,
+          "id": "vu_4_tl"
+        },
+        {
+          "color": "lime",
+          "dx": 37.76,
+          "dy": -37.76,
+          "id": "vu_4_tr"
+        },
+        {
+          "color": "yellow",
+          "dx": -37.76,
+          "dy": 37.76,
+          "id": "vu_4_bl"
+        },
+        {
+          "color": "yellow",
+          "dx": 37.76,
+          "dy": 37.76,
+          "id": "vu_4_br"
+        }
+      ],
+      "id": "vault_u_4",
+      "layer": 1,
+      "order": 4,
+      "shape_type": "uBracket",
+      "width": 118.0,
+      "x": 182.68621188168115,
+      "y": 250.3466758166618
+    },
+    {
+      "angle": 0.7634696364690672,
+      "height": 34.0,
+      "holes": [
+        {
+          "color": "yellow",
+          "dx": -60.0,
+          "dy": 0.0,
+          "id": "vlb1_0"
+        },
+        {
+          "color": "yellow",
+          "dx": 0.0,
+          "dy": 0.0,
+          "id": "vlb1_1"
+        },
+        {
+          "color": "yellow",
+          "dx": 60.0,
+          "dy": 0.0,
+          "id": "vlb1_2"
+        }
+      ],
+      "id": "vault_lock_bar1",
+      "layer": 4,
+      "order": 5,
+      "shape_type": "linkBar3",
+      "width": 190.0,
+      "x": 182.68621188168115,
+      "y": 250.3466758166618
+    }
+  ],
+  "waiting_capacity": 4
+}

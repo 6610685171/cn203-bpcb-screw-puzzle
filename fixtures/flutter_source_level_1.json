@@ -1,0 +1,349 @@
+{
+  "boxes": [
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "pink"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "yellow"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "pink"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "yellow"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "pink"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "yellow"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "pink"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "yellow"
+    }
+  ],
+  "covers": [
+    {
+      "plate_id": "lat_v_0",
+      "screw_id": "lh_0_0"
+    },
+    {
+      "plate_id": "lat_v_0",
+      "screw_id": "lh_0_1"
+    },
+    {
+      "plate_id": "lat_v_1",
+      "screw_id": "lh_0_1"
+    },
+    {
+      "plate_id": "lat_v_1",
+      "screw_id": "lh_0_2"
+    },
+    {
+      "plate_id": "lat_v_2",
+      "screw_id": "lh_0_2"
+    },
+    {
+      "plate_id": "lat_v_2",
+      "screw_id": "lh_0_3"
+    },
+    {
+      "plate_id": "lat_v_0",
+      "screw_id": "lh_1_0"
+    },
+    {
+      "plate_id": "lat_v_0",
+      "screw_id": "lh_1_1"
+    },
+    {
+      "plate_id": "lat_v_1",
+      "screw_id": "lh_1_1"
+    },
+    {
+      "plate_id": "lat_v_1",
+      "screw_id": "lh_1_2"
+    },
+    {
+      "plate_id": "lat_v_2",
+      "screw_id": "lh_1_2"
+    },
+    {
+      "plate_id": "lat_v_2",
+      "screw_id": "lh_1_3"
+    },
+    {
+      "plate_id": "lat_v_0",
+      "screw_id": "lh_2_0"
+    },
+    {
+      "plate_id": "lat_v_0",
+      "screw_id": "lh_2_1"
+    },
+    {
+      "plate_id": "lat_v_1",
+      "screw_id": "lh_2_1"
+    },
+    {
+      "plate_id": "lat_v_1",
+      "screw_id": "lh_2_2"
+    },
+    {
+      "plate_id": "lat_v_2",
+      "screw_id": "lh_2_2"
+    },
+    {
+      "plate_id": "lat_v_2",
+      "screw_id": "lh_2_3"
+    }
+  ],
+  "metadata": {
+    "level": 1,
+    "seed": null,
+    "source_commit": "5ee0b84970eba12d4fd7f937bae162bf75ba61f3"
+  },
+  "name": "ScrewJam level 1",
+  "plates": [
+    {
+      "angle": 0.0,
+      "height": 34.0,
+      "holes": [
+        {
+          "color": "yellow",
+          "dx": -75.0,
+          "dy": 0.0,
+          "id": "lh_0_0"
+        },
+        {
+          "color": "yellow",
+          "dx": -25.0,
+          "dy": 0.0,
+          "id": "lh_0_1"
+        },
+        {
+          "color": "pink",
+          "dx": 25.0,
+          "dy": 0.0,
+          "id": "lh_0_2"
+        },
+        {
+          "color": "pink",
+          "dx": 75.0,
+          "dy": 0.0,
+          "id": "lh_0_3"
+        }
+      ],
+      "id": "lat_h_0",
+      "layer": 0,
+      "order": 0,
+      "shape_type": "linkBar4",
+      "width": 204.0,
+      "x": 180.0,
+      "y": 194.0
+    },
+    {
+      "angle": 0.0,
+      "height": 34.0,
+      "holes": [
+        {
+          "color": "yellow",
+          "dx": -75.0,
+          "dy": 0.0,
+          "id": "lh_1_0"
+        },
+        {
+          "color": "pink",
+          "dx": -25.0,
+          "dy": 0.0,
+          "id": "lh_1_1"
+        },
+        {
+          "color": "pink",
+          "dx": 25.0,
+          "dy": 0.0,
+          "id": "lh_1_2"
+        },
+        {
+          "color": "yellow",
+          "dx": 75.0,
+          "dy": 0.0,
+          "id": "lh_1_3"
+        }
+      ],
+      "id": "lat_h_1",
+      "layer": 1,
+      "order": 1,
+      "shape_type": "linkBar4",
+      "width": 204.0,
+      "x": 180.0,
+      "y": 250.0
+    },
+    {
+      "angle": 0.0,
+      "height": 34.0,
+      "holes": [
+        {
+          "color": "pink",
+          "dx": -75.0,
+          "dy": 0.0,
+          "id": "lh_2_0"
+        },
+        {
+          "color": "pink",
+          "dx": -25.0,
+          "dy": 0.0,
+          "id": "lh_2_1"
+        },
+        {
+          "color": "yellow",
+          "dx": 25.0,
+          "dy": 0.0,
+          "id": "lh_2_2"
+        },
+        {
+          "color": "yellow",
+          "dx": 75.0,
+          "dy": 0.0,
+          "id": "lh_2_3"
+        }
+      ],
+      "id": "lat_h_2",
+      "layer": 0,
+      "order": 2,
+      "shape_type": "linkBar4",
+      "width": 204.0,
+      "x": 180.0,
+      "y": 306.0
+    },
+    {
+      "angle": 0.0,
+      "height": 204.0,
+      "holes": [
+        {
+          "color": "pink",
+          "dx": 0.0,
+          "dy": -75.0,
+          "id": "lv_0_0"
+        },
+        {
+          "color": "pink",
+          "dx": 0.0,
+          "dy": -25.0,
+          "id": "lv_0_1"
+        },
+        {
+          "color": "pink",
+          "dx": 0.0,
+          "dy": 25.0,
+          "id": "lv_0_2"
+        },
+        {
+          "color": "yellow",
+          "dx": 0.0,
+          "dy": 75.0,
+          "id": "lv_0_3"
+        }
+      ],
+      "id": "lat_v_0",
+      "layer": 2,
+      "order": 3,
+      "shape_type": "linkBar4",
+      "width": 34.0,
+      "x": 124.0,
+      "y": 250.0
+    },
+    {
+      "angle": 0.0,
+      "height": 204.0,
+      "holes": [
+        {
+          "color": "pink",
+          "dx": 0.0,
+          "dy": -75.0,
+          "id": "lv_1_0"
+        },
+        {
+          "color": "pink",
+          "dx": 0.0,
+          "dy": -25.0,
+          "id": "lv_1_1"
+        },
+        {
+          "color": "yellow",
+          "dx": 0.0,
+          "dy": 25.0,
+          "id": "lv_1_2"
+        },
+        {
+          "color": "yellow",
+          "dx": 0.0,
+          "dy": 75.0,
+          "id": "lv_1_3"
+        }
+      ],
+      "id": "lat_v_1",
+      "layer": 3,
+      "order": 4,
+      "shape_type": "linkBar4",
+      "width": 34.0,
+      "x": 180.0,
+      "y": 250.0
+    },
+    {
+      "angle": 0.0,
+      "height": 204.0,
+      "holes": [
+        {
+          "color": "pink",
+          "dx": 0.0,
+          "dy": -75.0,
+          "id": "lv_2_0"
+        },
+        {
+          "color": "yellow",
+          "dx": 0.0,
+          "dy": -25.0,
+          "id": "lv_2_1"
+        },
+        {
+          "color": "yellow",
+          "dx": 0.0,
+          "dy": 25.0,
+          "id": "lv_2_2"
+        },
+        {
+          "color": "yellow",
+          "dx": 0.0,
+          "dy": 75.0,
+          "id": "lv_2_3"
+        }
+      ],
+      "id": "lat_v_2",
+      "layer": 2,
+      "order": 5,
+      "shape_type": "linkBar4",
+      "width": 34.0,
+      "x": 236.0,
+      "y": 250.0
+    }
+  ],
+  "waiting_capacity": 4
+}

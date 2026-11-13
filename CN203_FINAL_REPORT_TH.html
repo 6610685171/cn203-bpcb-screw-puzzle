@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>CN203 Final Report - BPCB-(1,2)</title>
+<style>
+  body { font-family: Arial, "Noto Sans Thai", sans-serif; font-size: 11pt; line-height: 1.48; color: #172033; }
+  h1 { font-size: 20pt; margin: 22pt 0 8pt; color: #172033; }
+  h2 { font-size: 15pt; margin: 16pt 0 6pt; color: #22314f; }
+  h3 { font-size: 12pt; margin: 12pt 0 4pt; color: #30405f; }
+  p { margin: 0 0 8pt; }
+  .title { text-align: center; font-size: 23pt; font-weight: bold; margin-top: 36pt; }
+  .subtitle { text-align: center; font-size: 14pt; color: #40506d; }
+  .author { text-align: center; margin: 18pt 0 28pt; }
+  .abstract { background: #f4f7fb; padding: 12pt; border-left: 4pt solid #4263a8; }
+  table { border-collapse: collapse; width: 100%; margin: 8pt 0 12pt; font-size: 9.5pt; }
+  th, td { border: 1px solid #aab4c4; padding: 5pt; vertical-align: top; }
+  tr { page-break-inside: avoid; }
+  th { background: #e9eef7; font-weight: bold; }
+  code, pre { font-family: "Courier New", monospace; }
+  pre { background: #f6f7f9; border: 1px solid #d7dce4; padding: 9pt; white-space: pre-wrap; font-size: 9.5pt; }
+  .equation { text-align: center; font-family: "Courier New", monospace; margin: 10pt 0; }
+  .figure-marker { text-align: center; color: #777; }
+  .figure-marker img { max-width: 100%; height: auto; }
+  .caption { text-align: center; font-size: 9.5pt; color: #465169; margin-bottom: 12pt; }
+  .note { background: #fff8e7; border-left: 4pt solid #d59b2a; padding: 9pt; }
+  .small { font-size: 9.5pt; color: #465169; }
+</style>
+</head>
+<body>
+
+<div class="title">Ordered Screw-Removal Puzzle with Ordered Color Boxes and Bounded Temporary Storage</div>
+<div class="subtitle">การออกแบบ Box-Prefix Blocker-Closure Bound สำหรับลด Search Waste</div>
+<div class="author">
+  รายงานโครงงานวิชา CN203 Algorithm Design<br>
+  ธนวรรณ ผ่องแผ้ว รหัสนักศึกษา 6610685171<br>
+  รูปแบบโครงงาน: งานเดี่ยว
+</div>
+
+<h1>บทคัดย่อ</h1>
+<div class="abstract">
+<p>โครงงานนี้ศึกษาปัญหาการหาลำดับถอดสกรูจากแผ่นที่ซ้อนกัน สกรูแต่ละตัวมีสี กล่องรับสกรูมีลำดับตายตัว และสกรูที่ยังเข้ากล่องปัจจุบันไม่ได้ต้องพักใน tray ที่มีความจุจำกัด เป้าหมายคือหาลำดับที่ถอดสกรูได้ครบโดย tray ไม่ล้น หรือพิสูจน์ว่าไม่มีลำดับดังกล่าว ปัญหานี้ถูกกำหนดเป็นโมเดลแบบ discrete ชื่อ Ordered Screw-Removal Puzzle (OSRP)</p>
+<p>Baseline ที่ใช้เปรียบเทียบคือ Memoized Depth-First Search ซึ่งไม่ขยาย dead state เดิมซ้ำ แต่ยังมี waste จากการเดินลึกเข้าไปใน branch ที่ blocker structure บังคับให้ tray ล้นแน่นอน โครงงานจึงเสนอ Box-Prefix Blocker-Closure Bound หรือ BPCB ซึ่งเลือกสกรูเป้าหมายที่ต้องใช้ปิดกล่อง คำนวณ recursive blocker closure และนับสกรูสีที่ไม่มีทางออกจาก tray ตลอด box prefix หากจำนวนขั้นต่ำที่ถูกบังคับให้ค้างมากกว่าความจุ จะ prune state นั้นได้โดยไม่เสียคำตอบ วิธีหลักคือ BPCB-(1,2) ซึ่งรวม bound ของหนึ่งและสองกล่อง</p>
+<p>การทดลองใช้ frozen benchmark 100 instances แบ่ง development 60 และ final hold-out 40 instances ทุกคำตอบตรวจด้วย exact label และ solution replay บน final hold-out BPCB-(1,2) ลด nodes จาก 44,549 เหลือ 15,972 หรือลด 64.15% และเร็วขึ้นโดยรวม 1.855 เท่า ผลทั้ง 400 instance-method combinations ตรงกับ exact label อย่างไรก็ตาม direct-path levels แทบไม่มี subtree ให้ตัดและอาจช้าลงจาก bound overhead รายงานจึงสรุปว่า BPCB ลด search waste ได้จริงใน branch ที่มี forced storage สูง แต่ไม่ใช่วิธีที่เร็วกว่า baseline ทุก instance</p>
+</div>
+
+<h1>1. Problem - ปัญหาที่ศึกษา</h1>
+
+<h2>1.1 ที่มาและ intuition</h2>
+<p>เกมประเภท Screw Jam ให้ผู้เล่นถอดสกรูสีต่าง ๆ ออกจากแผ่นที่ซ้อนกัน สกรูบางตัวถอดไม่ได้เพราะยังมีแผ่นชั้นบนบังอยู่ เมื่อสกรูตัวสุดท้ายของแผ่นถูกถอด แผ่นนั้นจึงหลุดและหยุดบังสกรูด้านล่าง ขณะเดียวกันระบบมีกล่องรับสกรูทีละสี ถ้าสีของสกรูตรงกับกล่องปัจจุบัน สกรูจะเข้ากล่องโดยตรง แต่ถ้าสีไม่ตรง สกรูต้องค้างใน waiting tray ซึ่งมีจำนวนช่องจำกัด</p>
+<p>ความยากจึงไม่ได้อยู่ที่การเลือกสกรูที่มองเห็นง่ายที่สุดอย่างเดียว ตัวเลือกหนึ่งครั้งมีผลพร้อมกันสามด้าน คือแผ่นใดจะหลุด สีใดจะถูกเปิด และ tray จะเหลือพื้นที่เท่าไรสำหรับกล่องในอนาคต การถอดสกรูที่ legal ตอนนี้อาจนำไปสู่ dead end ภายหลัง ในทางกลับกัน tray ที่เต็มก็ยังไม่จำเป็นต้องแพ้ หากยังมีสกรูสีตรงกล่องซึ่งทำให้กล่องเต็มและ auto-drain สกรูที่รออยู่ได้</p>
+
+<h2>1.2 ขอบเขตของโมเดล</h2>
+<p>รายงานนี้เรียกโมเดลแบบ discrete ว่า Ordered Screw-Removal Puzzle หรือ OSRP Input ประกอบด้วย plates และลำดับชั้น, screws พร้อมสีและ plate ที่สังกัด, blocker relation, ลำดับ boxes พร้อมสีและ capacity และ waiting capacity <code>W</code> โมเดลเก็บเฉพาะสิ่งที่มีผลต่อ legal move และผลลัพธ์ของเกม ส่วน animation, score, booster และรูปร่างหัวสกรูไม่อยู่ในขอบเขต</p>
+<p>เพื่อให้ state finite และ deterministic รายงานใช้ static-geometry assumption: แผ่นยังอยู่ตำแหน่งเดิมตราบใดที่เหลือสกรูอย่างน้อยหนึ่งตัว และหยุดบังทันทีเมื่อสกรูตัวสุดท้ายถูกถอด Source runtime จริงอนุญาตให้แผ่นที่เหลือสกรูหนึ่งตัวหมุนได้ ดังนั้น solver นี้ไม่ได้จำลองฟิสิกส์ทุกกรณีของเกมต้นฉบับ ข้อสมมตินี้เป็นข้อจำกัดของผลที่รายงาน ไม่ใช่สิ่งที่ควรซ่อนไว้</p>
+
+<h2>1.3 State, legal move และ output</h2>
+<p>ให้ state เขียนย่อเป็น <code>X = (R, i, f, T)</code> โดย <code>R</code> คือชุดสกรูที่ยังอยู่บนกระดาน, <code>i</code> คือ index ของ active box, <code>f</code> คือจำนวนช่องที่เติมแล้ว และ <code>T</code> คือจำนวนสกรูแต่ละสีใน tray การเก็บ tray เป็น color-count multiset ทำให้ตำแหน่งช่องที่สลับกันแต่มีผลเหมือนกันเป็น state เดียวกัน</p>
+<p>สกรูเป็น legal move เมื่อยังอยู่ใน <code>R</code> และไม่มี active plate บังอยู่ หลังถอดสกรู ระบบส่งสกรูเข้ากล่องถ้าสีตรง มิฉะนั้นส่งเข้า tray หาก tray เต็ม move นั้นไม่มี successor เมื่อกล่องเต็มจะเปิดกล่องถัดไปและดึงสกรูสีตรงจาก tray อัตโนมัติ กระบวนการนี้ทำซ้ำจนถึง fixed point เพราะ move เดียวอาจทำให้หลายกล่องเต็มต่อเนื่องกัน</p>
+<p>Output มีสองแบบ: <code>SOLVED</code> พร้อมลำดับ screw IDs ที่ replay แล้วถึง goal หรือ <code>UNSOLVABLE</code> เมื่อค้นครบและพิสูจน์ว่าไม่มีลำดับใดทำได้ ผลที่ชน node/time limit ต้องรายงานเป็น <code>LIMIT_REACHED</code> ไม่ใช่ <code>UNSOLVABLE</code></p>
+
+<h1>2. Baseline และ Waste</h1>
+
+<h2>2.1 Exact DFS</h2>
+<p>Baseline แรกคือ Depth-First Search ที่ลอง legal move ทุกตัวตามลำดับคงที่ ถ้า successor แก้ได้ให้ต่อ screw นั้นหน้าคำตอบ ถ้าทุก successor แก้ไม่ได้จึงประกาศ state ปัจจุบันเป็น dead วิธีนี้ถูกต้องเพราะสำรวจ legal continuation ครบ แต่ worst case เป็น exponential ในจำนวนสกรู เนื่องจากแต่ละระดับอาจมีตัวเลือกหลายตัว</p>
+
+<h2>2.2 Memoized DFS เป็น primary baseline</h2>
+<p>ลำดับการถอดต่างกันอาจมาถึง logical state เดียวกัน เช่น ถอดสกรูอิสระ A แล้ว B หรือ B แล้ว A หาก state นั้นถูกพิสูจน์ว่า dead แล้ว การค้นซ้ำไม่มีข้อมูลใหม่ Memoized DFS จึงเก็บ canonical dead states และไม่ขยาย state เดิมซ้ำ วิธีนี้ตรงกับ Q1 REMEMBER และเป็น baseline ที่แข็งแรงกว่าการเปรียบเทียบกับ brute force ธรรมดา</p>
+<p>อย่างไรก็ตาม memoization ช่วยเมื่อเคยเห็น state เดิมแล้วเท่านั้น ถ้า state ใหม่ไม่เคยพบแต่ blocker structure บังคับให้ tray ล้นแน่นอน DFS ยังต้องเดินต่อจนเกิด overflow จริง Waste ที่โครงงานต้องการลดจึงไม่ใช่ repeated state แต่เป็น <em>late discovery of forced overflow</em></p>
+
+<h2>2.3 ตัวอย่าง waste ที่ต้องการลด</h2>
+<p>สมมติกล่องปัจจุบันต้องการสกรูสีน้ำเงินอีกหนึ่งตัว แต่สกรูน้ำเงินทุกตัวถูกแผ่นสีแดงบังอยู่ การจะเข้าถึงเป้าหมายจึงต้องถอดสกรูสีแดงบนแผ่นนั้นออกก่อน หากสีแดงไม่มีอยู่ในกล่องปัจจุบัน สกรูเหล่านั้นต้องค้างใน tray จนกว่ากล่องน้ำเงินจะเต็ม ถ้าจำนวนที่ถูกบังคับให้ค้างมากกว่า <code>W</code> branch นี้ไม่มีทางสำเร็จ แม้ overflow จะยังไม่เกิดใน state ปัจจุบัน</p>
+
+<h1>3. วิเคราะห์ Q1-Q6</h1>
+
+<table>
+<tr><th>คำถาม</th><th>เกี่ยวข้องหรือไม่</th><th>ผลต่อการออกแบบ</th></tr>
+<tr><td>Q1 REMEMBER</td><td>เกี่ยวข้อง</td><td>เก็บ canonical dead states เพื่อลด repeated-state waste แต่ถือเป็น baseline ไม่ใช่ contribution ใหม่</td></tr>
+<tr><td>Q2 DISCARD</td><td>เกี่ยวข้องมากที่สุด</td><td>ถ้าพิสูจน์ lower bound ของ forced tray occupancy ได้และค่ามากกว่า <code>W</code> จะตัด branch ได้อย่างปลอดภัย</td></tr>
+<tr><td>Q3 EXPLOIT</td><td>เกี่ยวข้อง</td><td>ใช้ blocker relation แบบ recursive และลำดับสีของ box prefix ซึ่ง DFS ปกติใช้เพียงตรวจ move ทีละก้าว</td></tr>
+<tr><td>Q4 TRADE</td><td>เกี่ยวข้อง</td><td>แลก memory กับ memoization, cached lookup และ bitset เพื่อให้ closure และ set union เร็วขึ้น</td></tr>
+<tr><td>Q5 SHRINK</td><td>ไม่ใช่แกนหลัก</td><td>DFS ลด remaining screws ทีละตัวอยู่แล้ว แต่ tray กับ box sequence เชื่อมทุกส่วน จึงแยกเป็น independent subproblems ได้ยาก</td></tr>
+<tr><td>Q6 COMMIT</td><td>ยังใช้ไม่ได้</td><td>ยังไม่มี greedy choice ที่พิสูจน์ว่าปลอดภัย สกรูสีตรงกล่องอาจเปิดแผ่นผิดจังหวะ จึงต้องคง exact branching</td></tr>
+</table>
+
+<p>จาก Q2 และ Q3 เกิด hypothesis หลัก: ถ้า solver คำนวณจำนวนสกรูขั้นต่ำที่ถูกบังคับให้ค้างใน tray จาก recursive blocker closure ภายใต้ ordered box prefix แล้ว prune เมื่อค่าดังกล่าวมากกว่า <code>W</code> จะลดจำนวน state ที่ exact search ขยาย โดยยังให้ผลตรงกับ baseline</p>
+
+<h1>4. Algorithm ที่เสนอ: BPCB-(1,2)</h1>
+
+<h2>4.1 Recursive blocker closure</h2>
+<p>เริ่มจาก target screws ที่ต้องใช้เติมกล่อง หาก plate ใดบัง target อยู่ plate นั้นต้องถูกทำให้ว่าง จึงต้องถอดสกรูที่เหลือบน plate นั้นทุกตัว แต่สกรูเหล่านี้อาจถูก plate อื่นบังต่อ จึงขยายซ้ำเป็น recursive closure ให้ <code>C_X(U)</code> เป็นชุดสกรูที่ถูกบังคับให้ถอดเพื่อเข้าถึง target set <code>U</code> จาก state <code>X</code></p>
+
+<h2>4.2 BPCB-k สำหรับ box prefix</h2>
+<p>ให้ prefix เริ่มจาก active box ยาว <code>k</code> ใบ สำหรับแต่ละสี <code>c</code> กำหนด <code>demand_k(c)</code> เป็นจำนวนช่องที่ยังต้องเติมเพื่อให้ prefix จบ Active box ใช้เฉพาะช่องที่ยังขาด ส่วนกล่องถัดไปใช้ capacity เต็ม สกรูสีเดียวกันที่อยู่ใน tray ช่วยเติม demand ได้ก่อน จึงต้องเลือก target จากกระดานอย่างน้อย</p>
+<div class="equation">board_need_k(c) = max(0, demand_k(c) - tray_count(c))</div>
+<p>สกรูใน tray ที่มีมากกว่า demand ของสีนั้นไม่สามารถถูก prefix รับได้ทั้งหมด ส่วนเกินต้องค้างถึงปลาย prefix จึงได้</p>
+<div class="equation">persistent_tray_k = sum_c max(0, tray_count(c) - demand_k(c))</div>
+<p>สำหรับทุกวิธีเลือก target screws จากกระดานให้ครบ <code>board_need_k</code> คำนวณ blocker closure แล้วนับเฉพาะสกรูใน closure ที่สีไม่ปรากฏใน prefix เพราะสกรูเหล่านั้นเข้ากล่องใดใน prefix ไม่ได้ ให้ค่าต่ำสุดเหนือทุก target selection เป็น <code>L_k(X)</code></p>
+<div class="equation">L_k(X) = min_U |{t in C_X(U) : color(t) ไม่อยู่ใน prefix}|</div>
+<p>Pruning rule คือ</p>
+<div class="equation">ถ้า persistent_tray_k(X) + L_k(X) &gt; W ให้ prune X</div>
+<p>ถ้าจำนวนสกรูสีใดบนกระดานน้อยกว่า <code>board_need_k(c)</code> ก็ prune ได้ทันที เพราะ supply ไม่พอเติม prefix แม้ไม่พิจารณา tray</p>
+
+<h2>4.3 เหตุผลที่รวม BPCB-1 และ BPCB-2</h2>
+<p>BPCB-1 พิจารณากล่องปัจจุบัน จึงนับสีของกล่องที่สองเป็น off-color และบางครั้งให้ bound ที่แรงกว่า แต่ BPCB-2 มองเห็น blocker ที่จำเป็นต่อกล่องถัดไปได้ก่อน BPCB-1 ทั้งสองจึงไม่ dominate กัน วิธีหลักตรวจ BPCB-1 ก่อน ถ้ายังตัดไม่ได้จึงตรวจ BPCB-2 และ prune เมื่ออย่างใดอย่างหนึ่งพิสูจน์ overflow</p>
+
+<pre>solveBPCB12(level, state):
+    state = normalize(state)
+    if goal(state): return SOLVED
+    if state in deadMemo: return UNSOLVABLE
+
+    if BPCB(level, state, k=1) proves overflow:
+        deadMemo.add(state)
+        return UNSOLVABLE
+
+    if BPCB(level, state, k=2) proves overflow:
+        deadMemo.add(state)
+        return UNSOLVABLE
+
+    for move in legalMoves(state):
+        if solveBPCB12(level, apply(move)) is SOLVED:
+            return move + suffix
+
+    deadMemo.add(state)
+    return UNSOLVABLE</pre>
+
+<h2>4.4 Implementation</h2>
+<p>Implementation แปลง screw sets, plate contents และ color sets เป็น integer bitsets การรวม closure ใช้ bitwise OR และนับจำนวนสมาชิกด้วย <code>bit_count()</code> Lookup ที่ไม่เปลี่ยนตาม state ถูก cache ต่อ level สำหรับ BPCB-2 จำนวน target combinations อาจโตเร็ว จึงตั้ง limit 50,000 combinations ถ้าเกิน limit จะไม่เดาค่าแบบ heuristic แต่ fallback เป็น bound ที่อ่อนลง เพื่อรักษาความถูกต้องแม้จะเสียโอกาส prune</p>
+
+<h1>5. Correctness</h1>
+
+<h2>5.1 Safety ของ BPCB-k</h2>
+<p>สมมติว่ามี solution continuation ที่ทำให้กล่องทั้ง <code>k</code> ใบใน prefix เต็ม เลือก target set จริงที่ solution ใช้เติม demand หลังหักสกรูเริ่มต้นใน tray ชุดนี้เป็นหนึ่งในตัวเลือก <code>U</code> ที่ใช้คำนวณ <code>L_k(X)</code></p>
+<p>ก่อน target ทุกตัวจะถูกถอด plate ที่บังต้องถูกทำให้ว่าง และการทำ plate เหล่านั้นให้ว่างอาจบังคับ plate ชั้นบนต่อไป ดังนั้นสกรูใน <code>C_X(U)</code> ต้องถูกถอดไม่ช้ากว่าจังหวะที่ prefix เสร็จ สกรูใน closure ที่สีไม่ปรากฏใน prefix เข้ากล่องใดในช่วงนี้ไม่ได้ จึงยังค้างใน tray พร้อมกันเมื่อ prefix จบ รวมกับ tray ส่วนเกินเดิมแล้ว occupancy จริงไม่น้อยกว่า</p>
+<div class="equation">persistent_tray_k(X) + offprefix_cost_k(U_actual)</div>
+<p>เนื่องจาก <code>L_k(X)</code> เป็น minimum เหนือทุก target selection จึงมี <code>offprefix_cost_k(U_actual) &gt;= L_k(X)</code> หากผลรวม lower bound มากกว่า <code>W</code> จะขัดกับสมมติฐานว่ามี legal continuation ดังนั้น state ที่ BPCB prune ไม่มี solution ภายใต้โมเดลนี้</p>
+
+<h2>5.2 Safety ของวิธีรวม</h2>
+<p>BPCB-1 และ BPCB-2 เป็น sound predicates ทั้งคู่ การ prune เมื่อ <code>P1(X) OR P2(X)</code> จึงยัง sound การตรวจ BPCB-1 ก่อนเป็นเพียงการลดต้นทุน ไม่เปลี่ยนเงื่อนไขความถูกต้อง Memoized DFS ที่เพิ่ม pruning rule นี้ยังเป็น exact solver เมื่อไม่ชน search limit</p>
+
+<h1>6. Complexity</h1>
+<p>ให้ <code>H</code> เป็นจำนวน distinct logical states ที่ search เข้าถึงได้ Memoized DFS ใช้เวลาอย่างน้อยตามจำนวน state และ transition ที่สำรวจ โดย <code>H</code> ยังเป็น exponential ในจำนวนสกรูได้ และใช้พื้นที่ <code>O(H)</code> สำหรับ dead-state memo รวม recursion depth <code>O(S)</code></p>
+<p>สำหรับ BPCB-k จำนวน target selections เป็นผลคูณของ combination แต่ละสี</p>
+<div class="equation">Ncomb = product_c C(n_c, q_c)</div>
+<p>โดย <code>n_c</code> คือจำนวน candidate screws สี <code>c</code> และ <code>q_c = board_need_k(c)</code> ดังนั้น worst case ของ bound เป็น combinatorial แม้ใช้ bitset ช่วยให้ closure union เร็วขึ้น BPCB ไม่เปลี่ยน worst-case class ของ solver แต่พยายามลดจำนวน state <code>H</code> ที่ต้องขยายจริง Combination limit ทำให้ต้นทุน BPCB-2 ถูกควบคุม และ fallback ไม่ทำให้เกิด false prune</p>
+<p>ต้นทุนรวมจึงมองแบบ output-sensitive ได้ว่าเป็นผลรวมของ cost สำหรับสร้าง legal moves และ cost ของ bound ในแต่ละ state Nodes ที่ลดลงไม่ได้รับประกันว่า wall-clock time จะลดลงเสมอ หาก search เดิมสั้นมาก bound overhead อาจมากกว่างานที่ประหยัดได้ ประเด็นนี้ต้องตอบด้วยการทดลอง ไม่ใช่ Big-O เพียงอย่างเดียว</p>
+
+<h2>6.1 ต้นทุนหลักและหลักฐานจาก Log</h2>
+<p>ต้นทุนหลักของ BPCB อยู่ที่การสร้างและไล่ target combinations ของแต่ละสี แล้วรวม recursive closure masks ด้วย bitwise OR และนับสมาชิกด้วย <code>bit_count()</code> ตำแหน่งดังกล่าวอยู่ใน <code>osrp/bounds.py</code> บรรทัด 208-217 สำหรับ BPCB-1 และบรรทัด 293-356 สำหรับ BPCB-2 จึงเป็นส่วนที่ต้องพิจารณาควบคู่กับจำนวน nodes ที่ประหยัดได้</p>
+<p>Log หลังตรึงการทดลองยืนยันว่าต้นทุนนี้เกิดขึ้นจริง: บน development วิธี BPCB-(1,2) ตรวจ bound 28,488 ครั้ง ไล่ candidate combinations 1,379,756 ชุด และ prune 8,374 ครั้ง ส่วน final hold-out ตรวจ bound 20,913 ครั้ง ไล่ combinations 2,201,651 ชุด และ prune 4,941 ครั้ง โดยไม่เกิด fallback จาก combination limit ข้อมูลนี้รองรับคำอธิบาย complexity และช่วยอธิบายว่าบาง instance ลด nodes ได้แต่เวลาอาจไม่ลด</p>
+
+<h1>7. Data และ Evaluation Plan</h1>
+
+<h2>7.1 แหล่งข้อมูล</h2>
+<p>Runtime levels มาจาก public Flutter repository <code>Sidhant947/ScrewJam</code> commit <code>5ee0b84970eba12d4fd7f937bae162bf75ba61f3</code> โดยรัน generator จริงแล้ว export plates, holes, colors, box sequence และผล coverage จาก <code>Path.contains</code> จากนั้นแปลงเป็น discrete OSRP instances การ mutation สลับลำดับกล่องและสีของสกรูภายใต้ color conservation และปรับ waiting capacity เพื่อสร้างทั้ง general cases และคู่ที่อยู่คนละด้านของ minimum feasible capacity</p>
+
+<h2>7.2 Frozen benchmark</h2>
+<table>
+<tr><th>Split</th><th>Raw direct</th><th>General mutation</th><th>Capacity boundary</th><th>รวม</th><th>Solved / Unsolvable</th></tr>
+<tr><td>Development</td><td>10</td><td>10</td><td>40</td><td>60</td><td>38 / 22</td></tr>
+<tr><td>Final hold-out</td><td>10</td><td>10</td><td>20</td><td>40</td><td>25 / 15</td></tr>
+<tr><td>รวม</td><td>20</td><td>20</td><td>60</td><td>100</td><td>63 / 37</td></tr>
+</table>
+<p>Development ใช้ runtime bases ระดับ 1-9 และ level 6 seed 61 ส่วน final hold-out ใช้ระดับ 11, 13, 14, 16, 19 และ seeded variants 111, 131, 141, 161, 191 การคัดเลือก instance และ exact labeling ใช้ Memoized DFS เท่านั้น ไม่ใช้ผลของ BPCB ก่อนเปิด hold-out Code หลัก, config, fixtures และทุก instance ถูกตรึงด้วย SHA-256 ใน manifest</p>
+<p>Frozen benchmark 100 instances มีขนาด 16-38 screws, 6-10 plates, 6-13 boxes, 2-4 colors, blocker pairs 2-50 คู่ และ waiting capacity 0-4 ช่วงดังกล่าวเป็นขนาดของข้อมูลที่วัดผลจริง ไม่ใช่ค่าที่คาดจาก generator เพียงอย่างเดียว</p>
+
+<h2>7.3 Methods, metrics และกติกา</h2>
+<p>เปรียบเทียบ Memoized DFS, BPCB-1, BPCB-2 และ BPCB-(1,2) บน input เดียวกัน ลำดับ move เดียวกัน และ limit เดียวกัน กำหนด <code>max_nodes = 500,000</code>, time limit 5 วินาที และ <code>max_bound_combinations = 50,000</code></p>
+<p>Primary metric คือ <code>nodes_expanded</code> เพราะสะท้อน search waste โดยตรงและ deterministic ภายใต้ move order ที่ freeze ไว้ Secondary metrics คือ transitions, bound checks, bound prunes, candidate combinations, fallback events และ wall-clock time เวลาแต่ละ method ต่อ instance ใช้ median จาก 5 รอบหลัง warm-up 1 รอบ Correctness ตรวจจาก status เทียบ exact label และ replay solution ทุกครั้งที่ตอบ <code>SOLVED</code></p>
+<p>ก่อนเปิด final hold-out กำหนดเกณฑ์ไว้ว่า correctness claim จะล้มเหลวทันทีหากมี status mismatch, invalid replay หรือ false prune แม้หนึ่ง instance และ efficiency hypothesis จะไม่ได้รับการสนับสนุนหาก BPCB-(1,2) ไม่ลด aggregate hold-out nodes เทียบกับ Memoized DFS หาก nodes ลดแต่เวลาไม่ลด จะสรุปได้เฉพาะว่าลด search space แต่ยังไม่มี practical speedup สำหรับ exact labeling กำหนดให้ baseline จบภายใน time limit 5 วินาทีต่อ instance; กรณีที่ชน limit ต้องรายงาน <code>LIMIT_REACHED</code> และไม่นำเข้า correctness table</p>
+
+<h1>8. ผลการทดลอง</h1>
+
+<h2>8.1 Aggregate results</h2>
+<table>
+<tr><th>Split</th><th>Method</th><th>Instances</th><th>Nodes</th><th>ลดจาก baseline</th><th>ผลรวม median time</th><th>Speedup</th></tr>
+<tr><td>Development</td><td>Memoized DFS</td><td>60</td><td>59,018</td><td>0.00%</td><td>22,594.28 ms</td><td>1.000x</td></tr>
+<tr><td>Development</td><td>BPCB-1</td><td>60</td><td>45,691</td><td>22.58%</td><td>20,632.54 ms</td><td>1.095x</td></tr>
+<tr><td>Development</td><td>BPCB-2</td><td>60</td><td>22,462</td><td>61.94%</td><td>10,836.51 ms</td><td>2.085x</td></tr>
+<tr><td>Development</td><td><strong>BPCB-(1,2)</strong></td><td>60</td><td><strong>20,114</strong></td><td><strong>65.92%</strong></td><td>10,997.65 ms</td><td>2.054x</td></tr>
+<tr><td>Hold-out</td><td>Memoized DFS</td><td>40</td><td>44,549</td><td>0.00%</td><td>17,768.65 ms</td><td>1.000x</td></tr>
+<tr><td>Hold-out</td><td>BPCB-1</td><td>40</td><td>27,812</td><td>37.57%</td><td>13,449.76 ms</td><td>1.321x</td></tr>
+<tr><td>Hold-out</td><td>BPCB-2</td><td>40</td><td>21,684</td><td>51.33%</td><td>11,629.61 ms</td><td>1.528x</td></tr>
+<tr><td>Hold-out</td><td><strong>BPCB-(1,2)</strong></td><td>40</td><td><strong>15,972</strong></td><td><strong>64.15%</strong></td><td><strong>9,580.23 ms</strong></td><td><strong>1.855x</strong></td></tr>
+</table>
+<p>ผล 400 instance-method combinations ตรงกับ frozen exact label ทั้งหมด และทุก solution ผ่าน replay validation ไม่พบ false prune ในชุดทดลองนี้ Development และ hold-out ให้ node reduction ใกล้กันคือ 65.92% และ 64.15% จึงไม่พบสัญญาณว่าผลดีเกิดเฉพาะข้อมูลที่ใช้พัฒนา</p>
+
+<p class="figure-marker"><img src="results/final/nodes_scatter.png" alt="กราฟเปรียบเทียบจำนวน nodes ของ baseline และ BPCB-(1,2)"></p>
+<p class="caption">รูปที่ 1 Baseline เทียบ BPCB-(1,2) ด้วยจำนวน expanded nodes ต่อ instance บน log scale จุดใต้เส้น y=x หมายถึงวิธีใหม่ขยาย state น้อยกว่า</p>
+
+<h2 style="page-break-before: always;">8.2 ผลแยกตาม data stratum</h2>
+<table>
+<tr><th>Hold-out stratum</th><th>Instances</th><th>Node reduction ของ BPCB-(1,2)</th><th>Speedup</th><th>ความหมาย</th></tr>
+<tr><td>Raw direct</td><td>10</td><td>2.32%</td><td>0.560x</td><td>แทบไม่มี subtree ให้ตัด จึงเสีย bound overhead</td></tr>
+<tr><td>General mutation</td><td>10</td><td>44.21%</td><td>1.292x</td><td>ได้ประโยชน์นอก crafted boundary cases</td></tr>
+<tr><td>Capacity boundary</td><td>20</td><td>72.33%</td><td>2.271x</td><td>ตรงกับ forced-storage waste ที่ออกแบบ bound มาแก้</td></tr>
+</table>
+<p>บน hold-out วิธีรวมตัด state ด้วย bound 4,941 ครั้ง และไม่เกิด fallback จาก combination limit ผลที่ general mutation ลด nodes 44.21% สำคัญเพราะแสดงว่าประโยชน์ไม่ได้เกิดเฉพาะคู่ capacity-boundary ที่ตั้งใจสร้างให้เห็น bound เท่านั้น ขณะเดียวกัน raw direct control ยืนยัน prediction ว่า bound ไม่คุ้มเมื่อ DFS เดินถึงคำตอบได้เกือบตรง</p>
+
+<p class="figure-marker"><img src="results/final/node_reduction.png" alt="กราฟ aggregate node reduction แยก development และ final hold-out"></p>
+<p class="caption">รูปที่ 2 Aggregate node reduction ของ BPCB variants แยก development และ final hold-out</p>
+
+<h2 style="page-break-before: always;">8.3 Prediction ก่อนทดลอง</h2>
+<p>ตารางนี้เทียบ prediction ที่บันทึกไว้ก่อนเปิด final hold-out กับผลที่วัดได้จริง โดยไม่เปลี่ยน algorithm หรือ parameter หลังเห็นผล</p>
+<table>
+<tr><th>Prediction ก่อน final hold-out</th><th>ผลที่วัดได้จริง</th><th>สรุป</th></tr>
+<tr><td>P1 ทุก BPCB variant ต้องตรง exact baseline และ replay ผ่าน 100%</td><td>400/400 instance-method combinations ตรง exact label และทุก solution replay ผ่าน</td><td>ผ่าน</td></tr>
+<tr><td>P2 BPCB-(1,2) ต้องขยาย nodes ไม่มากกว่า BPCB-1 หรือ BPCB-2</td><td>จริงครบ 100 instances; hold-out รวม 15,972 เทียบกับ 27,812 และ 21,684 nodes</td><td>ผ่าน</td></tr>
+<tr><td>P3 capacity-boundary จะได้ประโยชน์สูงสุด</td><td>Hold-out ลด nodes 72.33%; general mutation 44.21%; raw direct 2.32%</td><td>ผ่าน</td></tr>
+<tr><td>P4 direct-path instances จะลด nodes ได้น้อยและอาจช้าลง</td><td>Raw direct ลด nodes 2.32% และ speedup 0.560x</td><td>ผ่าน</td></tr>
+<tr><td>P5 BPCB-1 และ BPCB-2 จะไม่ dominate กันทุก instance</td><td>แต่ละ bound ชนะคนละ instance และวิธีรวมลด hold-out nodes ได้ 64.15%</td><td>ผ่าน</td></tr>
+</table>
+
+<h1>9. Failure Cases และข้อจำกัด</h1>
+<p><code>hol_level_11_raw</code> ขยาย 38 nodes เท่ากันทั้ง baseline และวิธีรวม แต่ median time เพิ่มจาก 5.669 ms เป็น 15.662 ms หรือช้าประมาณ 2.76 เท่า เพราะ bound ถูกตรวจทุก state โดยไม่สามารถตัด search ได้เลย</p>
+<p><code>hol_level_14_seed_141_boundary_01_unsolvable_W1</code> ลด nodes จาก 189 เหลือ 162 หรือ 14.29% แต่เวลาเพิ่มจาก 46.490 เป็น 55.426 ms แสดงว่า node reduction ขนาดเล็กยังไม่พอชดเชย bound overhead ดังนั้นข้อสรุปที่เหมาะสมไม่ใช่ “BPCB เร็วกว่าเสมอ” แต่คือ “BPCB ลด waste ได้เมื่อ forced-storage proof ตัด subtree ใหญ่พอ”</p>
+<p>ข้อจำกัดอื่นคือ benchmark มาจาก generator เดียว, static model ไม่รวม rigid-body rotation และยังไม่ได้วัด peak memory โดยตรง แม้ instrumentation จะบันทึก nodes, transitions, bound checks, bound prunes, combinations และ fallback events แล้ว นอกจากนี้การไม่พบ mismatch ใน 100 instances เป็น empirical evidence ไม่ใช่ proof แทนเหตุผลในส่วนที่ 5</p>
+
+<h1>10. ความใหม่และ Prior Work</h1>
+<p>สิ่งที่โครงงานไม่อ้างว่าใหม่คือ DFS, memoization, branch-and-bound, bitset, dependency closure หรือแนวคิด bounded buffer งาน disassembly sequence planning ใช้ blocker/precedence graph อยู่แล้ว งาน one-shot pebbling และ peak-memory scheduling ศึกษาจำนวนสิ่งที่ต้องค้างพร้อมกัน และ precedence-constrained bin packing รวม precedence กับ capacity อยู่ก่อน</p>
+<p>Candidate contribution ที่เฉพาะของโครงงานนี้คือการสร้าง lower bound โดยเลือก target screws ตาม residual demand ของ ordered color-box prefix คำนวณ recursive AND-closure ของ blocking plates แล้วนับเฉพาะ closure colors ที่ไม่มีอยู่ใน prefix รวมกับ tray excess ที่ระบายไม่ได้ ก่อน prune เมื่อ minimum forced occupancy มากกว่า tray capacity</p>
+<div class="note">จาก targeted literature และ source-code search ยังไม่พบ algorithm ที่รวมเงื่อนไขทั้งหมดนี้ตรงกับ BPCB-(1,2) แต่การค้นดังกล่าวไม่สามารถพิสูจน์ว่าไม่มีใครในโลกเคยคิดวิธีเทียบเท่า รายงานจึงใช้ถ้อยคำว่า <strong>novel candidate with documented prior-art search</strong> และไม่ใช้คำว่า first algorithm in the world</div>
+
+<h1>11. สรุป</h1>
+<p>โครงงานเริ่มจาก waste ที่ Memoized DFS ยังแก้ไม่ได้ คือการค้นต่อใน state ใหม่ที่ blocker structure บังคับให้ tray ล้นในอนาคต Q2 DISCARD และ Q3 EXPLOIT นำไปสู่ BPCB ซึ่งเปลี่ยน blocker relation กับ box order ให้เป็น forced-storage lower bound ส่วน Q1 และ Q4 ช่วยทำให้ baseline และ implementation แข็งแรงขึ้น ขณะที่ Q5 ไม่ใช่แกนหลักและ Q6 ยังไม่มี greedy proof ที่ปลอดภัย</p>
+<p>บน final untouched hold-out BPCB-(1,2) ลด expanded nodes 64.15% และให้ aggregate speedup 1.855 เท่าโดยคำตอบตรง exact baseline ทุก instance ผลสนับสนุนว่า bound ลด search waste ได้จริงภายใต้ OSRP model โดยเฉพาะ capacity-constrained branches แต่ failure cases แสดงชัดว่าการตรวจ bound มีต้นทุนและไม่เหมาะกับ direct path การพัฒนาต่อที่สมเหตุสมผลคือเพิ่ม trigger ราคาถูกเพื่อข้าม bound เมื่อ state มีแนวโน้มไม่มี subtree ให้ตัด และขยายการทดลองไปยัง generator หรือกฎฟิสิกส์ที่หลากหลายกว่า</p>
+
+<h1>เอกสารอ้างอิง</h1>
+<ol>
+<li>Sidhant947. <em>ScrewJam</em>, public Flutter source repository, commit 5ee0b84970eba12d4fd7f937bae162bf75ba61f3.</li>
+<li>Backtracking Algorithm-based Disassembly Sequence Planning. Procedia CIRP, DOI: 10.1016/j.procir.2017.12.007.</li>
+<li>Austrin, Per, and Wu. <em>Inapproximability of Treewidth, One-Shot Pebbling, and Related Layout Problems</em>, arXiv:1109.4910.</li>
+<li>Jin et al. <em>New Tools for Peak Memory Scheduling</em>, arXiv:2312.13526.</li>
+<li>Dell'Amico et al. <em>The Bin Packing Problem with Precedence Constraints</em>, Operations Research, DOI: 10.1287/opre.1120.1109.</li>
+</ol>
+
+<h1>Reproducibility</h1>
+<p>Repository มี frozen manifest, SHA-256, raw CSV 400 แถว, environment metadata, tests และ README คำสั่งเดียวสำหรับสร้างผลและกราฟใหม่:</p>
+<pre>python3 scripts/run_final_evaluation.py --repeats 5 --warmup 1</pre>
+<p class="small">ไฟล์หลัก: <code>generated_final_dataset/manifest.json</code>, <code>results/final/raw_results.csv</code>, <code>results/final/aggregate_summary.csv</code>, <code>results/final/environment.json</code> และ <code>results/final/*.png</code></p>
+
+</body>
+</html>

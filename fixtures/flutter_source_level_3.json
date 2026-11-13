@@ -1,0 +1,361 @@
+{
+  "boxes": [
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "cyan"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "coral"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "cyan"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "coral"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "cyan"
+    },
+    {
+      "capacity": 3,
+      "collected": [],
+      "color": "coral"
+    },
+    {
+      "capacity": 2,
+      "collected": [],
+      "color": "cyan"
+    }
+  ],
+  "covers": [
+    {
+      "plate_id": "l_bracket_4",
+      "screw_id": "lb_0_corner"
+    },
+    {
+      "plate_id": "l_bracket_1",
+      "screw_id": "lb_0_v"
+    },
+    {
+      "plate_id": "l_bracket_2",
+      "screw_id": "lb_0_v"
+    },
+    {
+      "plate_id": "l_bracket_3",
+      "screw_id": "lb_0_v"
+    },
+    {
+      "plate_id": "l_bracket_4",
+      "screw_id": "lb_0_v"
+    },
+    {
+      "plate_id": "l_bracket_5",
+      "screw_id": "lb_0_v"
+    },
+    {
+      "plate_id": "l_center_disc",
+      "screw_id": "lb_0_v"
+    },
+    {
+      "plate_id": "l_bracket_4",
+      "screw_id": "lb_0_h"
+    },
+    {
+      "plate_id": "l_bracket_5",
+      "screw_id": "lb_1_corner"
+    },
+    {
+      "plate_id": "l_bracket_3",
+      "screw_id": "lb_1_v"
+    },
+    {
+      "plate_id": "l_bracket_5",
+      "screw_id": "lb_1_v"
+    },
+    {
+      "plate_id": "l_center_disc",
+      "screw_id": "lb_1_v"
+    },
+    {
+      "plate_id": "l_bracket_5",
+      "screw_id": "lb_1_h"
+    },
+    {
+      "plate_id": "l_bracket_1",
+      "screw_id": "lb_2_v"
+    },
+    {
+      "plate_id": "l_bracket_3",
+      "screw_id": "lb_2_v"
+    },
+    {
+      "plate_id": "l_bracket_4",
+      "screw_id": "lb_2_v"
+    },
+    {
+      "plate_id": "l_bracket_5",
+      "screw_id": "lb_2_v"
+    },
+    {
+      "plate_id": "l_center_disc",
+      "screw_id": "lb_2_v"
+    },
+    {
+      "plate_id": "l_bracket_5",
+      "screw_id": "lb_3_v"
+    },
+    {
+      "plate_id": "l_center_disc",
+      "screw_id": "lb_3_v"
+    },
+    {
+      "plate_id": "l_bracket_1",
+      "screw_id": "lb_4_v"
+    },
+    {
+      "plate_id": "l_bracket_3",
+      "screw_id": "lb_4_v"
+    },
+    {
+      "plate_id": "l_bracket_5",
+      "screw_id": "lb_4_v"
+    },
+    {
+      "plate_id": "l_center_disc",
+      "screw_id": "lb_4_v"
+    },
+    {
+      "plate_id": "l_center_disc",
+      "screw_id": "lb_5_v"
+    }
+  ],
+  "metadata": {
+    "level": 3,
+    "seed": null,
+    "source_commit": "5ee0b84970eba12d4fd7f937bae162bf75ba61f3"
+  },
+  "name": "ScrewJam level 3",
+  "plates": [
+    {
+      "angle": 4.708310518214085,
+      "height": 130.0,
+      "holes": [
+        {
+          "color": "coral",
+          "dx": -39.0,
+          "dy": 39.0,
+          "id": "lb_0_corner"
+        },
+        {
+          "color": "cyan",
+          "dx": -39.0,
+          "dy": -39.0,
+          "id": "lb_0_v"
+        },
+        {
+          "color": "cyan",
+          "dx": 39.0,
+          "dy": 39.0,
+          "id": "lb_0_h"
+        }
+      ],
+      "id": "l_bracket_0",
+      "layer": 0,
+      "order": 0,
+      "shape_type": "lBracket",
+      "width": 130.0,
+      "x": 204.86490927257285,
+      "y": 231.66198898819155
+    },
+    {
+      "angle": 6.2791068450089815,
+      "height": 130.0,
+      "holes": [
+        {
+          "color": "cyan",
+          "dx": -39.0,
+          "dy": 39.0,
+          "id": "lb_1_corner"
+        },
+        {
+          "color": "cyan",
+          "dx": -39.0,
+          "dy": -39.0,
+          "id": "lb_1_v"
+        },
+        {
+          "color": "cyan",
+          "dx": 39.0,
+          "dy": 39.0,
+          "id": "lb_1_h"
+        }
+      ],
+      "id": "l_bracket_1",
+      "layer": 1,
+      "order": 1,
+      "shape_type": "lBracket",
+      "width": 130.0,
+      "x": 205.06101449042757,
+      "y": 279.7448502044662
+    },
+    {
+      "angle": 7.849903171803878,
+      "height": 130.0,
+      "holes": [
+        {
+          "color": "cyan",
+          "dx": -39.0,
+          "dy": 39.0,
+          "id": "lb_2_corner"
+        },
+        {
+          "color": "coral",
+          "dx": -39.0,
+          "dy": -39.0,
+          "id": "lb_2_v"
+        },
+        {
+          "color": "coral",
+          "dx": 39.0,
+          "dy": 39.0,
+          "id": "lb_2_h"
+        }
+      ],
+      "id": "l_bracket_2",
+      "layer": 0,
+      "order": 2,
+      "shape_type": "lBracket",
+      "width": 130.0,
+      "x": 156.9781532741529,
+      "y": 279.94095542232094
+    },
+    {
+      "angle": 9.420699498598776,
+      "height": 130.0,
+      "holes": [
+        {
+          "color": "coral",
+          "dx": -39.0,
+          "dy": 39.0,
+          "id": "lb_3_corner"
+        },
+        {
+          "color": "coral",
+          "dx": -39.0,
+          "dy": -39.0,
+          "id": "lb_3_v"
+        },
+        {
+          "color": "coral",
+          "dx": 39.0,
+          "dy": 39.0,
+          "id": "lb_3_h"
+        }
+      ],
+      "id": "l_bracket_3",
+      "layer": 1,
+      "order": 3,
+      "shape_type": "lBracket",
+      "width": 130.0,
+      "x": 156.78204805629815,
+      "y": 231.85809420604627
+    },
+    {
+      "angle": 4.708310518214085,
+      "height": 118.0,
+      "holes": [
+        {
+          "color": "cyan",
+          "dx": -35.4,
+          "dy": 35.4,
+          "id": "lb_4_corner"
+        },
+        {
+          "color": "coral",
+          "dx": -35.4,
+          "dy": -35.4,
+          "id": "lb_4_v"
+        },
+        {
+          "color": "cyan",
+          "dx": 35.4,
+          "dy": 35.4,
+          "id": "lb_4_h"
+        }
+      ],
+      "id": "l_bracket_4",
+      "layer": 0,
+      "order": 4,
+      "shape_type": "lBracket",
+      "width": 118.0,
+      "x": 227.39985327182924,
+      "y": 208.94247537213067
+    },
+    {
+      "angle": 6.2791068450089815,
+      "height": 118.0,
+      "holes": [
+        {
+          "color": "cyan",
+          "dx": -35.4,
+          "dy": 35.4,
+          "id": "lb_5_corner"
+        },
+        {
+          "color": "coral",
+          "dx": -35.4,
+          "dy": -35.4,
+          "id": "lb_5_v"
+        },
+        {
+          "color": "coral",
+          "dx": 35.4,
+          "dy": 35.4,
+          "id": "lb_5_h"
+        }
+      ],
+      "id": "l_bracket_5",
+      "layer": 1,
+      "order": 5,
+      "shape_type": "lBracket",
+      "width": 118.0,
+      "x": 227.78052810648842,
+      "y": 302.27979420372264
+    },
+    {
+      "angle": 4.708310518214085,
+      "height": 84.0,
+      "holes": [
+        {
+          "color": "cyan",
+          "dx": -22.0,
+          "dy": 0.0,
+          "id": "lcd_0"
+        },
+        {
+          "color": "cyan",
+          "dx": 22.0,
+          "dy": 0.0,
+          "id": "lcd_1"
+        }
+      ],
+      "id": "l_center_disc",
+      "layer": 3,
+      "order": 6,
+      "shape_type": "cogwheel",
+      "width": 84.0,
+      "x": 180.92153127336286,
+      "y": 255.80147220525623
+    }
+  ],
+  "waiting_capacity": 4
+}

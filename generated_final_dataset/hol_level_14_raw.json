@@ -1,0 +1,206 @@
+{
+  "boxes": [
+    {
+      "capacity": 3,
+      "color": "orange"
+    },
+    {
+      "capacity": 3,
+      "color": "lime"
+    },
+    {
+      "capacity": 3,
+      "color": "pink"
+    },
+    {
+      "capacity": 3,
+      "color": "cyan"
+    },
+    {
+      "capacity": 3,
+      "color": "orange"
+    },
+    {
+      "capacity": 3,
+      "color": "lime"
+    },
+    {
+      "capacity": 2,
+      "color": "pink"
+    }
+  ],
+  "covers": [
+    {
+      "plate_id": "gear_2",
+      "screw_id": "g_6_0"
+    },
+    {
+      "plate_id": "gear_cross_key",
+      "screw_id": "g_4_0"
+    },
+    {
+      "plate_id": "gear_cross_key",
+      "screw_id": "g_4_1"
+    },
+    {
+      "plate_id": "gear_cross_key",
+      "screw_id": "g_7_0"
+    },
+    {
+      "plate_id": "gear_cross_key",
+      "screw_id": "g_7_1"
+    }
+  ],
+  "format": "osrp-level-v1",
+  "name": "ScrewJam level 14 [raw W=4]",
+  "plates": [
+    {
+      "id": "gear_0",
+      "layer": 0,
+      "order": 0
+    },
+    {
+      "id": "gear_1",
+      "layer": 1,
+      "order": 1
+    },
+    {
+      "id": "gear_2",
+      "layer": 2,
+      "order": 2
+    },
+    {
+      "id": "gear_3",
+      "layer": 0,
+      "order": 3
+    },
+    {
+      "id": "gear_4",
+      "layer": 1,
+      "order": 4
+    },
+    {
+      "id": "gear_5",
+      "layer": 2,
+      "order": 5
+    },
+    {
+      "id": "gear_6",
+      "layer": 0,
+      "order": 6
+    },
+    {
+      "id": "gear_7",
+      "layer": 1,
+      "order": 7
+    },
+    {
+      "id": "gear_cross_key",
+      "layer": 4,
+      "order": 8
+    }
+  ],
+  "screws": [
+    {
+      "color": "orange",
+      "id": "g_0_0",
+      "plate_id": "gear_0"
+    },
+    {
+      "color": "orange",
+      "id": "g_0_1",
+      "plate_id": "gear_0"
+    },
+    {
+      "color": "orange",
+      "id": "g_1_0",
+      "plate_id": "gear_1"
+    },
+    {
+      "color": "lime",
+      "id": "g_1_1",
+      "plate_id": "gear_1"
+    },
+    {
+      "color": "lime",
+      "id": "g_2_0",
+      "plate_id": "gear_2"
+    },
+    {
+      "color": "lime",
+      "id": "g_2_1",
+      "plate_id": "gear_2"
+    },
+    {
+      "color": "pink",
+      "id": "g_3_0",
+      "plate_id": "gear_3"
+    },
+    {
+      "color": "pink",
+      "id": "g_3_1",
+      "plate_id": "gear_3"
+    },
+    {
+      "color": "lime",
+      "id": "g_4_0",
+      "plate_id": "gear_4"
+    },
+    {
+      "color": "lime",
+      "id": "g_4_1",
+      "plate_id": "gear_4"
+    },
+    {
+      "color": "pink",
+      "id": "g_5_0",
+      "plate_id": "gear_5"
+    },
+    {
+      "color": "cyan",
+      "id": "g_5_1",
+      "plate_id": "gear_5"
+    },
+    {
+      "color": "cyan",
+      "id": "g_6_0",
+      "plate_id": "gear_6"
+    },
+    {
+      "color": "cyan",
+      "id": "g_6_1",
+      "plate_id": "gear_6"
+    },
+    {
+      "color": "pink",
+      "id": "g_7_0",
+      "plate_id": "gear_7"
+    },
+    {
+      "color": "pink",
+      "id": "g_7_1",
+      "plate_id": "gear_7"
+    },
+    {
+      "color": "orange",
+      "id": "gck_0",
+      "plate_id": "gear_cross_key"
+    },
+    {
+      "color": "orange",
+      "id": "gck_1",
+      "plate_id": "gear_cross_key"
+    },
+    {
+      "color": "orange",
+      "id": "gck_2",
+      "plate_id": "gear_cross_key"
+    },
+    {
+      "color": "lime",
+      "id": "gck_3",
+      "plate_id": "gear_cross_key"
+    }
+  ],
+  "waiting_capacity": 4
+}
