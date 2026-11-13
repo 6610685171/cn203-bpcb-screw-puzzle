@@ -5,7 +5,7 @@
     "osrp/search.py": "2000a4f12ea4ab8d8750fe825df3f77ba379645238e8d4834b584a282eada5e4",
     "osrp/simulator.py": "6e5381fbc4d534ba033d582b4e72828494afe105fdf8c80d0e94e98cda11751d"
   },
-  "completed_utc": "2026-11-13T13:27:54.555922+00:00",
+  "completed_utc": "2026-11-13T13:34:48.203534+00:00",
   "cpu_count": 8,
   "manifest_sha256": "d5979eb3f5763982b0abb26bef09d6783140192c869bd7d4840487331badcc9d",
   "max_bound_combinations": 50000,

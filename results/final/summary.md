@@ -1,6 +1,6 @@
 # Final benchmark summary
 
-Generated: 2026-11-13T13:27:54.555922+00:00
+Generated: 2026-11-13T13:34:48.203534+00:00
 
 | Split | Method | n | Nodes | Node reduction | Sum of median times | Speedup | Bound prunes | Fallbacks |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|

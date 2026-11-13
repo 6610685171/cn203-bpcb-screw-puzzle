@@ -104,6 +104,7 @@ CN203_FINAL_REPORT_TH.html     รายงานฉบับเต็ม
 - `generated_final_dataset/manifest.json` เก็บ exact label และ SHA-256 ของทุก instance
 - `generated_final_dataset/freeze.json` ตรึง Algorithm และ config ที่ใช้ทดลอง
 - `scripts/run_final_evaluation.py` ตรวจ hash ก่อนรันทุกครั้ง
+- `scripts/verify_final_benchmark.py` ใช้ deterministic node limit โดยไม่ใช้ wall-clock limit เป็นค่าเริ่มต้น เพื่อให้ตรวจซ้ำได้บนเครื่องที่มีความเร็วต่างกัน
 - ทุกสถานะเปรียบเทียบกับ exact label
 - ทุกคำตอบ `SOLVED` ต้องผ่าน solution replay
 - `LIMIT_REACHED` แยกจาก `UNSOLVABLE` เสมอ

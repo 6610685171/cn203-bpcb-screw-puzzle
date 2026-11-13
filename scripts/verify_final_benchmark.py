@@ -31,14 +31,26 @@ def main() -> int:
         "dataset", type=Path, nargs="?", default=PROJECT_ROOT / "generated_final_dataset"
     )
     parser.add_argument("--max-nodes", type=int)
-    parser.add_argument("--time-limit", type=float)
+    parser.add_argument(
+        "--time-limit",
+        type=float,
+        default=None,
+        help=(
+            "optional wall-clock limit per instance; disabled by default so "
+            "verification is independent of machine speed"
+        ),
+    )
     args = parser.parse_args()
 
     manifest_path = args.dataset / "manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     limits = manifest["config"]["exact_label_limits"]
-    max_nodes = args.max_nodes or int(limits["max_nodes"])
-    time_limit = args.time_limit or float(limits["time_limit_seconds"])
+    max_nodes = (
+        args.max_nodes
+        if args.max_nodes is not None
+        else int(limits["max_nodes"])
+    )
+    time_limit = args.time_limit
 
     failures: list[str] = []
     counts: Counter[tuple[str, str, str]] = Counter()
