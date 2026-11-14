@@ -18,7 +18,7 @@ instances ข้อมูลและ code หลักถูกตรึงด�
 | Final hold-out | BPCB-2 | 40 | 21,684 | 51.33% | 11,629.61 ms | 1.528x |
 | Final hold-out | BPCB-(1,2) | 40 | 15,972 | **64.15%** | 9,580.23 ms | **1.855x** |
 
-ผล 400 instance-method combinations ตรงกับ frozen exact label ทั้งหมด และทุก
+ผล 400/400 instance-method combinations ตรงกับ frozen exact label ทั้งหมด และทุก
 solution ที่คืนมาผ่าน replay validation ไม่พบ false prune ในชุดทดลองนี้
 
 ## ผล BPCB-(1,2) แยกตาม hold-out stratum
@@ -59,8 +59,10 @@ state ได้เลย
 - `results/final/node_reduction.png`: กราฟ aggregate node reduction
 - `EVALUATION_PROTOCOL_TH.md`: prediction และเกณฑ์ตัดสินที่บันทึกก่อนรัน
 
-คำสั่งสร้างผลและกราฟใหม่จาก frozen manifest:
+คำสั่งตรวจ tests, ตรวจ frozen benchmark และสร้างตารางกับกราฟใหม่จากผลที่ตรึงไว้:
 
 ```bash
-python3 scripts/run_final_evaluation.py --repeats 5 --warmup 1
+make reproduce
 ```
+
+หากต้องการจับเวลาใหม่ครบทุก method และทุก instance ให้ใช้ `make benchmark`

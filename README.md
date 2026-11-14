@@ -44,7 +44,7 @@ BPCB พยายามพิสูจน์ forced overflow ก่อนเก�
 | Final hold-out | Memoized DFS | 40 | 44,549 | 0.00% | 17,768.65 ms | 1.000x |
 | Final hold-out | BPCB-(1,2) | 40 | **15,972** | **64.15%** | **9,580.23 ms** | **1.855x** |
 
-ผลครบ 400 instance-method combinations ตรงกับ frozen exact label และทุก solution
+ผลครบ 400/400 instance-method combinations ตรงกับ frozen exact label และทุก solution
 ผ่าน replay validation ไม่พบ false prune ใน benchmark นี้
 
 ![Aggregate node reduction](results/final/node_reduction.png)
@@ -132,7 +132,19 @@ Runtime fixtures สร้างจาก public repository
 `5ee0b84970eba12d4fd7f937bae162bf75ba61f3`
 
 โครงงานไม่อ้างว่า DFS, memoization, bitset หรือ dependency closure เป็นสิ่งใหม่
-ข้อเสนอที่นำมาทดลองคือการรวม ordered color-box prefix, recursive blocker closure และ
-forced tray occupancy ให้เป็น safe lower bound สำหรับ OSRP รายงานจึงใช้คำว่า
+งาน selective disassembly มี recursive blocker/precedence planning และ DSSG สำหรับหา
+ชิ้นส่วนที่ต้องถอดก่อนถึง target อยู่แล้ว ส่วน Reordering Buffer Management ศึกษาวัตถุมีสี
+ใน buffer ความจุจำกัด ข้อเสนอที่นำมาทดลองในโครงงานนี้คือการรวม ordered color-box prefix,
+recursive blocker closure และ minimum forced tray occupancy ให้เป็น safe pruning bound
+สำหรับ OSRP
+
+จากการค้นงานวิจัยและ source code แบบเจาะจง ยังไม่พบวิธีสาธารณะที่รวมเงื่อนไขทั้งสามนี้
+แบบ BPCB-(1,2) แต่การค้นไม่สามารถพิสูจน์ว่าไม่มีวิธีเทียบเท่าอยู่ที่ใดในโลก รายงานจึงใช้คำว่า
 **novel candidate with documented prior-art search** และไม่อ้างว่าเป็น Algorithm แรกของโลก
+
+Prior work ที่ใกล้เคียง ได้แก่
+[recursive selective disassembly](https://doi.org/10.1016/j.aei.2010.03.002),
+[Disassembly Sequence Structure Graphs](https://doi.org/10.1016/j.aei.2011.11.003),
+[Reordering Buffer Management](https://arxiv.org/abs/1202.4504) และ
+[blocking reduction](https://arxiv.org/abs/1907.03835)
 

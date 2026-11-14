@@ -41,7 +41,7 @@
 <div class="abstract">
 <p>โครงงานนี้ศึกษาปัญหาการหาลำดับถอดสกรูจากแผ่นที่ซ้อนกัน สกรูแต่ละตัวมีสี กล่องรับสกรูมีลำดับตายตัว และสกรูที่ยังเข้ากล่องปัจจุบันไม่ได้ต้องพักใน tray ที่มีความจุจำกัด เป้าหมายคือหาลำดับที่ถอดสกรูได้ครบโดย tray ไม่ล้น หรือพิสูจน์ว่าไม่มีลำดับดังกล่าว ปัญหานี้ถูกกำหนดเป็นโมเดลแบบ discrete ชื่อ Ordered Screw-Removal Puzzle (OSRP)</p>
 <p>Baseline ที่ใช้เปรียบเทียบคือ Memoized Depth-First Search ซึ่งไม่ขยาย dead state เดิมซ้ำ แต่ยังมี waste จากการเดินลึกเข้าไปใน branch ที่ blocker structure บังคับให้ tray ล้นแน่นอน โครงงานจึงเสนอ Box-Prefix Blocker-Closure Bound หรือ BPCB ซึ่งเลือกสกรูเป้าหมายที่ต้องใช้ปิดกล่อง คำนวณ recursive blocker closure และนับสกรูสีที่ไม่มีทางออกจาก tray ตลอด box prefix หากจำนวนขั้นต่ำที่ถูกบังคับให้ค้างมากกว่าความจุ จะ prune state นั้นได้โดยไม่เสียคำตอบ วิธีหลักคือ BPCB-(1,2) ซึ่งรวม bound ของหนึ่งและสองกล่อง</p>
-<p>การทดลองใช้ frozen benchmark 100 instances แบ่ง development 60 และ final hold-out 40 instances ทุกคำตอบตรวจด้วย exact label และ solution replay บน final hold-out BPCB-(1,2) ลด nodes จาก 44,549 เหลือ 15,972 หรือลด 64.15% และเร็วขึ้นโดยรวม 1.855 เท่า ผลทั้ง 400 instance-method combinations ตรงกับ exact label อย่างไรก็ตาม direct-path levels แทบไม่มี subtree ให้ตัดและอาจช้าลงจาก bound overhead รายงานจึงสรุปว่า BPCB ลด search waste ได้จริงใน branch ที่มี forced storage สูง แต่ไม่ใช่วิธีที่เร็วกว่า baseline ทุก instance</p>
+<p>การทดลองใช้ frozen benchmark 100 instances แบ่ง development 60 และ final hold-out 40 instances ทุกคำตอบตรวจด้วย exact label และ solution replay บน final hold-out BPCB-(1,2) ลด nodes จาก 44,549 เหลือ 15,972 หรือลด 64.15% และเร็วขึ้นโดยรวม 1.855 เท่า ผลทั้ง 400/400 instance-method combinations ตรงกับ exact label อย่างไรก็ตาม direct-path levels แทบไม่มี subtree ให้ตัดและอาจช้าลงจาก bound overhead รายงานจึงสรุปว่า BPCB ลด search waste ได้จริงใน branch ที่มี forced storage สูง แต่ไม่ใช่วิธีที่เร็วกว่า baseline ทุก instance</p>
 </div>
 
 <h1>1. Problem - ปัญหาที่ศึกษา</h1>
@@ -80,7 +80,7 @@
 <tr><td>Q3 EXPLOIT</td><td>เกี่ยวข้อง</td><td>ใช้ blocker relation แบบ recursive และลำดับสีของ box prefix ซึ่ง DFS ปกติใช้เพียงตรวจ move ทีละก้าว</td></tr>
 <tr><td>Q4 TRADE</td><td>เกี่ยวข้อง</td><td>แลก memory กับ memoization, cached lookup และ bitset เพื่อให้ closure และ set union เร็วขึ้น</td></tr>
 <tr><td>Q5 SHRINK</td><td>ไม่ใช่แกนหลัก</td><td>DFS ลด remaining screws ทีละตัวอยู่แล้ว แต่ tray กับ box sequence เชื่อมทุกส่วน จึงแยกเป็น independent subproblems ได้ยาก</td></tr>
-<tr><td>Q6 COMMIT</td><td>ยังใช้ไม่ได้</td><td>ยังไม่มี greedy choice ที่พิสูจน์ว่าปลอดภัย สกรูสีตรงกล่องอาจเปิดแผ่นผิดจังหวะ จึงต้องคง exact branching</td></tr>
+<tr><td>Q6 COMMIT</td><td>ยังใช้ไม่ได้</td><td>สกรูสีตรงกล่องแต่ละตัวอาจปลดตัวบังคนละชุด และถ้ากล่องเต็มเร็ว สกรูสีเดิมที่ต้องถอดภายหลังก็อาจกลายเป็นสีผิดกล่องได้ จึงยังไม่มี greedy choice ที่พิสูจน์ว่าปลอดภัยและต้องคง exact branching</td></tr>
 </table>
 
 <p>จาก Q2 และ Q3 เกิด hypothesis หลัก: ถ้า solver คำนวณจำนวนสกรูขั้นต่ำที่ถูกบังคับให้ค้างใน tray จาก recursive blocker closure ภายใต้ ordered box prefix แล้ว prune เมื่อค่าดังกล่าวมากกว่า <code>W</code> จะลดจำนวน state ที่ exact search ขยาย โดยยังให้ผลตรงกับ baseline</p>
@@ -183,7 +183,7 @@
 <tr><td>Hold-out</td><td>BPCB-2</td><td>40</td><td>21,684</td><td>51.33%</td><td>11,629.61 ms</td><td>1.528x</td></tr>
 <tr><td>Hold-out</td><td><strong>BPCB-(1,2)</strong></td><td>40</td><td><strong>15,972</strong></td><td><strong>64.15%</strong></td><td><strong>9,580.23 ms</strong></td><td><strong>1.855x</strong></td></tr>
 </table>
-<p>ผล 400 instance-method combinations ตรงกับ frozen exact label ทั้งหมด และทุก solution ผ่าน replay validation ไม่พบ false prune ในชุดทดลองนี้ Development และ hold-out ให้ node reduction ใกล้กันคือ 65.92% และ 64.15% จึงไม่พบสัญญาณว่าผลดีเกิดเฉพาะข้อมูลที่ใช้พัฒนา</p>
+<p>ผล 400/400 instance-method combinations ตรงกับ frozen exact label ทั้งหมด และทุก solution ผ่าน replay validation ไม่พบ false prune ในชุดทดลองนี้ Development และ hold-out ให้ node reduction ใกล้กันคือ 65.92% และ 64.15% จึงไม่พบสัญญาณว่าผลดีเกิดเฉพาะข้อมูลที่ใช้พัฒนา</p>
 
 <p class="figure-marker"><img src="results/final/nodes_scatter.png" alt="กราฟเปรียบเทียบจำนวน nodes ของ baseline และ BPCB-(1,2)"></p>
 <p class="caption">รูปที่ 1 Baseline เทียบ BPCB-(1,2) ด้วยจำนวน expanded nodes ต่อ instance บน log scale จุดใต้เส้น y=x หมายถึงวิธีใหม่ขยาย state น้อยกว่า</p>
@@ -217,9 +217,10 @@
 <p>ข้อจำกัดอื่นคือ benchmark มาจาก generator เดียว, static model ไม่รวม rigid-body rotation และยังไม่ได้วัด peak memory โดยตรง แม้ instrumentation จะบันทึก nodes, transitions, bound checks, bound prunes, combinations และ fallback events แล้ว นอกจากนี้การไม่พบ mismatch ใน 100 instances เป็น empirical evidence ไม่ใช่ proof แทนเหตุผลในส่วนที่ 5</p>
 
 <h1>10. ความใหม่และ Prior Work</h1>
-<p>สิ่งที่โครงงานไม่อ้างว่าใหม่คือ DFS, memoization, branch-and-bound, bitset, dependency closure หรือแนวคิด bounded buffer งาน disassembly sequence planning ใช้ blocker/precedence graph อยู่แล้ว งาน one-shot pebbling และ peak-memory scheduling ศึกษาจำนวนสิ่งที่ต้องค้างพร้อมกัน และ precedence-constrained bin packing รวม precedence กับ capacity อยู่ก่อน</p>
+<p>สิ่งที่โครงงานไม่อ้างว่าใหม่คือ DFS, memoization, branch-and-bound, bitset, dependency closure หรือแนวคิด bounded buffer งาน selective disassembly ใช้ blocker/precedence graph และวิธีแบบ recursive เพื่อหาชิ้นส่วนที่ต้องถอดก่อนเข้าถึง target อยู่แล้ว โดย Disassembly Sequence Structure Graph (DSSG) ยังสร้างโครงสร้างของชุดชิ้นส่วนขั้นต่ำที่ต้องถอดเพื่อเข้าถึงหลาย targets</p>
+<p>อีกสายหนึ่งคือ Reordering Buffer Management ซึ่งศึกษาวัตถุมีสีที่เข้ามาใน buffer ความจุจำกัดและเลือกลำดับนำออกเพื่อลดการเปลี่ยนสี งาน one-shot pebbling, peak-memory scheduling และ precedence-constrained bin packing ก็ศึกษาความสัมพันธ์ระหว่าง precedence กับพื้นที่หรือทรัพยากรที่ต้องใช้พร้อมกัน ปัญหาเหล่านี้ใกล้เคียงบางส่วน แต่ไม่มี ordered color boxes, blocker closure ของสกรู และกฎ solvability แบบ OSRP พร้อมกัน</p>
 <p>Candidate contribution ที่เฉพาะของโครงงานนี้คือการสร้าง lower bound โดยเลือก target screws ตาม residual demand ของ ordered color-box prefix คำนวณ recursive AND-closure ของ blocking plates แล้วนับเฉพาะ closure colors ที่ไม่มีอยู่ใน prefix รวมกับ tray excess ที่ระบายไม่ได้ ก่อน prune เมื่อ minimum forced occupancy มากกว่า tray capacity</p>
-<div class="note">จาก targeted literature และ source-code search ยังไม่พบ algorithm ที่รวมเงื่อนไขทั้งหมดนี้ตรงกับ BPCB-(1,2) แต่การค้นดังกล่าวไม่สามารถพิสูจน์ว่าไม่มีใครในโลกเคยคิดวิธีเทียบเท่า รายงานจึงใช้ถ้อยคำว่า <strong>novel candidate with documented prior-art search</strong> และไม่ใช้คำว่า first algorithm in the world</div>
+<div class="note">จากการค้นงานวิจัยและ source code แบบเจาะจง ยังไม่พบวิธีสาธารณะที่รวม residual demand ของ ordered color-box prefix, recursive blocker closure และ minimum forced tray occupancy เป็น safe pruning bound แบบ BPCB-(1,2) อย่างไรก็ตาม การค้นไม่สามารถพิสูจน์ว่าไม่มีวิธีเทียบเท่าอยู่ที่ใดในโลก รายงานจึงใช้ถ้อยคำว่า <strong>novel candidate with documented prior-art search</strong> และไม่อ้างว่าเป็น first algorithm in the world</div>
 
 <h1>11. สรุป</h1>
 <p>โครงงานเริ่มจาก waste ที่ Memoized DFS ยังแก้ไม่ได้ คือการค้นต่อใน state ใหม่ที่ blocker structure บังคับให้ tray ล้นในอนาคต Q2 DISCARD และ Q3 EXPLOIT นำไปสู่ BPCB ซึ่งเปลี่ยน blocker relation กับ box order ให้เป็น forced-storage lower bound ส่วน Q1 และ Q4 ช่วยทำให้ baseline และ implementation แข็งแรงขึ้น ขณะที่ Q5 ไม่ใช่แกนหลักและ Q6 ยังไม่มี greedy proof ที่ปลอดภัย</p>
@@ -229,14 +230,19 @@
 <ol>
 <li>Sidhant947. <em>ScrewJam</em>, public Flutter source repository, commit 5ee0b84970eba12d4fd7f937bae162bf75ba61f3.</li>
 <li>Backtracking Algorithm-based Disassembly Sequence Planning. Procedia CIRP, DOI: 10.1016/j.procir.2017.12.007.</li>
+<li>Smith, S. S., and Chen, W. H. <em>Rule-Based Recursive Selective Disassembly Sequence Planning for Green Design</em>. Advanced Engineering Informatics 25(1), 77–87, DOI: 10.1016/j.aei.2010.03.002.</li>
+<li>Smith, S., Smith, G., and Chen, W. H. <em>Disassembly Sequence Structure Graphs: An Optimal Approach for Multiple-Target Selective Disassembly Sequence Planning</em>. Advanced Engineering Informatics 26(2), 306–316, DOI: 10.1016/j.aei.2011.11.003.</li>
+<li>Avigdor-Elgrabli, N., and Rabani, Y. <em>A Constant Factor Approximation Algorithm for Reordering Buffer Management</em>. arXiv:1202.4504.</li>
+<li>Watson, J., and Hermans, T. <em>Assembly Planning by Subassembly Decomposition Using Blocking Reduction</em>. arXiv:1907.03835.</li>
 <li>Austrin, Per, and Wu. <em>Inapproximability of Treewidth, One-Shot Pebbling, and Related Layout Problems</em>, arXiv:1109.4910.</li>
 <li>Jin et al. <em>New Tools for Peak Memory Scheduling</em>, arXiv:2312.13526.</li>
 <li>Dell'Amico et al. <em>The Bin Packing Problem with Precedence Constraints</em>, Operations Research, DOI: 10.1287/opre.1120.1109.</li>
 </ol>
 
 <h1>Reproducibility</h1>
-<p>Repository มี frozen manifest, SHA-256, raw CSV 400 แถว, environment metadata, tests และ README คำสั่งเดียวสำหรับสร้างผลและกราฟใหม่:</p>
-<pre>python3 scripts/run_final_evaluation.py --repeats 5 --warmup 1</pre>
+<p>Repository มี frozen manifest, SHA-256, raw CSV 400 แถว, environment metadata, tests และ README คำสั่งเดียวสำหรับตรวจ tests, ตรวจ frozen benchmark และสร้างตารางกับกราฟใหม่:</p>
+<pre>make reproduce</pre>
+<p class="small">หากต้องการจับเวลาใหม่ครบทุก method และทุก instance ให้ใช้ <code>make benchmark</code></p>
 <p class="small">ไฟล์หลัก: <code>generated_final_dataset/manifest.json</code>, <code>results/final/raw_results.csv</code>, <code>results/final/aggregate_summary.csv</code>, <code>results/final/environment.json</code> และ <code>results/final/*.png</code></p>
 
 </body>

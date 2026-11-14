@@ -161,5 +161,9 @@ Implementation ตั้ง `max_combinations=50,000` สำหรับ BPCB-2 
 > การสร้าง admissible forced-storage lower bound จาก recursive blocker closure และ ordered
 > color-box prefix แล้วใช้หลาย prefix lengths ร่วมกันเพื่อตัด state ของปริศนาถอดสกรู
 
-ยังต้องทำ prior-art search เฉพาะ formulation นี้ก่อนใช้คำว่า first/new อย่างเด็ดขาด
+จากการค้นงานวิจัยและ source code แบบเจาะจง ยังไม่พบวิธีสาธารณะที่รวม residual demand
+ของ ordered color-box prefix, recursive blocker closure และ minimum forced tray occupancy
+เป็น safe pruning bound แบบ BPCB-(1,2) อย่างไรก็ตาม การค้นไม่สามารถพิสูจน์ว่าไม่มีวิธี
+เทียบเท่าอยู่ที่ใดในโลก จึงใช้คำว่า **novel candidate with documented prior-art search**
+และไม่อ้างว่าเป็น first algorithm in the world
 
