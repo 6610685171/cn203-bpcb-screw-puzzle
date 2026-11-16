@@ -6,6 +6,10 @@ Repository นี้ประกอบด้วยโมเดลปริศน
 Algorithm ที่เสนอชื่อ **Box-Prefix Blocker-Closure Bound หรือ BPCB-(1,2)**,
 frozen benchmark 100 instances, ผลทดลอง, tests และสคริปต์สร้างกราฟใหม่
 
+โครงงานโฟกัสที่การ **ลดจำนวน state ที่ exact solver ต้องค้นก่อนรู้คำตอบ**
+โดยยังตอบถูกเหมือน Baseline เดิม ตัววัดหลักคือจำนวน state ที่ขยายจริง
+(`nodes_expanded`) ส่วนเวลาจริงเป็นตัววัดรอง เพราะเวลาสามารถเปลี่ยนตามเครื่องที่ใช้รันได้
+
 ## ปัญหาที่ศึกษา
 
 Ordered Screw-Removal Puzzle (OSRP) ให้ผู้เล่นถอดสกรูออกจากแผ่นที่ซ้อนกัน
@@ -96,7 +100,6 @@ fixtures/                     runtime exports จาก public Flutter generator
 generated_final_dataset/      frozen development/hold-out instances
 results/final/                CSV, environment log, summary และกราฟ
 source_bridge/                เครื่องมือ export และแปลงข้อมูลจาก Flutter
-CN203_FINAL_REPORT_TH.html     รายงานฉบับเต็ม
 ```
 
 ## Reproducibility และ Correctness
@@ -114,7 +117,8 @@ CN203_FINAL_REPORT_TH.html     รายงานฉบับเต็ม
 - [`ALGORITHM_DESIGN_AND_PROOF_TH.md`](ALGORITHM_DESIGN_AND_PROOF_TH.md): นิยาม Algorithm และ safety argument
 - [`EVALUATION_PROTOCOL_TH.md`](EVALUATION_PROTOCOL_TH.md): prediction และเกณฑ์ตัดสินก่อนเปิด hold-out
 - [`FINAL_RESULTS_TH.md`](FINAL_RESULTS_TH.md): ผลทดลองสุดท้ายและ failure cases
-- [`CN203_FINAL_REPORT_TH.html`](CN203_FINAL_REPORT_TH.html): รายงานฉบับเต็ม รวม Q1-Q6, correctness, complexity, prior work และข้อจำกัด
+
+รายงานและสไลด์ฉบับ Final จะเพิ่มเป็นลิงก์ Google Drive ในส่วนนี้ภายหลัง
 
 ## ขอบเขตและข้อจำกัด
 
