@@ -172,7 +172,7 @@ source_bridge/                เครื่องมือส่งออก�
 
 ## เอกสารประกอบ
 
-- รายงานฉบับสมบูรณ์: 
+- รายงาน: https://drive.google.com/file/d/1Q2VIt6dgmsfjMcjzGiCxS9Tc6SRAOwCf/view?usp=sharing
 - สไลด์นำเสนอ: https://canva.link/o671gjkvxcbifuv
 
 ## ที่มาของข้อมูลและความใหม่
